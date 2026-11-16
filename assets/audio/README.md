@@ -1,11 +1,24 @@
-# Musik und Nutzungsrechte
+# Dreamy Elsewhere — Musikquelle
 
-Zum bevorzugten Song „Let Go“ (Ark Patrol), Version „Slowed to Perfection“:
-Die Nutzung über eine Instagram-Musikbibliothek bedeutet nicht automatisch, dass
-wir die Aufnahme selbst als Tondatei in automatisiert produzierte Videos einbauen dürfen.
+Gewählter Titel: **Vastness** von **Andrew Ev** (3:50), angeboten bei Mixkit.
+Quelle: https://mixkit.co/free-stock-music/ambient/
+Lizenz: https://mixkit.co/license/modal/musicFree/
 
-Nur wenn eine **passend lizenzierte** Audiodatei vorliegt, darf sie als
-`background.mp3`, `background.m4a` oder `background.wav` hinterlegt werden.
+Die Mixkit Stock Music Free License erlaubt die Nutzung der Musik in kommerziellen und
+nichtkommerziellen Social-Media-Videos. Die isolierte Weiterverbreitung einer MP3
+als eigenständiger Download ist nicht Teil unseres Workflows. Wir veröffentlichen
+nur die damit vertonten Reel-MP4s.
 
-Ohne eine solche Audiodatei rendert das System technisch ein stilles Reel, verhindert
-aber automatisch das Einplanen in Buffer.
+**Private Ablage:** Google Drive, Dreamy Elsewhere - Bildproduktion / licensed-audio
+https://drive.google.com/drive/folders/1yghmnkIr6vyN8Ok-WYjgdiZaqh8OQx2Y
+
+**Technik:** Der Renderer akzeptiert `DREAMY_AUDIO_PATH` oder eine beim Renderlauf
+vorhandene `assets/audio/background.mp3`, `.m4a` oder `.wav`. GitHub Actions muss
+die tatsächlich lizenzierte Datei vor dem Rendern temporär bereitstellen.
+Ohne verfügbare Audiodatei schlägt die Produktion absichtlich fehl. Es wird kein
+stummes Reel als fertig markiert.
+
+**Noch offen:** Die originale Mixkit-MP3 ist noch nicht im privaten Drive-Ordner
+angekommen; der dauerhafte sichere Abruf beim GitHub-Runner muss anschließend
+verbunden und mit einer fertigen MP4 geprüft werden. Kein Instagram-Publishing
+aktivieren, bevor Bildimport, Audiomuxing, Hosting und Buffer-Queue geprüft sind.
