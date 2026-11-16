@@ -1,4 +1,5 @@
 name: Dreamy Elsewhere — End-to-end technical smoke test
+# Re-run with corrected valid JPEG fixture
 on:
   push:
     paths:
