@@ -1,7 +1,8 @@
 """Safely queue only @dreamy_elsewhere on Buffer Free.
 
-Requires BUFFER_API_KEY, AUTO_PUBLISH=true, five finished images and cleared
-audio per Reel. Never targets @blinkpuzz or another channel.
+Requires BUFFER_API_KEY, AUTO_PUBLISH=true and five finished images per Reel.
+Silent clips are permitted under the user's current launch policy. Never targets
+@blinkpuzz or another channel.
 """
 import json
 import os
@@ -150,8 +151,8 @@ def main():
             continue
         if not now + timedelta(minutes=5) < when <= now + timedelta(days=9):
             continue
-        if meta.get("audio_status") != "CLEARED_AUDIO":
-            print("SKIP", meta["marker"], ": no cleared music")
+        if meta.get("audio_status") not in {"CLEARED_AUDIO", "SILENT"}:
+            print("SKIP", meta["marker"], ": unknown audio status")
             continue
         candidates.append((when, meta))
 
