@@ -1,9 +1,12 @@
-name: Dreamy Elsewhere — Prepare and verify
+name: Dreamy Elsewhere — Import and render (no publishing)
 
-# Manual test mode. Daily scheduling will be enabled once both the image
-# source and licensed audio/publishing route actually work.
+# Automatically react to five-image Drive manifests once provided.
+# This workflow renders media only. Buffer publishing is owned separately.
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'assets/drive_manifests/*.json'
 
 permissions:
   contents: write
@@ -43,6 +46,8 @@ jobs:
           assert CONFIG["account"] == "dreamy_elsewhere"
           print("Verified four daily boost slots, two later slots, correct Instagram target.")
           PY
+      - name: Download and verify five actual images from Drive manifests
+        run: python src/drive_import.py --start "$(TZ=Europe/Berlin date +%F)" --days 9
       - name: Render only complete five-image sets
         run: python src/render.py --start "$(TZ=Europe/Berlin date +%F)" --days 9
       - name: Save new media
@@ -55,8 +60,5 @@ jobs:
             git pull --rebase origin main
             git push
           fi
-      - name: Verify Buffer only; publishing disabled unless explicitly configured
-        env:
-          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-          AUTO_PUBLISH: ${{ vars.AUTO_PUBLISH }}
-        run: python src/publish.py
+      - name: Keep publishing disabled in the renderer
+        run: echo 'DRY RUN / RENDER ONLY: no Buffer API or Instagram publishing in this workflow.'
