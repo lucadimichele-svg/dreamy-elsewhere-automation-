@@ -44,7 +44,7 @@ jobs:
           print("Verified four daily boost slots, two later slots, correct Instagram target.")
           PY
       - name: Render only complete five-image sets
-        run: python src/render.py --start 2026-11-17 --days 9
+        run: python src/render.py --start "$(TZ=Europe/Berlin date +%F)" --days 9
       - name: Save new media
         run: |
           git config user.name dreamy-elsewhere-bot
