@@ -1,0 +1,59 @@
+name: Dreamy Elsewhere — Import five images (no publishing)
+on:
+  workflow_dispatch:
+    inputs:
+      reel_id:
+        description: 'Reel ID, e.g. 2026-11-17_S1'
+        required: true
+        type: string
+      image_01:
+        description: 'Public HTTPS URL of image 1'
+        required: true
+        type: string
+      image_02:
+        description: 'Public HTTPS URL of image 2'
+        required: true
+        type: string
+      image_03:
+        description: 'Public HTTPS URL of image 3'
+        required: true
+        type: string
+      image_04:
+        description: 'Public HTTPS URL of image 4'
+        required: true
+        type: string
+      image_05:
+        description: 'Public HTTPS URL of image 5'
+        required: true
+        type: string
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install Pillow requests
+      - name: Validate and import five real images
+        env:
+          REEL_ID: ${{ inputs.reel_id }}
+          URL_01: ${{ inputs.image_01 }}
+          URL_02: ${{ inputs.image_02 }}
+          URL_03: ${{ inputs.image_03 }}
+          URL_04: ${{ inputs.image_04 }}
+          URL_05: ${{ inputs.image_05 }}
+        run: |
+          python src/import_images.py --reel "$REEL_ID" --url01 "$URL_01" --url02 "$URL_02" --url03 "$URL_03" --url04 "$URL_04" --url05 "$URL_05"
+      - name: Commit validated image files only
+        env:
+          REEL_ID: ${{ inputs.reel_id }}
+        run: |
+          git config user.name dreamy-elsewhere-bot
+          git config user.email dreamy-elsewhere-bot@users.noreply.github.com
+          git add "assets/inbox/$REEL_ID"
+          git commit -m "assets: import five verified images for $REEL_ID"
+          git push
