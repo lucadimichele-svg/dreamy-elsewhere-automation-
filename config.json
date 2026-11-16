@@ -1,0 +1,34 @@
+{
+  "account": "dreamy_elsewhere",
+  "timezone": "Europe/Berlin",
+  "launch_date": "2026-11-17",
+  "boost_days": 28,
+  "boost_times": [
+    "08:00",
+    "12:30",
+    "17:30",
+    "21:30"
+  ],
+  "ongoing_times": [
+    "12:30",
+    "20:30"
+  ],
+  "frames_per_reel": 5,
+  "duration_seconds": 15,
+  "output_width": 1080,
+  "output_height": 1920,
+  "max_queued": 10,
+  "public_media_base": "https://lucadimichele-svg.github.io/dreamy-elsewhere-automation-/media",
+  "topics": [
+    "Which cozy bed would you choose?",
+    "Where would you spend a rainy night?",
+    "Choose your dream hideaway",
+    "Where would you wake up tomorrow?",
+    "Which winter cabin feels like home?",
+    "Where would you escape tonight?",
+    "Choose your cozy reading corner",
+    "Which view would you fall asleep to?",
+    "Where would you watch the sunset?",
+    "Choose your peaceful getaway"
+  ]
+}
