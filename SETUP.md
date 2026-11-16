@@ -13,8 +13,7 @@ Der laufende Blinkpuzz-Account und Vibsnaxx bleiben vollständig unangetastet.
    eines ChatGPT-Chats auslösen. Es fehlen die fortlaufend erstellten fünf Bilder pro Reel.
 2. **Musikquelle**: Der bevorzugte Song benötigt eine zulässige Veröffentlichungsroute.
    Ohne rechtmäßig nutzbare Tondatei wird NICHT veröffentlicht.
-3. **Buffer-API-Zugang**: Repository `Settings > Secrets and variables > Actions`,
-   neues Secret `BUFFER_API_KEY` – Wert niemals in eine Repo-Datei oder diesen Chat schreiben.
+3. **Buffer-API-Zugang**: Buffer Free erlaubt nur einen persönlichen API-Schlüssel. Der vorhandene Schlüssel wird **nicht rotiert** und nicht in dieses Repository kopiert. Stattdessen enthält `lucadimichele-svg/blinkpuzz-automation` einen **neuen, isolierten**, ausschließlich manuellen und lesenden Prüf-Workflow `.github/workflows/dreamy-buffer-bridge.yml`. Er nutzt das bestehende `BUFFER_API_KEY`-Secret dort, checkt den Code von Dreamy Elsewhere aus und verifiziert ausschließlich den exakt passenden Instagram-Kanal `@dreamy_elsewhere`. Vorhandene Blinkpuzz-Workflows werden nicht verändert.
 4. **Prüflauf**: `Actions > Dreamy Elsewhere — Prepare and verify > Run workflow`.
    Ohne Buffer-Secret wird nur lokal geprüft, **nichts** veröffentlicht.
 5. **Medienhosting**: Später GitHub Pages unter `Settings > Pages` auf
