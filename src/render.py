@@ -5,6 +5,7 @@ commercial music. Input: assets/inbox/YYYY-MM-DD_S1/01.jpg through 05.jpg.
 """
 import argparse
 import json
+import os
 import subprocess
 import tempfile
 from datetime import date, timedelta
@@ -77,6 +78,17 @@ def make_one(day, slot):
     if target.exists() and manifest.exists():
         return False
 
+    # Never mark a silent Reel as finished when music is mandatory.
+    optional_path = os.environ.get("DREAMY_AUDIO_PATH")
+    candidates = ([Path(optional_path)] if optional_path else []) + [
+        ROOT / "assets/audio/background.mp3",
+        ROOT / "assets/audio/background.m4a",
+        ROOT / "assets/audio/background.wav",
+    ]
+    audio = next((p for p in candidates if p.is_file()), None)
+    if audio is None:
+        raise RuntimeError("Licensed soundtrack missing: no silent Dreamy Elsewhere Reel will be rendered.")
+
     offset = (day - date.fromisoformat(CONFIG["launch_date"])).days
     topic = CONFIG["topics"][(offset * 4 + int(slot[1:]) - 1) % len(CONFIG["topics"])]
     with tempfile.TemporaryDirectory() as temporary:
@@ -98,26 +110,17 @@ def make_one(day, slot):
         silent = temp / "silent.mp4"
         run(["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0",
              "-i", str(playlist), "-c", "copy", str(silent)])
-        audio = next((p for p in [
-            ROOT/"assets/audio/background.mp3",
-            ROOT/"assets/audio/background.m4a",
-            ROOT/"assets/audio/background.wav",
-        ] if p.is_file()), None)
-        if audio:
-            run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(silent),
-                 "-stream_loop", "-1", "-i", str(audio), "-t", "15",
-                 "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a",
-                 "aac", "-b:a", "160k", "-filter:a",
-                 "volume=0.35,afade=t=out:st=13.8:d=1.2", "-movflags",
-                 "+faststart", str(target)])
-        else:
-            run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(silent),
-                 "-c", "copy", "-movflags", "+faststart", str(target)])
+        run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(silent),
+             "-stream_loop", "-1", "-i", str(audio), "-t", "15",
+             "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a",
+             "aac", "-b:a", "160k", "-filter:a",
+             "volume=0.35,afade=t=out:st=13.8:d=1.2", "-movflags",
+             "+faststart", str(target)])
     meta = {
         "date": str(day), "slot": slot, "marker": marker(day, slot),
         "video": target.name, "cover": cover.name, "topic": topic,
         "caption": f"{topic} 🌙✨\n\n1, 2, 3, 4 or 5? Tell us below!\n\n#DreamyElsewhere #CozyAesthetic #DreamyPlaces",
-        "audio_status": "CLEARED_AUDIO" if audio else "SILENT",
+        "audio_status": "EMBEDDED_AUDIO",
         "image_count": 5, "duration_seconds": 15,
     }
     manifest.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
