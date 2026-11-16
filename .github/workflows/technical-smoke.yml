@@ -1,0 +1,61 @@
+name: Dreamy Elsewhere — End-to-end technical smoke test
+on:
+  push:
+    paths:
+      - '.github/workflows/technical-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install test dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install Pillow
+      - name: Create full-resolution test input from committed real JPEG
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageOps
+          from pathlib import Path
+          source = Path("tests/bridge-test-32x57.jpg")
+          assert source.is_file(), "Binary GitHub image not present"
+          dest = Path("assets/inbox/2026-11-17_S1")
+          dest.mkdir(parents=True, exist_ok=True)
+          with Image.open(source) as image:
+              image.load()
+              assert image.format == "JPEG"
+              full = ImageOps.fit(image.convert("RGB"), (1080, 1920))
+              for i in range(1, 6):
+                  full.save(dest / f"{i:02d}.jpg", quality=88)
+          print("Five 1080x1920 test files created from real committed JPEG")
+          PY
+      - name: Render 15-second MP4 with existing production renderer
+        run: python src/render.py --start 2026-11-17 --days 1
+      - name: Validate actual output
+        run: |
+          test -s docs/media/2026-11-17_S1.mp4
+          python - <<'PY'
+          import json, subprocess
+          f = "docs/media/2026-11-17_S1.mp4"
+          p = subprocess.check_output(["ffprobe", "-v", "error", "-show_streams", "-show_format", "-of", "json", f])
+          j = json.loads(p)
+          v = next(s for s in j["streams"] if s["codec_type"] == "video")
+          assert (v["width"], v["height"]) == (1080, 1920)
+          assert 14.5 <= float(j["format"]["duration"]) <= 15.5
+          print("PASS:", v["width"], v["height"], j["format"]["duration"])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dreamy-technical-smoke-reel
+          path: |
+            docs/media/2026-11-17_S1.mp4
+            docs/media/2026-11-17_S1.json
+          retention-days: 3
