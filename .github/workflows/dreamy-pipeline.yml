@@ -63,4 +63,4 @@ jobs:
             git push
           fi
       - name: Keep publishing disabled in the renderer
-        run: echo 'DRY RUN / RENDER ONLY: no Buffer API or Instagram publishing in this workflow.'
+        run: "echo 'DRY RUN / RENDER ONLY: no Buffer API or Instagram publishing in this workflow.'"
