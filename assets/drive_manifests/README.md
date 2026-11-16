@@ -1,36 +1,45 @@
-# Dreamy Elsewhere: Google Drive image manifests
+# Drive → GitHub: Fünf-Bilder-Übergabe
 
-The scheduled ChatGPT production task should upload five separate original
-images into the **dedicated** Google Drive `incoming/YYYY-MM-DD_SX` folder.
+Die Google-Drive-Ordner bleiben **privat**. Eine geplante ChatGPT-Aufgabe
+lädt fünf Originalbilder in den Drive-Unterordner `incoming/YYYY-MM-DD_SX`.
+Anschließend liest sie jede Bilddatei über den verbundenen Drive-Zugang,
+übergibt deren echte Binärdaten über `GitHub.create_blob` an dieses Repo
+und notiert die fünf zurückgegebenen Blob-SHAs.
 
-Each Reel is represented by a single JSON manifest, only after five uploads
-have returned confirmed Drive file IDs:
+Beispiel für `assets/drive_manifests/2026-11-17_S1.json`:
 
 ```json
 {
   "date": "2026-11-17",
   "slot": "S1",
-  "folder_id": "ACTUAL_DRIVE_FOLDER_ID",
+  "drive_folder_id": "EXACT_ACTUAL_FOLDER_ID",
   "files": [
-    {"name":"01.png","id":"ACTUAL_FILE_ID_1"},
-    {"name":"02.png","id":"ACTUAL_FILE_ID_2"},
-    {"name":"03.png","id":"ACTUAL_FILE_ID_3"},
-    {"name":"04.png","id":"ACTUAL_FILE_ID_4"},
-    {"name":"05.png","id":"ACTUAL_FILE_ID_5"}
+    {"name":"01.png","drive_id":"EXACT_DRIVE_FILE_ID_01","blob_sha":"40_HEX_CHARS"},
+    {"name":"02.png","drive_id":"EXACT_DRIVE_FILE_ID_02","blob_sha":"40_HEX_CHARS"},
+    {"name":"03.png","drive_id":"EXACT_DRIVE_FILE_ID_03","blob_sha":"40_HEX_CHARS"},
+    {"name":"04.png","drive_id":"EXACT_DRIVE_FILE_ID_04","blob_sha":"40_HEX_CHARS"},
+    {"name":"05.png","drive_id":"EXACT_DRIVE_FILE_ID_05","blob_sha":"40_HEX_CHARS"}
   ]
 }
 ```
 
-These are examples, **not actual file IDs**. Use the exact returned upload
-file IDs. Do not write a manifest while any upload is incomplete.
+**Platzhalter, keine gültigen IDs.** Erst nachdem alle fünf echten Uploads
+und alle fünf `create_blob`-Aufrufe erfolgreich waren, die JSON-Datei in
+GitHub erzeugen. Das löst den Workflow `dreamy-pipeline.yml` aus.
 
-Do not place a secret, OAuth token, or service-account credential in a
-manifest. The current importer needs the FIVE individual image links to
-be accessible to GitHub's runner. The Drive `incoming` folder is presently
-**private**, and import has not yet been tested end-to-end. Do not expose
-the whole Drive account. Public sharing of only a dedicated image inbox
-would require the owner's informed decision.
+GitHub Actions liest die fünf Bild-Blobs anhand ihrer SHA, kontrolliert
+tatsächliche Bilddaten, Auflösung und Reihenfolge und rendert ein Reel.
+Die Ausgangsbilder werden nicht in die dauerhafte Git-Historie committed.
+GitHub garantiert allerdings keine unbegrenzte Aufbewahrung unreferenzierter
+Blobs; die Verarbeitung muss zeitnah erfolgen.
 
-The importer is read-only: it does not move or delete Drive originals.
-Images are not removed until successful publication has been verified
-separately and the cleanup rules have been tested.
+**Datenschutz:** Der Drive-Ordner bleibt privat. Die SHA-IDs stehen jedoch in
+einem öffentlichen GitHub-Repository; jemand mit der SHA kann möglicherweise
+die entsprechende Bildkopie abrufen. Keine vertraulichen Bilder verwenden.
+
+**Keine Löschung im Importprozess.** Drive-Bilder bleiben erhalten, bis ein
+unabhängiger Cleanup-Prozess die tatsächliche Instagram-Veröffentlichung
+bestätigt hat und mindestens 24 Stunden vergangen sind.
+
+Das Import-Workflow testet derzeit nur die technisch sichere Produktionsstrecke;
+automatische Veröffentlichung wird separat aktiviert.
