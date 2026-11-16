@@ -4,6 +4,7 @@ import argparse
 import io
 import ipaddress
 import socket
+import re
 from pathlib import Path
 from urllib.parse import urlparse
 import requests
@@ -25,7 +26,6 @@ def main():
     for i in range(1, 6):
         a.add_argument(f"--url{i:02d}", required=True)
     args = a.parse_args()
-    import re
     if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}_S[1-9]\d*", args.reel):
         raise ValueError("Invalid reel ID")
     dest = Path("assets/inbox") / args.reel
@@ -35,9 +35,9 @@ def main():
     for i in range(1, 6):
         url = check_url(getattr(args, f"url{i:02d}"))
         r = requests.get(url, timeout=45, allow_redirects=False, stream=True)
-        r.raise_for_status()
         if 300 <= r.status_code < 400:
             raise ValueError("Redirects are not supported")
+        r.raise_for_status()
         data = bytearray()
         for chunk in r.iter_content(65536):
             data.extend(chunk)
@@ -52,7 +52,7 @@ def main():
             out = io.BytesIO()
             im.convert("RGB").save(out, format="JPEG", quality=92, optimize=True)
             images.append(out.getvalue())
-    dest.mkdir(parents=True, exist_ok=False)
+    dest.mkdir(parents=True, exist_ok=True)
     for i, data in enumerate(images, 1):
         (dest / f"{i:02d}.jpg").write_bytes(data)
         print(f"Validated {dest / f'{i:02d}.jpg'} ({len(data)} bytes)")
