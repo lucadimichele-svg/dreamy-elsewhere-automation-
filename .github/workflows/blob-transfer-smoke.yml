@@ -1,0 +1,38 @@
+name: Dreamy Elsewhere — Private Blob Transfer Test
+
+on:
+  push:
+    paths:
+      - '.github/workflows/blob-transfer-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-private-image-transfer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Fetch a previously uploaded uncommitted binary blob
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PY'
+          import sys
+          import io
+          from PIL import Image
+          sys.path.insert(0, "src")
+          from blob_import import get_blob
+          import requests
+          sha = "4a9d27b167f4a3cb7957c0f384cc21d69a930433"
+          data = get_blob(requests.Session(), sha)
+          with Image.open(io.BytesIO(data)) as img:
+              img.verify()
+          print("PASS: uncommitted binary image successfully fetched and verified")
+          PY
