@@ -26,7 +26,7 @@ def main():
         a.add_argument(f"--url{i:02d}", required=True)
     args = a.parse_args()
     import re
-    if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}_S[1-9]\\d*", args.reel):
+    if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}_S[1-9]\d*", args.reel):
         raise ValueError("Invalid reel ID")
     dest = Path("assets/inbox") / args.reel
     if dest.exists() and any(dest.glob("*")):
