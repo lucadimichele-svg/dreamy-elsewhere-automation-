@@ -46,8 +46,10 @@ jobs:
           assert CONFIG["account"] == "dreamy_elsewhere"
           print("Verified four daily boost slots, two later slots, correct Instagram target.")
           PY
-      - name: Download and verify five actual images from Drive manifests
-        run: python src/drive_import.py --start "$(TZ=Europe/Berlin date +%F)" --days 9
+      - name: Import five images from temporary GitHub blobs (Drive remains private)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python src/blob_import.py --start "$(TZ=Europe/Berlin date +%F)" --days 9
       - name: Render only complete five-image sets
         run: python src/render.py --start "$(TZ=Europe/Berlin date +%F)" --days 9
       - name: Save new media
