@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .env
 .DS_Store
+
+# Keep the licensed source track private; videos may contain the soundtrack.
+assets/audio/background.*
