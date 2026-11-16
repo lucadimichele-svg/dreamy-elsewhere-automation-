@@ -1,30 +1,55 @@
-# Einrichtung – Dreamy Elsewhere
+# Dreamy Elsewhere — aktuelle technische Einrichtung
 
-Der laufende Blinkpuzz-Account und Vibsnaxx bleiben vollständig unangetastet.
+**Account:** @dreamy_elsewhere · **Zeitzone:** Europe/Berlin
 
-## Bereits bereitgestellt
-- `config.json` – vier tägliche Posting-Slots 17.11.–14.12.2026, danach zwei.
-- `src/render.py` – aus je fünf geeigneten Fotos ein 1080×1920-Reel erstellen.
-- `src/publish.py` – Buffer-Abgleich ausschließlich mit `@dreamy_elsewhere`.
-- `.github/workflows/dreamy-pipeline.yml` – derzeit nur **manueller Testmodus**, ohne Zeitplan.
+## Gewünschter Plan
+- 17. November bis 14. Dezember 2026: vier Reels täglich (08:00, 12:30, 17:30, 21:30)
+- Ab 15. Dezember: zwei Reels täglich (12:30, 20:30)
+- Fünf eigenständige fotorealistische Cozy-/Dreamy-Bilder pro Reel, 1080×1920.
+- Keine subjektive KI-Qualitätsbewertung.
+- Keine weiteren kostenpflichtigen Abos.
 
-## Noch erforderlich
-1. **Verfügbare Bildquelle**: GitHub Actions kann nicht direkt den Bildgenerator
-   eines ChatGPT-Chats auslösen. Es fehlen die fortlaufend erstellten fünf Bilder pro Reel.
-2. **Musikquelle**: Der bevorzugte Song benötigt eine zulässige Veröffentlichungsroute.
-   Ohne rechtmäßig nutzbare Tondatei wird NICHT veröffentlicht.
-3. **Buffer-API-Zugang**: Buffer Free erlaubt nur einen persönlichen API-Schlüssel. Der vorhandene Schlüssel wird **nicht rotiert** und nicht in dieses Repository kopiert. Stattdessen enthält `lucadimichele-svg/blinkpuzz-automation` einen **neuen, isolierten**, ausschließlich manuellen und lesenden Prüf-Workflow `.github/workflows/dreamy-buffer-bridge.yml`. Er nutzt das bestehende `BUFFER_API_KEY`-Secret dort, checkt den Code von Dreamy Elsewhere aus und verifiziert ausschließlich den exakt passenden Instagram-Kanal `@dreamy_elsewhere`. Vorhandene Blinkpuzz-Workflows werden nicht verändert.
-4. **Prüflauf**: `Actions > Dreamy Elsewhere — Prepare and verify > Run workflow`.
-   Ohne Buffer-Secret wird nur lokal geprüft, **nichts** veröffentlicht.
-5. **Medienhosting**: Später GitHub Pages unter `Settings > Pages` auf
-   `GitHub Actions` umstellen und Deployment aktivieren.
-6. **Automatische Ausführung und Veröffentlichung** werden erst eingeschaltet,
-   wenn die fehlende Bildquelle und Musikroute wirklich funktionieren.
+## Realisierter Stand
+1. Zeitgesteuerte ChatGPT-Bildgenerierung: separat getestet (fünf Bilder).
+2. Drive: privater Projektordner und `incoming` / `used` existieren.
+3. **Private Drive→GitHub-Blob-Übergabe:** Einzeltest erfolgreich.
+   Drive-Files können authentifiziert gelesen und als Binär-Git-Blob
+   hochgeladen werden, ohne den Drive-Ordner öffentlich zu teilen.
+4. `src/blob_import.py`: GitHub Actions liest fünf SHA-Blobs anhand des
+   Manifests `assets/drive_manifests/YYYY-MM-DD_SX.json` und verifiziert
+   echte Bilddaten/Abmessungen.
+5. `src/render.py`: rendert fünf Szenen zu einem 1080×1920-MP4.
+6. `.github/workflows/dreamy-pipeline.yml`: startet durch den Commit
+   eines vollständig ausgefüllten Manifests automatisch **nur** Import
+   und Rendering, **keine Veröffentlichung**.
+7. Buffer-Free-Bridge für den exakten Zielkanal liegt in der bestehenden
+   Blinkpuzz-Repo als separater **read-only**-Prüfworkflow. Die
+   produktive Blinkpuzz-Automation bleibt unverändert.
 
-## Sicherheitsregel
-Keine subjektive Qualitätsbewertung. Nur technische Mindestauflösung, Dateiformat,
-Vorhandensein aller fünf Bilder und erfolgreiche Videoerstellung. Buffer wird nur für
-den **exakt zugeordneten Instagram-Kanal** angesprochen.
+## Noch zu verifizieren
+- Ein vollständiger fünfteiliger Produktionslauf
+  ChatGPT → Drive → Blob → Manifest → GitHub Actions → MP4.
+- GitHub-Pages-Hosting der fertigen MP4-Dateien.
+- Unabhängige Queue-Befüllung für @dreamy_elsewhere über das vorhandene
+  Buffer-Free-Secret (ohne @blinkpuzz zu verändern).
+- Audio: Bevorzugt `Let Go — Ark Patrol (slowed)`; eine geeignete
+  Nutzungs-/Automationsroute ist noch nicht bestätigt. Bis dahin kann
+  die technisch erlaubte Variante als stummes Reel gerendert werden.
+- Automatisches Löschen in Drive **erst nach tatsächlich bestätigter
+  Veröffentlichung** und mindestens 24 Stunden Aufbewahrung.
 
-Das Repository hat am Ende des Namens einen Bindestrich:
+## Sicherheits- und Speicherregel
+Nie Bilddateien aus anderen Drive-Bereichen übernehmen oder löschen.
+Drive-Bilder bleiben privat; ihre SHA-Adressen erscheinen im öffentlichen
+GitHub-Repository. Die Blobkopien sind daher potentiell über SHA abrufbar.
+Kein API-Schlüssel wird in GitHub-Dateien gespeichert. Originale fünf Bilder
+werden nicht in die dauerhafte Git-Historie committed, sondern vom Runner
+temporär abgerufen. Unreferenzierte Git-Objekte dürfen nicht als langfristige
+Ablage betrachtet werden.
+
+**Status:** Prototyp/Integrationstests, keine automatische Veröffentlichung
+aktiviert. Reel-Produktion erst als erfolgreich melden, wenn der tatsächliche
+Workflow grün ist und eine echte MP4-Datei vorliegt.
+
+Repo-Name hat am Ende einen Bindestrich:
 `lucadimichele-svg/dreamy-elsewhere-automation-`.
