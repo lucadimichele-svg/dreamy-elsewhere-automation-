@@ -42,29 +42,76 @@ def find_images(folder):
                 return []
     return pics
 
+def wrap_heading(text, chosen_font, max_width):
+    """Wrap to at most two centered lines without cutting off any words."""
+    words = text.strip().split()
+    if not words:
+        return ""
+    draw = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    lines = [words[0]]
+    for word in words[1:]:
+        proposal = lines[-1] + " " + word
+        if draw.textbbox((0, 0), proposal, font=chosen_font)[2] <= max_width:
+            lines[-1] = proposal
+        else:
+            lines.append(word)
+    if len(lines) <= 2:
+        return "\n".join(lines)
+    # Exact text is retained: reduce the font size in draw_frame if needed.
+    return None
+
+
 def draw_frame(source, index, hook, destination):
+    """Full-bleed 9:16 frame with unobtrusive text below Instagram's top UI."""
     with Image.open(source) as img:
         img = ImageOps.exif_transpose(img).convert("RGB")
-        img = ImageOps.fit(img, (W, H), method=Image.Resampling.LANCZOS)
-    draw = ImageDraw.Draw(img, "RGBA")
-    draw.rounded_rectangle((40, 120, W-40, 342), radius=28, fill=(11, 19, 31, 148))
-    label = hook[:90]
-    chosen_font = font(54 if len(label) < 38 else 44)
-    if draw.textbbox((0, 0), label, font=chosen_font)[2] > W - 150:
-        words = label.split()
-        middle = len(words) // 2
-        label = " ".join(words[:middle]) + "\n" + " ".join(words[middle:])
-    draw.multiline_text((W/2, 228), label, font=chosen_font, anchor="mm",
-                        align="center", spacing=7, fill=(255, 249, 236, 255))
-    draw.ellipse((60, 370, 186, 496), fill=(12, 23, 39, 190),
-                 outline=(243, 223, 186, 240), width=3)
-    draw.text((123, 433), str(index), font=font(64), anchor="mm",
-              fill=(255, 249, 236, 255))
-    draw.rounded_rectangle((W-296, H-163, W-48, H-98), radius=21,
-                           fill=(11, 22, 39, 155))
-    draw.text((W-172, H-131), "Dreamy Elsewhere", font=font(23), anchor="mm",
-              fill=(245, 232, 213, 255))
-    img.save(destination, quality=93, subsampling=0)
+        # ImageOps.fit crops instead of adding side bars or stretching pixels.
+        img = ImageOps.fit(img, (W, H), method=Image.Resampling.LANCZOS,
+                           centering=(0.5, 0.5))
+        # Subtle sharpening after resize; no artificial detail is invented.
+        from PIL import ImageFilter
+        img = img.filter(ImageFilter.UnsharpMask(radius=1.05, percent=115,
+                                                threshold=3))
+
+    # A very soft full-width shade avoids the opaque grey rounded rectangle.
+    # The top 320px and bottom UI area remain free of captions.
+    shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    shade_pixels = ImageDraw.Draw(shade, "RGBA")
+    for y in range(340, 640):
+        p = (y - 340) / 300
+        opacity = round(59 * (1.0 - abs(2.0 * p - 1.0)))
+        if opacity:
+            shade_pixels.line([(0, y), (W, y)], fill=(9, 16, 25, opacity))
+    img = Image.alpha_composite(img.convert("RGBA"), shade)
+    draw = ImageDraw.Draw(img)
+
+    # Restrained elegant white title, in the safe center-upper area.
+    label = hook.strip()
+    for size in range(46, 29, -2):
+        chosen_font = font(size)
+        wrapped = wrap_heading(label, chosen_font, W - 148)
+        if wrapped is not None:
+            break
+    if wrapped is None:
+        raise ValueError("Cannot fit title into two lines")
+    draw.multiline_text((W // 2 + 2, 456 + 3), wrapped,
+                        font=chosen_font, anchor="mm", align="center",
+                        spacing=11, fill=(0, 0, 0, 155),
+                        stroke_width=2, stroke_fill=(0, 0, 0, 105))
+    draw.multiline_text((W // 2, 456), wrapped, font=chosen_font,
+                        anchor="mm", align="center", spacing=11,
+                        fill=(249, 248, 246, 255),
+                        stroke_width=1, stroke_fill=(21, 27, 32, 100))
+
+    # The number is necessary for "1–5?" comments, but not a side badge.
+    # No left border, bar, circle, or extra branding panel.
+    numeral = f"{index:02d}  /  05"
+    draw.text((W // 2 + 1, 572 + 2), numeral, font=font(28), anchor="mm",
+              fill=(0, 0, 0, 155))
+    draw.text((W // 2, 572), numeral, font=font(28), anchor="mm",
+              fill=(253, 247, 235, 235))
+    img.convert("RGB").save(destination, format="PNG", optimize=True)
+
 
 def run(cmd):
     subprocess.run(cmd, check=True)
@@ -95,14 +142,15 @@ def make_one(day, slot):
         temp = Path(temporary)
         segments = []
         for index, pic in enumerate(pics, 1):
-            frame = temp / f"{index:02}.jpg"
+            frame = temp / f"{index:02}.png"
             segment = temp / f"{index:02}.mp4"
             draw_frame(pic, index, topic, frame)
             if index == 1:
                 cover.write_bytes(frame.read_bytes())
             run(["ffmpeg", "-loglevel", "error", "-y", "-loop", "1",
-                 "-i", str(frame), "-t", "3", "-r", "25", "-c:v", "libx264",
-                 "-preset", "fast", "-pix_fmt", "yuv420p", "-vf", "setsar=1",
+                 "-framerate", "30", "-i", str(frame), "-t", "3", "-r", "30",
+                 "-c:v", "libx264", "-preset", "slow", "-crf", "17",
+                 "-pix_fmt", "yuv420p", "-vf", "setsar=1,format=yuv420p",
                  "-an", str(segment)])
             segments.append(segment)
         playlist = temp / "concat.txt"
