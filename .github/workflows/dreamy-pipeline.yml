@@ -53,7 +53,7 @@ jobs:
       - name: Retrieve approved soundtrack from private Google Drive
         env:
           DREAMY_DRIVE_AUDIO_ID: ${{ secrets.DREAMY_DRIVE_AUDIO_ID }}
-          DREAMY_DRIVE_SA_JSON: ${{ secrets.DREAMY_DRIVE_SA_JSON }}
+          DREAMY_DRIVE_SA_JSON: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
         run: python src/fetch_licensed_audio.py
       - name: Render only complete five-image sets
         run: python src/render.py --start "$(TZ=Europe/Berlin date +%F)" --days 9
