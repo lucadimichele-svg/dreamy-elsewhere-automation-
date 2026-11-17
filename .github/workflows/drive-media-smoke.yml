@@ -1,0 +1,98 @@
+name: Dreamy Elsewhere — Verify real Drive media (no publishing)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/drive-media-smoke.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify-drive-media:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install validation dependencies
+        run: python -m pip install google-auth requests Pillow
+      - name: Download and verify private Drive image and audio
+        env:
+          GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
+        run: |
+          python - <<'PY'
+          import hashlib
+          import io
+          import json
+          import os
+          import requests
+          from PIL import Image
+          from google.auth.transport.requests import Request
+          from google.oauth2.service_account import Credentials
+
+          info = json.loads(os.environ["GOOGLE_DRIVE_CREDENTIALS"])
+          creds = Credentials.from_service_account_info(
+              info, scopes=["https://www.googleapis.com/auth/drive.readonly"]
+          )
+          creds.refresh(Request())
+          sess = requests.Session()
+          sess.headers.update({"Authorization": f"Bearer {creds.token}"})
+          base = "https://www.googleapis.com/drive/v3/files"
+          root_id = "1dh4Bd0XHsb6OvHaUELYKra1TWGt6clf5"
+          audio_folder_id = "1yghmnkIr6vyN8Ok-WYjgdiZaqh8OQx2Y"
+
+          def find(name, parent_id):
+              response = sess.get(
+                  base,
+                  params={
+                      "q": f"name = '{name}' and '{parent_id}' in parents and trashed = false",
+                      "fields": "files(id,name,mimeType),nextPageToken",
+                      "pageSize": 10,
+                  },
+                  timeout=30,
+              )
+              response.raise_for_status()
+              matches = response.json().get("files", [])
+              if len(matches) != 1:
+                  raise RuntimeError(f"Expected one shared Drive item named {name}; found {len(matches)}")
+              return matches[0]["id"]
+
+          def download(file_id, limit):
+              response = sess.get(
+                  base + "/" + file_id, params={"alt": "media"},
+                  timeout=90, stream=True
+              )
+              response.raise_for_status()
+              data = bytearray()
+              try:
+                  for chunk in response.iter_content(1024 * 128):
+                      data.extend(chunk)
+                      if len(data) > limit:
+                          raise RuntimeError("Drive media file exceeds size limit")
+              finally:
+                  response.close()
+              if not data:
+                  raise RuntimeError("Drive returned an empty file")
+              return bytes(data)
+
+          image_id = find("bridge-test-alpine.png", root_id)
+          raw_image = download(image_id, 18 * 1024 * 1024)
+          with Image.open(io.BytesIO(raw_image)) as img:
+              img.verify()
+          with Image.open(io.BytesIO(raw_image)) as img:
+              width, height = img.size
+          if width < 500 or height < 500:
+              raise RuntimeError("Image dimensions unexpectedly small")
+          print(f"PASS: real private image downloaded and decoded ({width}x{height})")
+
+          mp3_id = find("mixkit-vastness-184.mp3", audio_folder_id)
+          raw_audio = download(mp3_id, 20 * 1024 * 1024)
+          expected = "3ffae7ccd5ea6f612f75efdf9a8318ccce79a5e4f355b26e233631330a57660f"
+          if hashlib.sha256(raw_audio).hexdigest() != expected:
+              raise RuntimeError("Audio differs from expected approved file; no content was published")
+          print("PASS: real private audio downloaded and SHA-256 verified")
+          print("PASS: Drive media integration test. No files committed or published.")
+          PY
