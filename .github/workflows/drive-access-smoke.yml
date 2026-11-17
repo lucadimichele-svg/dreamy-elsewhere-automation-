@@ -1,0 +1,41 @@
+name: Dreamy Elsewhere — Test private Google Drive access
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check-drive-access:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install google-auth requests
+      - name: Authenticate and list accessible Drive items (read-only)
+        env:
+          GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
+        run: |
+          python - <<'PY'
+          import json, os
+          import requests
+          from google.oauth2.service_account import Credentials
+          from google.auth.transport.requests import Request
+          raw = os.getenv("GOOGLE_DRIVE_CREDENTIALS")
+          if not raw:
+              raise SystemExit("FAIL: missing GOOGLE_DRIVE_CREDENTIALS repository secret")
+          info = json.loads(raw)
+          c = Credentials.from_service_account_info(info, scopes=["https://www.googleapis.com/auth/drive.readonly"])
+          c.refresh(Request())
+          r = requests.get(
+              "https://www.googleapis.com/drive/v3/files",
+              headers={"Authorization": f"Bearer {c.token}"},
+              params={"pageSize": 100, "fields": "nextPageToken,files(id,mimeType)", "q":"trashed = false"},
+              timeout=25,
+          )
+          r.raise_for_status()
+          files = r.json().get("files", [])
+          if not files:
+              raise SystemExit("FAIL: authenticated, but no shared Drive files or folders are visible")
+          print(f"PASS: Google Drive API authenticated; {len(files)} shared items visible.")
+          PY
