@@ -151,7 +151,7 @@ def main():
             continue
         if not now + timedelta(minutes=5) < when <= now + timedelta(days=9):
             continue
-        if meta.get("audio_status") not in {"CLEARED_AUDIO", "SILENT"}:
+        if meta.get("audio_status") not in {"CLEARED_AUDIO", "SILENT", "EMBEDDED_AUDIO"}:
             print("SKIP", meta["marker"], ": unknown audio status")
             continue
         candidates.append((when, meta))
