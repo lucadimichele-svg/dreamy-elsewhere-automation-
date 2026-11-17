@@ -1,0 +1,67 @@
+name: Dreamy Elsewhere — Renderer layout smoke test
+
+on:
+  push:
+    paths:
+      - 'src/render.py'
+      - '.github/workflows/render-layout-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render-layout-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install image and encoding test dependencies
+        run: |
+          python -m pip install "Pillow>=10,<12"
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - name: Check exact Dreamy renderer and full-bleed portrait output
+        run: |
+          python -m compileall -q src
+          python - <<'PY'
+          import sys
+          import tempfile
+          from pathlib import Path
+          from PIL import Image
+          sys.path.insert(0, 'src')
+          import render
+          from schedule import CONFIG
+          assert CONFIG['account'] == 'dreamy_elsewhere'
+          assert (render.W, render.H) == (1080, 1920)
+          with tempfile.TemporaryDirectory() as d:
+              path = Path(d)
+              src = path / 'source.png'
+              out = path / 'frame.png'
+              Image.new('RGB', (1400, 2500), (88, 129, 152)).save(src)
+              render.draw_frame(src, 3, 'Which cozy bed would you choose?', out)
+              with Image.open(out) as img:
+                  assert img.size == (1080, 1920), img.size
+                  assert img.format == 'PNG'
+                  # All edges contain the image, no letterbox or white sidebars.
+                  assert img.getpixel((0, 1200)) == (88, 129, 152), img.getpixel((0, 1200))
+                  assert img.getpixel((1079, 1200)) == (88, 129, 152), img.getpixel((1079, 1200))
+                  print('PASS: 1080x1920 full-bleed PNG, no edge bars')
+              import subprocess
+              output = path / 'segment.mp4'
+              subprocess.run([
+                  'ffmpeg','-loglevel','error','-y','-loop','1',
+                  '-framerate','30','-i',str(out),'-t','1','-r','30',
+                  '-c:v','libx264','-preset','slow','-crf','17',
+                  '-pix_fmt','yuv420p','-vf','setsar=1,format=yuv420p',
+                  '-an',str(output)
+              ], check=True)
+              subprocess.run(['ffprobe','-v','error','-select_streams','v:0',
+                  '-show_entries','stream=width,height,r_frame_rate,pix_fmt',
+                  '-of','json',str(output)],check=True)
+              assert output.stat().st_size > 10000
+              print('PASS: 1080x1920 H.264 30fps CRF17 segment produced')
+          PY
