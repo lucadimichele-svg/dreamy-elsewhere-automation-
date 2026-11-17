@@ -46,13 +46,13 @@ jobs:
           assert CONFIG["account"] == "dreamy_elsewhere"
           print("Verified four daily boost slots, two later slots, correct Instagram target.")
           PY
-      - name: Import five images from temporary GitHub blobs (Drive remains private)
+      - name: Import five images from private Google Drive
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python src/blob_import.py --start "$(TZ=Europe/Berlin date +%F)" --days 9
+          GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
+        run: python src/private_drive_import.py --start "$(TZ=Europe/Berlin date +%F)" --days 9
       - name: Retrieve approved soundtrack from private Google Drive
         env:
-          DREAMY_DRIVE_AUDIO_ID: ${{ secrets.DREAMY_DRIVE_AUDIO_ID }}
+          DREAMY_DRIVE_AUDIO_ID: '1epXkgSoT41uTYpFUB0bC4r_ADrViBuOP'
           DREAMY_DRIVE_SA_JSON: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
         run: python src/fetch_licensed_audio.py
       - name: Render only complete five-image sets
