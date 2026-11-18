@@ -1,0 +1,32 @@
+name: Dreamy Elsewhere — Open themes end-to-end smoke (NO PUBLISHING)
+
+on:
+  push:
+    paths:
+      - 'tests/open_theme_reel_smoke.py'
+      - '.github/workflows/open-theme-reel-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  technical-smoke-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install render dependencies
+        run: |
+          python -m pip install "Pillow>=10,<12"
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-ebgaramond fonts-dejavu-core
+      - name: Test open topics, persistent memory, labeled 15s Reel, and AAC audio
+        run: |
+          python -m compileall -q src tests
+          python tests/open_theme_reel_smoke.py
+      - name: No publication or commit is ever permitted
+        run: echo "PASS - no Buffer secrets, no GitHub writes, synthetic dates far outside the posting window"
