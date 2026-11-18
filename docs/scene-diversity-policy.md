@@ -1,45 +1,78 @@
-# Dreamy Elsewhere – verbindliche Methode für abwechslungsreiche Reel-Motive
+# Dreamy Elsewhere — verbindliche offene Themen- und Reel-Produktion
 
-Diese Produktionsregel gilt **für jedes neue Reel von @dreamy_elsewhere**. Sie ergänzt die bestehenden Vorgaben für Slot, Musik, Layout, Upload und Veröffentlichung. Das jeweilige Oberthema wird unverändert aus `config.json` und der Slot-Logik in `src/render.py` bestimmt.
+## Grundprinzip (ab 18.11.2026 S3)
 
-## Phase 1: Fünf Welten festlegen – bevor ein Bild generiert wird
+**EIN neues gemeinsames Thema + FÜNF kreative, eigenständige Varianten dieses Themas.**
 
-1. Bestimme die englische Auswahlfrage des Reels. Das Oberthema verbindet alle fünf Motive.
-2. Plane **fünf unterschiedliche eigenständige Motivwelten**. Wähle für jedes Motiv getrennt:
-   - Ort und geografische Umgebung,
-   - Architektur oder Rückzugsort,
-   - Kamerastandpunkt und Bildausschnitt,
-   - zentralen Blickfang,
-   - Tageszeit/Licht/Wetter,
-   - charakteristische Materialien und Farben.
-3. Nutze als Ideenpool etwa Unterwasser-Suite, Regenwald-Baumhaus, Nordlicht-Glaskuppel, Wüsten-Oase, mediterranes Klippenhaus, Vulkan-Lodge, versteckte Höhlenwohnung, Seehaus, modernes Stadt-Penthouse oder japanisches Ryokan. **Das sind keine fünf stets wiederkehrenden Standardszenen.** Wechsle die Kombination über die Reels hinweg passend zum Thema.
-4. Plane nach Möglichkeit **höchstens zwei Motive derselben visuellen Familie**; idealerweise fünf verschiedene. Nicht fünf Betten in ähnlichen Berghütten. Das ist eine **Vorgabe zur Ideenplanung, KEIN nachträgliches subjektives Stopp- oder Freigabekriterium**.
+Es gibt KEINEN begrenzten, regelmäßig rotierenden Themenpool mehr. Dreamy Elsewhere ist kein Account, der nur Schlafzimmer, Hütten oder gemütliche Aussichtszimmer produziert. "Dreamy" bedeutet einladend, faszinierend, atmosphärisch und fantasievoll; es ist keine Pflicht zu Betten, Fenstern, Bergen oder "Cozy Room" in jedem Bild.
 
-## Phase 2: Fünf separat formulierte Prompts und fünf getrennte Generierungen
+Mögliche Gegenstände eines Themas: Frühstück, Festessen, Dessert, königliche Throne, Fahrzeuge, magische Portale, verlorene Städte, Bäder, versteckte Bibliotheken, Märkte, außergewöhnliche Unterkünfte, Gärten, Festivals, historische und futuristische Erlebnisse. Dies ist nur Inspiration: **nie als fertige Pflichtliste interpretieren**. Erfinde auch Themen, die hier nicht stehen.
 
-1. Erzeuge **jedes Bild einzeln mit einem eigenen image_gen-Aufruf**. Kein gemeinsamer Sammelprompt, kein `n=5` für ein Motiv und kein "zeige diese fünf Orte".
-2. **Entscheidend gegen Collagen:** In **jedem einzelnen Bildprompt ausschließlich EINE einzige Szene beschreiben**. Keine Angaben wie "Bild 2 von 5", "five-location series", "compare the five destinations", "other four scenes" oder überhaupt eine Aufzählung weiterer Motivwelten. Dadurch wird verhindert, dass das Bildmodell ein Poster, Raster oder eine Collage interpretiert.
-3. Jeder Prompt formuliert positiv, was **in diesem einen Bild** zu sehen sein soll. Keine Anweisungen über andere Szenen oder Inhalte anderer Bilder in demselben Prompt.
-4. Verbindlicher Prompt-Abschluss (Englisch): **"One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."**
-5. Die fünf Prompts sollen **gezielt unterschiedliche** Standpunkte, Architekturen, Aussichten, Stimmungen und Lichtfarben haben; die Bildqualität soll scharf, detailliert, atmosphärisch und materialrealistisch sein. Cozy & Dreamy bleibt das verbindende Thema.
-6. **Nur Bilddateien generieren.** Der GitHub-Renderer fügt englische Frage und dezente Nummerierung `01 / 05` usw. erst danach hinzu. Das Bildmodell darf keine Schrift, Nummern oder Instagram-Oberfläche einfügen.
+Die fünf Varianten müssen auf die *gleiche* Wahlfrage antworten, dürfen aber in Epoche, Architektur, Kultur, Technik, Material, Schauplatz, Bildstimmung und Fantasie weit auseinander liegen.
 
-### Prompt-Schablone: exakt ein Motiv
+Gute Beispiele (nicht als schablonenhafte Dauerthemen wiederholen):
+- **Choose your feast:** mittelalterliches Festmahl / antikes Rom / pharaonisches Ägypten / japanisches Kaiserdinner / futuristisches Dinner.
+- **Choose your ride:** Belle-Époque-Zug / fliegendes Piratenschiff / Luftschiff / magische Kutsche / Raumschiff.
+- **Which lost city would you explore?:** Atlantis / verschollene Maya-Stadt / Kristallstadt / Wüstenmetropole / schwebende Stadt.
 
-"Photorealistic high-detail vertical 9:16 photograph of [ONE SPECIFIC COZY DREAM LOCATION]. [EXACT UNIQUE ARCHITECTURE AND MATERIALS]. Camera positioned [SPECIFIC SINGLE VIEWPOINT], looking toward [ONE MAIN FOCAL POINT]. [UNIQUE LIGHT AND ATMOSPHERE], realistic rich textures, inviting warmth, believable construction, cinematic but natural. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+## Verbindliche Reihenfolge
 
-## Phase 3: Technischer Durchlauf, keine subjektive Sperre
+1. **Echtes aktuelles Slotdatum bestimmen**; alte `assets/drive_manifests/YYYY-MM-DD_Sx.json` und `docs/media/YYYY-MM-DD_Sx.json` zuerst prüfen. Fertige Slots niemals doppelt erzeugen.
+2. **Themenhistorie lesen:** Alle oder mindestens die jüngsten 40 Einträge unter `assets/creative_plans/`, außerdem vorhandene `docs/media/*.json` der alten Reels. Themen UND die fünf Varianten beachten. Nicht nur den letzten Beitrag ansehen; aktuelle Wiederholungen möglichst vermeiden. Historische Ähnlichkeit ist ein Ideationssignal, **kein nachträgliches Verbot oder Veröffentlichungsgate**.
+3. **Offen ein Thema entwickeln.** Keine Modulo-/Index-Auswahl aus `config.json`; `legacy_topics` ist ausschließlich ein Kompatibilitätsarchiv für die vor der Umstellung bereits erzeugten Reels. Eine neue Frage plus eine frei gewählte `theme_category` definieren, z.B. `food/history`, `fantasy/transport`, `exploration/mythology` oder eine völlig neue Kategorie.
+4. **Vor Generierung genau fünf Varianten planen** — jeweils eindeutiger Labelname, eine konkrete Szenenbeschreibung und ein Prompt für **genau dieses eine** Bild. Gleiche Themafrage, aber fünf unterschiedliche kreative Ansätze. Das Objekt selbst (Essen, Fahrzeug, Stadt etc.) muss deutlich erkennbar sein; keine reflexartige Wiederholung von Betten/Glaskuppeln/Unterwasser-Suiten.
+5. **Kreativplan zuerst dauerhaft sichern** im Repository auf Main als `assets/creative_plans/YYYY-MM-DD_Sx.json`. Die plan Datei ist gleichzeitig unser wachsendes Gedächtnis und die verbindliche Quelle für Theme/Variantenschrift im Renderer. Wenn ein Plan nach einem Teilausfall bereits existiert, genau diesen Plan wiederverwenden, **keinen anderen Themenentwurf erfinden**. Ein existierender Plan allein bedeutet noch nicht, dass die Produktion fertig ist.
+6. **Fünf originale Einzelbilder generieren:** pro Variante ein eigener, voneinander unabhängiger image_gen-Aufruf mit nur ihrem einzelnen Bildmotiv. Kein Sammelprompt, keine Referenz auf frühere generierte Bilder und keine Collage. Keine Nummerierung/Schrift im Quellbild; das macht erst GitHub. Wenn der Bildgenerator ungewollt eine Collage erzeugt, denselben EINEN Bildprompt erneut als isolierte Einzelaufnahme versuchen, niemals daraus Panel-Crops herausschneiden.
+7. **Nur technische Prüfung:** fünf unterscheidbare echte Dateien, gültige PNGs, tatsächliche native Originalabmessungen >=800x1400, brauchbares Hochformat (9:16), korrekte Reihenfolge/IDs und kein byte-identisches Duplikat. Keine subjektive Ästhetikbewertung, kein KI-Scorer, keine manuelle Freigabe. Selbst wenn ein fertiges echtes Einzelbild ästhetisch ähnlich wirkt, immer fortfahren.
+8. Fünf Quellbilder nach privatem Drive in `incoming/YYYY-MM-DD_Sx/01.png` bis `05.png` hochladen, echte Drive-IDs prüfen, dann einmalig `assets/drive_manifests/YYYY-MM-DD_Sx.json` anlegen. Bestehende Pipeline importiert, rendert MP4 mit Musik, die getrennte Buffer-Bridge veröffentlicht exakt **@dreamy_elsewhere**. Andere Marken niemals anfassen.
+9. Dokumentiere Thema, Kategorie und die fünf Varianten im Kreativplan sowie im Ausgabe-Manifest. Überprüfe technische Erfolge, erfinde keine Veröffentlichungsbestätigungen.
 
-- Ziel: fünf wirklich getrennte, lesbare Bilddateien `01.png` bis `05.png`, je ein Vollbildmotiv. Auflösung höchstmöglich nativ; nach erforderlichem 9:16-Crop **höchstens einmal hochwertig** auf 1080×1920 skalieren. Bilder niemals strecken.
-- Prüfe nur **technische** Kriterien: fünf tatsächliche Dateien, lesbares PNG, Abmessungen, korrekte Vollbildkomposition ohne technisch angelegte Mehrfachpanel-Raster, Dateizuordnung, Drive-Zugriff, Manifest und Renderer.
-- **Collagen niemals wieder zerschneiden oder hochskalieren!** Die S4-Nachproduktion am 17.11.2026 nutzte Einzel-Crops aus einer 1199x1312-Pixel-Montage; trotz 1080x1920-Endformat wurden die Szenen auf Instagram unscharf. Eine Collage/Poster-/Rasterdatei ist keine akzeptable Quellbilddatei für einzelne Reel-Szenen. Keine Panel-Crops, keine Screenshots oder Thumbnails als Produktionsquelle.
-- **Native Mindestdetailauflösung je Einzelbild vor irgendeinem Resize: mindestens 800x1400 Pixel**, idealerweise mehr. Bildquelle ist der tatsächliche einzelne image_gen-Ausgang, niemals ein nachträglich vergrößerter Ausschnitt. Originalabmessungen für jeden der fünf Slots dokumentieren. Für das 1080x1920-Endformat bei Bedarf genau einmal proportional skalieren und passend beschneiden; nicht strecken, nicht mehrfach exportieren.
-- Liefert das Modell trotz Einzelprompt eine Collage, erneut EINE einzelne Szene mit einem isolierten Prompt generieren (ohne Erwähnung einer Serie oder vier anderer Orte). **Nicht** das mehrteilige Bild zerschneiden, um fünf Dateien vorzutäuschen. Falls kein ausreichendes natives Einzelbild möglich ist, als technischen Fehler melden – keine unscharfen vergrößerten Ausschnitte hochladen. Keine endlosen Regenerierungs- oder subjektiven Freigabeschleifen.
-- **Niemals abbrechen, nur weil die Bilder subjektiv zu ähnlich, zu gewöhnlich oder nicht schön genug erscheinen.** Eine schwache, aber technisch gültige Einzelbildszene ist besser als ein ausgefallener Post.
-- Bei technisch gültigen Einzelbildern die fünf Originale privat nach Google Drive übertragen, reale IDs im GitHub-Manifest speichern und den bestehenden GitHub-/Buffer-Prozess unverändert fortsetzen. Keine ästhetische Freigabe, keine zusätzlichen Qualitäts-Scorer, keine manuelle Rückfrage.
+## Exaktes Kreativplan-Format
 
-## Konten- und Betriebsschutz
+`assets/creative_plans/YYYY-MM-DD_Sx.json`:
 
-Nur **@dreamy_elsewhere**, Repository `lucadimichele-svg/dreamy-elsewhere-automation-`, private Google-Drive-Ablage. Bereits vorhandene Slot-Manifeste und fertige Videos nicht duplizieren. Keine Änderungen an Blinkpuzz, Vibsnaxx oder Professor Wheel. Kein stillschweigendes Erfinden eines erfolgreichen Uploads oder Instagram-Posts.
+```json
+{
+  "date": "2026-11-19",
+  "slot": "S1",
+  "topic": "Which magical vehicle would you take?",
+  "theme_category": "fantasy/transport",
+  "variants": [
+    {"label": "VINTAGE LUXURY TRAIN", "brief": "Ornate steam train crossing a stone viaduct at dawn", "image_prompt": "Photorealistic vertical portrait of one luxury steam locomotive..."},
+    {"label": "FLYING PIRATE SHIP", "brief": "Wooden pirate sailing ship high above sunset clouds", "image_prompt": "Photorealistic vertical portrait of one airborne pirate ship..."},
+    {"label": "LUXURY AIRSHIP", "brief": "Art Deco Zeppelin above a historic metropolis", "image_prompt": "Photorealistic vertical portrait of one airship..."},
+    {"label": "ENCHANTED CARRIAGE", "brief": "Gilded horse carriage in moonlit forest", "image_prompt": "Photorealistic vertical portrait of one magical horse carriage..."},
+    {"label": "STARLIGHT CRUISER", "brief": "Futuristic spacecraft beside a ringed planet", "image_prompt": "Photorealistic vertical portrait of one spaceship..."}
+  ]
+}
+```
 
-**Merksatz:** Erst fünf deutlich unterschiedliche Orte **planen**, dann fünf **einzelne** Bildaufnahmen generieren, schließlich technisch verarbeiten und veröffentlichen – **ohne subjektive Blockade**.
+Dieses JSON zeigt nur die Struktur. **Die Varianten des Beispielthemas sind bereits im Test verwendet worden und sollen nicht ungefragt als neue reguläre Reel-Idee wiederholt werden.**
+
+Technische Grenzen: `topic` 8–92 Zeichen; `theme_category` 3–70 Zeichen und frei wählbar; genau fünf `variants`; jeweils `label` 3–36 Zeichen, `brief` 12–800 Zeichen, `image_prompt` möglichst konkret und nur zu EINEM Motiv. Prüfe nach dem Anlegen mit `src/creative_plan.py` oder dem dort beschriebenen Schema. Das Validieren einer JSON-Struktur ist keine subjektive Qualitätskontrolle.
+
+## Verbindliche Bildprompts
+
+Jeder Bildprompt muss nur EIN Motiv beschreiben. Nie „Bild 3 von 5“, „ähnlich wie die vorherigen“ oder Aufzählung der anderen vier Orte/Fahrzeuge. Ein eigenständiger 9:16-Quellbildprompt endet sinnvollerweise:
+
+> One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark.
+
+Keine aus Collagen ausgeschnittenen und hochskalierten Frames. Keine unbewiesene angeblich native 4K-Qualität. Höchste tatsächlich verfügbare native Hochformatauflösung anstreben, aber nicht behaupten, künstliche Hochskalierung mache echte Details.
+
+## Reel-Design (ab Umstellung)
+
+Nutze **das erfolgreiche Choose-Your-Ride-Muster** in `src/render.py`:
+- fünf Einzelbilder, jeweils drei Sekunden, 15 Sekunden total;
+- 1080x1920, 30 FPS, H.264 CRF17 und eingebettete bereits vorhandene lizenzierte Musik;
+- oben eleganter gold/cremefarbener Serifentitel mit der *tatsächlichen* Themenfrage;
+- unten eine dezent dunkle, goldkonturierte Variantenplakette: `01` bis `05` sowie die **individuelle Variantenbezeichnung** aus dem Kreativplan;
+- **KEINE** fertig beschrifteten Bilder an das Rendering übergeben, keine Zahlen oder Überschriften durch image_gen einbrennen;
+- Instagram-Safe-Areas beachten, das Quellmotiv vollflächig ohne Seitenstreifen;
+- kein gesprochenes Roboter-Voiceover, keine notwendige manuelle Vorschau/Bestätigung.
+
+## Veröffentlichungs- und Sicherheitsschranken
+
+- Keine subjektive Bildbewertung oder blockierende Freigabe. Historische Theme-Wiederholung rechtzeitig durch kreative Neuwahl vermeiden, nicht einen technisch vollständigen Post aus ästhetischen Gründen abbrechen.
+- Technische Fehler konkret melden (beschädigte/fehlende Quelldateien, fehlender Kreativplan bei neuen Slots, ungültige Dateien, Auth-/Netzwerkfehler); keine stillen Erfolge.
+- Produktionsplan: 17.11.–14.12.2026 vier tägliche Posts (08:00, 12:30, 17:30, 21:30); ab 15.12.2026 zwei (12:30, 20:30), Europe/Berlin.
+- Nur Dreamy Elsewhere, nicht Blinkpuzz, Vibsnaxx oder Professor Wheel. Beibehaltung des bestehenden geschützten GitHub/Drive/Buffer-Wegs.
