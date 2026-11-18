@@ -12,18 +12,26 @@ from datetime import date, timedelta
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from schedule import ROOT, CONFIG, slots_for, reel_key, marker
+from creative_plan import load_for_render
 
 INBOX = ROOT / "assets" / "inbox"
 OUT = ROOT / "docs" / "media"
 W, H = CONFIG["output_width"], CONFIG["output_height"]
 FONT_PATHS = (
+    "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-Regular.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-    "/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf",
 )
+BOLD_FONT_PATHS = (
+    "/usr/share/fonts/truetype/ebgaramond/EBGaramond12-Bold.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
+)
+MIN_SOURCE_W = CONFIG.get("native_source_min_width", 800)
+MIN_SOURCE_H = CONFIG.get("native_source_min_height", 1400)
 OUT.mkdir(parents=True, exist_ok=True)
 
-def font(size):
-    for path in FONT_PATHS:
+def font(size, bold=False):
+    for path in (BOLD_FONT_PATHS if bold else FONT_PATHS):
         if Path(path).exists():
             return ImageFont.truetype(path, size)
     return ImageFont.load_default()
@@ -37,8 +45,9 @@ def find_images(folder):
         return []
     for pic in pics:
         with Image.open(pic) as im:
-            if im.width < W or im.height < H:
-                print("SKIP:", pic.name, "too small", im.size, "need", (W, H))
+            if im.width < MIN_SOURCE_W or im.height < MIN_SOURCE_H:
+                print("SKIP:", pic.name, "native source too small", im.size,
+                      "need at least", (MIN_SOURCE_W, MIN_SOURCE_H))
                 return []
     return pics
 
@@ -61,57 +70,63 @@ def wrap_heading(text, chosen_font, max_width):
     return None
 
 
-def draw_frame(source, index, hook, destination):
-    """Full-bleed 9:16 frame with unobtrusive text below Instagram's top UI."""
+def draw_frame(source, index, hook, destination, variant_label=None):
+    """Gold serif layout from the approved Choose Your Ride demonstration."""
     with Image.open(source) as img:
         img = ImageOps.exif_transpose(img).convert("RGB")
-        # ImageOps.fit crops instead of adding side bars or stretching pixels.
-        img = ImageOps.fit(img, (W, H), method=Image.Resampling.LANCZOS,
-                           centering=(0.5, 0.5))
-        # Subtle sharpening after resize; no artificial detail is invented.
-        from PIL import ImageFilter
-        img = img.filter(ImageFilter.UnsharpMask(radius=1.05, percent=115,
-                                                threshold=3))
-
-    # A very soft full-width shade avoids the opaque grey rounded rectangle.
-    # The top 320px and bottom UI area remain free of captions.
+        img = ImageOps.fit(img, (W, H), method=Image.Resampling.LANCZOS)
     shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    shade_pixels = ImageDraw.Draw(shade, "RGBA")
-    for y in range(340, 640):
-        p = (y - 340) / 300
-        opacity = round(59 * (1.0 - abs(2.0 * p - 1.0)))
-        if opacity:
-            shade_pixels.line([(0, y), (W, y)], fill=(9, 16, 25, opacity))
+    shade_draw = ImageDraw.Draw(shade, "RGBA")
+    for y in range(265, 615):
+        v = max(0.0, 1.0 - abs(y - 425) / 175)
+        shade_draw.line([(0, y), (W, y)], fill=(8, 11, 19, int(130*v)))
+    for y in range(1305, 1635):
+        v = max(0.0, 1.0 - abs(y - 1460) / 180)
+        shade_draw.line([(0, y), (W, y)], fill=(8, 11, 19, int(140*v)))
     img = Image.alpha_composite(img.convert("RGBA"), shade)
-    draw = ImageDraw.Draw(img)
+    draw = ImageDraw.Draw(img, "RGBA")
+    cream = (255, 247, 227, 255)
+    gold = (240, 203, 144, 255)
 
-    # Restrained elegant white title, in the safe center-upper area.
-    label = hook.strip()
-    for size in range(46, 29, -2):
-        chosen_font = font(size)
-        wrapped = wrap_heading(label, chosen_font, W - 148)
+    def centered(text, center, f, color):
+        draw.text((center[0]+2, center[1]+3), text, font=f, anchor="mm",
+                  align="center", spacing=8, fill=(0,0,0,175),
+                  stroke_width=2, stroke_fill=(4,6,9,145))
+        draw.text(center, text, font=f, anchor="mm", align="center",
+                  spacing=8, fill=color, stroke_width=1,
+                  stroke_fill=(20,14,10,130))
+
+    centered("D R E A M Y   E L S E W H E R E", (W//2, 329), font(26), gold)
+    title = hook.strip()
+    for size in range(72, 25, -2):
+        chosen = font(size)
+        wrapped = wrap_heading(title, chosen, W-150)
         if wrapped is not None:
             break
-    if wrapped is None:
-        raise ValueError("Cannot fit title into two lines")
-    draw.multiline_text((W // 2 + 2, 456 + 3), wrapped,
-                        font=chosen_font, anchor="mm", align="center",
-                        spacing=11, fill=(0, 0, 0, 155),
-                        stroke_width=2, stroke_fill=(0, 0, 0, 105))
-    draw.multiline_text((W // 2, 456), wrapped, font=chosen_font,
-                        anchor="mm", align="center", spacing=11,
-                        fill=(249, 248, 246, 255),
-                        stroke_width=1, stroke_fill=(21, 27, 32, 100))
+    else:
+        raise ValueError("Title cannot fit in two lines")
+    centered(wrapped, (W//2, 437), chosen, cream)
+    draw.line([(340,521),(510,521)], fill=(230,185,121,205), width=2)
+    draw.line([(570,521),(740,521)], fill=(230,185,121,205), width=2)
+    draw.polygon([(540,509),(551,521),(540,533),(529,521)],
+                 fill=(250,216,159,230))
 
-    # The number is necessary for "1–5?" comments, but not a side badge.
-    # No left border, bar, circle, or extra branding panel.
-    numeral = f"{index:02d}  /  05"
-    draw.text((W // 2 + 1, 572 + 2), numeral, font=font(28), anchor="mm",
-              fill=(0, 0, 0, 155))
-    draw.text((W // 2, 572), numeral, font=font(28), anchor="mm",
-              fill=(253, 247, 235, 235))
+    # Decorative number + variant plaque, clear of Instagram bottom controls.
+    draw.rounded_rectangle([125,1398,955,1543], radius=29,
+                           fill=(13,15,20,191),
+                           outline=(229,190,131,238), width=3)
+    draw.ellipse([156,1423,260,1527], fill=(28,27,27,230),
+                 outline=(245,207,146,248), width=3)
+    centered(f"{index:02d}", (208,1475), font(49), cream)
+    label = " ".join((variant_label or f"CHOICE {index:02d}").upper().split())
+    for size in range(49, 23, -1):
+        label_font = font(size, bold=True)
+        if draw.textbbox((0,0), label, font=label_font)[2] <= 620:
+            break
+    else:
+        raise ValueError("Variant label is too long for the plaque")
+    centered(label, (608,1473), label_font, cream)
     img.convert("RGB").save(destination, format="PNG", optimize=True)
-
 
 def run(cmd):
     subprocess.run(cmd, check=True)
@@ -136,17 +151,20 @@ def make_one(day, slot):
     if audio is None:
         raise RuntimeError("Licensed soundtrack missing: no silent Dreamy Elsewhere Reel will be rendered.")
 
-    offset = (day - date.fromisoformat(CONFIG["launch_date"])).days
-    topic = CONFIG["topics"][(offset * 4 + int(slot[1:]) - 1) % len(CONFIG["topics"])]
+    plan = load_for_render(day, slot)
+    topic = plan["topic"]
+    labels = [v["label"] for v in plan["variants"]]
     with tempfile.TemporaryDirectory() as temporary:
         temp = Path(temporary)
         segments = []
         for index, pic in enumerate(pics, 1):
             frame = temp / f"{index:02}.png"
             segment = temp / f"{index:02}.mp4"
-            draw_frame(pic, index, topic, frame)
+            draw_frame(pic, index, topic, frame, labels[index-1])
             if index == 1:
-                cover.write_bytes(frame.read_bytes())
+                with Image.open(frame) as cover_frame:
+                    cover_frame.convert("RGB").save(cover, format="JPEG",
+                                                    quality=94, subsampling=0)
             run(["ffmpeg", "-loglevel", "error", "-y", "-loop", "1",
                  "-framerate", "30", "-i", str(frame), "-t", "3", "-r", "30",
                  "-c:v", "libx264", "-preset", "slow", "-crf", "17",
@@ -167,7 +185,13 @@ def make_one(day, slot):
     meta = {
         "date": str(day), "slot": slot, "marker": marker(day, slot),
         "video": target.name, "cover": cover.name, "topic": topic,
-        "caption": f"{topic} 🌙✨\n\n1, 2, 3, 4 or 5? Tell us below!\n\n#DreamyElsewhere #CozyAesthetic #DreamyPlaces",
+        "theme_category": plan["theme_category"], "variants": labels,
+        "creative_source": ("legacy" if plan.get("mode") == "legacy"
+                            else "open_theme_five_variants"),
+        "caption": (f"{topic} 🌙✨\\n\\n"
+                    + "\\n".join(f"{i}. {name.title()}" for i, name in enumerate(labels, 1))
+                    + "\\n\\nWhich one would you choose? Comment your number! 🌙"
+                    + "\\n\\n#DreamyElsewhere #ChooseYourFavorite #DreamWorlds"),
         "audio_status": "EMBEDDED_AUDIO",
         "image_count": 5, "duration_seconds": 15,
     }
