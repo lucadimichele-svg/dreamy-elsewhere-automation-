@@ -19,7 +19,15 @@
   "output_height": 1920,
   "max_queued": 10,
   "public_media_base": "https://lucadimichele-svg.github.io/dreamy-elsewhere-automation-/media",
-  "topics": [
+  "creative_mode": "open_theme_five_variants",
+  "creative_plan_dir": "assets/creative_plans",
+  "creative_history_sources": [
+    "assets/creative_plans",
+    "docs/media"
+  ],
+  "native_source_min_width": 800,
+  "native_source_min_height": 1400,
+  "legacy_topics": [
     "Which cozy bed would you choose?",
     "Where would you spend a rainy night?",
     "Choose your dream hideaway",
