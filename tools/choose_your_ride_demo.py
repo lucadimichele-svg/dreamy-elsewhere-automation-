@@ -136,7 +136,7 @@ def main():
             segments.append(segment)
             print(f"SCENE_{i} {NAMES[i-1]} SOURCE {width}x{height} RENDER 1080x1920",flush=True)
         playlist=temp/"concat.txt"
-        playlist.write_text("".join("file '"+str(p)+"'\\n" for p in segments))
+        playlist.write_text("".join("file '" + str(p) + "'" + chr(10) for p in segments))
         silent=temp/"silent.mp4"
         run("ffmpeg","-hide_banner","-loglevel","error","-y","-f","concat","-safe","0",
             "-i",playlist,"-c","copy",silent)
