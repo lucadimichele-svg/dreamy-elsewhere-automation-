@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-18",
+  "slot": "S3",
+  "topic": "Which magical night market would you visit?",
+  "theme_category": "fantasy/markets",
+  "variants": [
+    {
+      "label": "MOONLIT VENICE",
+      "brief": "A candlelit Venetian canal market with silk stalls and gondolas at midnight.",
+      "image_prompt": "Photorealistic vertical editorial travel photograph of a magical night market on a narrow Venetian canal, floating gondola stalls carrying embroidered silk, warm candles reflecting on black water, ornate Renaissance palazzi, viewpoint from an old stone bridge at midnight, atmospheric indigo sky, richly detailed stone and fabric. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "SAHARA STAR BAZAAR",
+      "brief": "A glowing Berber desert caravan bazaar under a brilliant Milky Way.",
+      "image_prompt": "Photorealistic vertical cinematic photograph of a remote Saharan caravan bazaar under the Milky Way, indigo tents and brass lanterns, richly patterned rugs, spice baskets, camels silhouetted by dunes, view from a sand ridge at night, crisp desert textures, deep cobalt starlight and warm amber pools of light. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "SKY CITY NIGHT FAIR",
+      "brief": "A futuristic floating city marketplace among clouds and luminous airships.",
+      "image_prompt": "Photorealistic vertical architectural photograph of a futuristic floating night market above clouds, suspended glass walkways between elegant titanium towers, small glowing airships, flower vendors and luminous hanging gardens, viewed from a high pedestrian terrace, violet-blue twilight, refined plausible engineering and fine details. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "KYOTO LANTERN ALLEY",
+      "brief": "A rain-soaked Edo-period Kyoto festival lane lined with paper lanterns.",
+      "image_prompt": "Photorealistic vertical street photograph of an Edo-period Kyoto festival market in gentle evening rain, narrow cobblestone alley, wooden machiya shops, rows of glowing red and cream paper lanterns, lacquered parasols and food stalls, viewpoint at street level, reflections on wet stones, realistic historic materials and atmospheric lighting. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "CORAL KINGDOM MARKET",
+      "brief": "An imagined ancient seaside market built into giant coral terraces.",
+      "image_prompt": "Photorealistic vertical fantasy architectural photograph of an ancient seaside market carved into towering natural coral limestone terraces above turquoise water, iridescent shell canopies, carved stone archways, woven baskets and pearl merchants' counters, seen from a descending spiral staircase at golden dawn, realistic natural materials and physically plausible terraces. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
