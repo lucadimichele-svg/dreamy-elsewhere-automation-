@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-18",
+  "slot": "S4",
+  "topic": "Which impossible artifact would you keep?",
+  "theme_category": "fantasy/curiosities",
+  "variants": [
+    {
+      "label": "THE CLOCKWORK ORRERY",
+      "brief": "An intricate brass astronomical clockwork model of the solar system in a Victorian observatory at sunrise.",
+      "image_prompt": "A single immense nineteenth-century mechanical brass orrery with polished planetary spheres and intricate gearwork, centered inside a Victorian observatory of dark walnut and green marble, photographed close from low three-quarter angle in golden sunrise beams, exquisite physical brass textures and precise mechanisms. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE GLASS COMET",
+      "brief": "A luminous crystal comet captured within an Art Nouveau museum display at midnight.",
+      "image_prompt": "One extraordinary translucent glass comet sculpture with delicate illuminated tails suspended in a curved Art Nouveau exhibition hall, viewed from a high mezzanine at midnight, blue and lavender refracted light across pale marble, finely engineered suspension wires and jewel-like detail. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE TIDAL COMPASS",
+      "brief": "An ancient ocean navigator's astrolabe set on a windswept stone terrace at blue hour.",
+      "image_prompt": "One enormous weathered bronze nautical astrolabe with engraved rotating rings mounted on a stone pedestal at the edge of an ancient Mediterranean lighthouse terrace, close-up viewpoint against dark rolling sea at blue hour, sea spray, oxidized bronze, detailed engraved markings without legible text. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE STARSEED LANTERN",
+      "brief": "A mysterious floating bioluminescent lantern in an ancient forest shrine after rain.",
+      "image_prompt": "A single floating seed-shaped lantern made of translucent opal glass and living vines, glowing with tiny firefly-like lights above a mossy stone altar deep in a primeval forest shrine after rainfall, low eye-level photographic composition, emerald mist, soft warm light and realistic wet stone. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE MEMORY HOURGLASS",
+      "brief": "A futuristic hourglass of glowing particles displayed in a minimalist lunar gallery.",
+      "image_prompt": "One monumental hourglass constructed from brushed titanium and clear quartz, filled with softly glowing golden particles falling in zero gravity, displayed in a minimalist lunar gallery with concrete floor and a distant crater landscape through a narrow aperture, dramatic side-lit close perspective, physically believable engineered detailing. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
