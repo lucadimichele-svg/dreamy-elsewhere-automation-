@@ -105,8 +105,9 @@ def import_one(path, session):
                 image.verify()
             with Image.open(io.BytesIO(payload)) as image:
                 image = ImageOps.exif_transpose(image).convert("RGB")
-                if image.width < CONFIG["output_width"] or image.height < CONFIG["output_height"]:
-                    raise ImportFailure(f"Image {index} below required resolution")
+                if (image.width < CONFIG.get("native_source_min_width",800)
+                        or image.height < CONFIG.get("native_source_min_height",1400)):
+                    raise ImportFailure(f"Image {index} below true native source minimum")
                 if not 0.45 <= image.width / image.height <= 0.68:
                     raise ImportFailure(f"Image {index} has incompatible portrait aspect ratio")
                 image.save(tmp / name, "PNG")
