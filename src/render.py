@@ -188,10 +188,10 @@ def make_one(day, slot):
         "theme_category": plan["theme_category"], "variants": labels,
         "creative_source": ("legacy" if plan.get("mode") == "legacy"
                             else "open_theme_five_variants"),
-        "caption": (f"{topic} 🌙✨\\n\\n"
-                    + "\\n".join(f"{i}. {name.title()}" for i, name in enumerate(labels, 1))
-                    + "\\n\\nWhich one would you choose? Comment your number! 🌙"
-                    + "\\n\\n#DreamyElsewhere #ChooseYourFavorite #DreamWorlds"),
+        "caption": (f"{topic} 🌙✨\n\n"
+                    + "\n".join(f"{i}. {name.title()}" for i, name in enumerate(labels, 1))
+                    + "\n\nWhich one would you choose? Comment your number! 🌙"
+                    + "\n\n#DreamyElsewhere #ChooseYourFavorite #DreamWorlds"),
         "audio_status": "EMBEDDED_AUDIO",
         "image_count": 5, "duration_seconds": 15,
     }
