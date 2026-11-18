@@ -1,0 +1,49 @@
+{
+  "title": "Choose Your Ride",
+  "status": "TEST ONLY; NOT PUBLISHED",
+  "video": "choose_your_ride_15s.mp4",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "seconds": 15,
+  "scene_count": 5,
+  "seconds_per_scene": 3,
+  "audio": "Licensed music embedded",
+  "source_details": [
+    {
+      "scene": 1,
+      "variant": "BELLE ÉPOQUE TRAIN",
+      "native_source_width": 941,
+      "native_source_height": 1672,
+      "source_sha256": "be7bc6bcdad0e2bb7a2f694de2ce14575992d1dc983600e81941619b150a5c80"
+    },
+    {
+      "scene": 2,
+      "variant": "FLYING PIRATE SHIP",
+      "native_source_width": 1536,
+      "native_source_height": 2752,
+      "source_sha256": "c2843bdff622d642bdab1b372fdd8542e07b5fe738deab0d400c3f4ff75152f4"
+    },
+    {
+      "scene": 3,
+      "variant": "LUXURY AIRSHIP",
+      "native_source_width": 1536,
+      "native_source_height": 2752,
+      "source_sha256": "1a06c22cc8ea00b525e6a97d554f52a470a494796ab66b36219d3cac9c6265d0"
+    },
+    {
+      "scene": 4,
+      "variant": "ENCHANTED CARRIAGE",
+      "native_source_width": 1536,
+      "native_source_height": 2752,
+      "source_sha256": "2ee045a9006c2f97e1a5a921b2d068d3feefc281487680814ca4264fc5c7c32b"
+    },
+    {
+      "scene": 5,
+      "variant": "STARLIGHT CRUISER",
+      "native_source_width": 1536,
+      "native_source_height": 2752,
+      "source_sha256": "b54d3090944d58aa87cde351f2dd5eaede0ee78938a447d17b44628c4c55cbc0"
+    }
+  ]
+}
