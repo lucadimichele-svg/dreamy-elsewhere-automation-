@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-19",
+  "slot": "S4",
+  "topic": "Which extraordinary bridge would you cross?",
+  "theme_category": "architecture/imagined-crossings",
+  "variants": [
+    {
+      "label": "THE GLASS ABYSS",
+      "brief": "Transparent engineered suspension footbridge spanning a vast emerald canyon in the Andes at first light, seen from one end with a dramatic downward view.",
+      "image_prompt": "Photorealistic architectural photograph from the entrance of a single transparent reinforced-glass pedestrian suspension bridge over an immense green Andean canyon, morning mist far below, taut steel cables, wet glass decking and rugged cliffs, cool dawn lighting, no people. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE LAVA CAUSEWAY",
+      "brief": "Ancient basalt stone bridge over a glowing volcanic river in Iceland at blue twilight, seen low beside its weathered arches.",
+      "image_prompt": "Photorealistic wide-angle low viewpoint of one ancient black basalt arched stone causeway crossing a glowing orange lava channel in Iceland, heat shimmer, volcanic steam, blue twilight, rough masonry and credible heavy arches, no people. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE LOTUS CROSSING",
+      "brief": "Ornate carved sandstone bridge winding across a lotus-filled lake toward an Indian palace at golden dawn.",
+      "image_prompt": "Photorealistic elevated three-quarter view of one intricately carved pale sandstone pedestrian bridge with lotus-shaped balustrades across a pink lotus lake in Rajasthan, palace reflected in still water, sunrise amber haze, tactile hand-carved masonry, no people. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE SKY RAIL",
+      "brief": "Futuristic illuminated magnetic rail bridge suspended between two vertical megacity towers during a rainy neon night.",
+      "image_prompt": "Photorealistic street-level upward photograph of one slender futuristic enclosed magnetic-rail bridge connecting immense Tokyo-inspired skyscrapers high above a rain-soaked neon city at midnight, visible structural trusses and glass tube, cyan reflections, realistic engineering, no people. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE ROOT BRIDGE",
+      "brief": "Living tree-root footbridge grown across a lush Meghalaya waterfall gorge, viewed from a mossy forest path after rain.",
+      "image_prompt": "Photorealistic ground-level photograph of one living root bridge naturally woven from thick ficus tree roots spanning a deep lush Meghalaya rainforest gorge, waterfall in background, wet moss and fern fronds, soft overcast post-rain light, natural botanical structural detail, no people. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
