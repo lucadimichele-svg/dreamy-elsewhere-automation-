@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-19",
+  "slot": "S1",
+  "topic": "Which enchanted dessert would you taste?",
+  "theme_category": "fantasy/culinary",
+  "variants": [
+    {
+      "label": "MOON PEARL TART",
+      "brief": "A silver-blue pearlescent fruit tart on a dark slate patisserie counter beneath cool moonlight.",
+      "image_prompt": "Close-up editorial food photograph of one exquisite silver-blue pearlescent fruit tart with translucent moon-shaped pear slices and delicate edible sugar crystals on a black slate plate, in a contemporary Paris patisserie at midnight, soft cool moonlight, finely defined pastry layers and natural reflections. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "VOLCANIC CHOCOLATE",
+      "brief": "A black cocoa lava cake with glowing ruby-red molten filling on a basalt platter.",
+      "image_prompt": "Macro food photograph of a single dramatic black cocoa lava cake cracked open to reveal warm ruby-red raspberry chocolate filling, served on rough volcanic basalt with subtle steam in an Icelandic geothermal dining room at dusk, tactile cocoa crumbs and amber side lighting. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "SAKURA CLOUD MOCHI",
+      "brief": "A pale pink cloudlike mochi dessert with cherry blossom petals on a ceramic plate.",
+      "image_prompt": "Photorealistic intimate food photograph of a single soft pink sakura mochi confection shaped like a billowing cloud, sprinkled with edible cherry blossom petals, on handmade celadon pottery in a traditional Kyoto tea room at spring morning, diffuse paper-screen daylight, detailed rice flour and glaze textures. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "GOLDEN HONEY PYRAMID",
+      "brief": "A geometric tower of amber honey pastries with pistachios in a sunlit courtyard.",
+      "image_prompt": "High-detail food photograph of a single sculptural pyramid of crisp honey-soaked filo pastry triangles and green pistachio crumbs on a hammered copper serving platter in a Moroccan riad courtyard at late afternoon, golden honey droplets, zellige tile bokeh and warm sunlight. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "STARDUST GELATO",
+      "brief": "An iridescent violet gelato spiral in a futuristic transparent glass cup.",
+      "image_prompt": "Cinematic macro food photograph of one tall spiral of iridescent violet blueberry gelato dusted with tiny edible shimmering sugar crystals, in a clear sculpted glass dessert cup on a sleek brushed aluminum counter of a futuristic orbital cafe, deep indigo planetlight and clean cyan highlights, believable creamy texture. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
