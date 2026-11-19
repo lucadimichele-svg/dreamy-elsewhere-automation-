@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-19",
+  "slot": "S3",
+  "topic": "Which secret library would you explore?",
+  "theme_category": "fantasy/libraries",
+  "variants": [
+    {
+      "label": "THE LIBRARY OF TIDES",
+      "brief": "An ancient coastal library carved into sea cliffs, flooded with sunset reflections.",
+      "image_prompt": "A monumental ancient coastal library carved into Portuguese limestone sea cliffs, towering shelves of leather-bound books and a narrow stone staircase winding toward the ocean, photographed from a low interior angle at golden sunset, realistic salt-worn stone and oak, shafts of warm light. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE SKY ARCHIVE",
+      "brief": "A futuristic floating archive above a neon city in a rainy night.",
+      "image_prompt": "A spectacular futuristic archive suspended above a rain-soaked megacity, illuminated transparent bookshelves and floating walkways held by credible steel trusses, photographed from a high balcony looking down through violet rain, polished titanium and glass with intricate realistic details. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE ROOTBOUND VAULT",
+      "brief": "A secret woodland library inside the hollow of an ancient giant tree.",
+      "image_prompt": "A secret library built within the enormous living trunk of an ancient redwood in California, concentric curved shelves carved around the tree's natural hollow and a spiral stair, photographed from ground level looking upward in soft morning forest light, realistic bark, copper railings and warm parchment. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE SANDSTONE CODEX",
+      "brief": "A hidden desert archive carved into a rose-red canyon.",
+      "image_prompt": "A hidden desert archive inside a rose-red sandstone canyon in Petra, long rows of hand-bound manuscripts in deep arched alcoves, open courtyard with a narrow ribbon of sunlight, photographed from above at late afternoon, richly detailed sandstone and woven fabrics. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE ICE MEMORY HALL",
+      "brief": "An Arctic subterranean library preserving glowing manuscripts in frozen crystal.",
+      "image_prompt": "A subterranean Arctic archive excavated in a massive glacier in Svalbard, illuminated ice columns and carefully engineered sealed display cases holding ancient manuscripts, photographed head-on through a long symmetrical blue ice corridor, polar twilight filtering through translucent ceiling, realistic frosted glass and steel. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
