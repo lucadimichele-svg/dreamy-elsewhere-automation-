@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-19",
+  "slot": "S2",
+  "topic": "Which impossible machine would you discover?",
+  "theme_category": "fantasy/engineering",
+  "variants": [
+    {
+      "label": "THE TIDE CLOCK",
+      "brief": "A monumental tidal clock carved into the cliffs of an imaginary ancient maritime kingdom, its bronze rings powered by ocean waves.",
+      "image_prompt": "Photorealistic low-angle architectural photograph of an immense ancient tidal clock built into a storm-worn limestone sea cliff, concentric patinated bronze rings turning above cascading seawater, dramatic Atlantic sunrise, weathered limestone and polished wet brass, credible stone masonry and engineering. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE CLOUD HARVESTER",
+      "brief": "A gigantic cloud-collecting machine suspended between high Himalayan peaks, with fabric sails catching mist.",
+      "image_prompt": "Photorealistic aerial view of an immense fantasy cloud-harvesting machine spanning two Himalayan summits, white tensile fabric sails gathering morning mist into copper aqueducts, tiny suspension bridges and glacial blue shadows, realistic steel cables and stone foundations at crisp dawn. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE SUNKEN ORGAN",
+      "brief": "An enormous musical pipe organ installed inside a submerged Roman amphitheater, illuminated by sea light.",
+      "image_prompt": "Photorealistic underwater architectural photograph of an immense coral-encrusted pipe organ in a flooded ancient Roman amphitheater, tall bronze pipes rising through turquoise water, sunbeams descending between submerged marble columns, close diagonal view from the amphitheater steps, physically plausible aged materials. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE DESERT STAR ENGINE",
+      "brief": "A vast astronomical engine of moving stone and brass mirrors rising from a desert observatory.",
+      "image_prompt": "Photorealistic wide low-angle photograph of an immense celestial observatory engine rising from an ancient desert plateau, giant articulated brass mirrors and carved sandstone gear wheels reflecting the last orange sunset rays, distant dunes and purple twilight, finely detailed mechanically plausible supports. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE AURORA LOOM",
+      "brief": "A colossal futuristic loom weaving luminous fabric beneath polar auroras, built on an Arctic ice shelf.",
+      "image_prompt": "Photorealistic eye-level photograph of an enormous futuristic weaving machine mounted on a reinforced Arctic research platform, titanium frames guiding shimmering translucent threads beneath green aurora borealis, dark polar night, frosted steel and precise engineered rollers, warm work lights reflecting in snow. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
