@@ -76,3 +76,53 @@ Nutze **das erfolgreiche Choose-Your-Ride-Muster** in `src/render.py`:
 - Technische Fehler konkret melden (beschädigte/fehlende Quelldateien, fehlender Kreativplan bei neuen Slots, ungültige Dateien, Auth-/Netzwerkfehler); keine stillen Erfolge.
 - Produktionsplan: 17.11.–14.12.2026 vier tägliche Posts (08:00, 12:30, 17:30, 21:30); ab 15.12.2026 zwei (12:30, 20:30), Europe/Berlin.
 - Nur Dreamy Elsewhere, nicht Blinkpuzz, Vibsnaxx oder Professor Wheel. Beibehaltung des bestehenden geschützten GitHub/Drive/Buffer-Wegs.
+
+## Schutz gegen themenfremde Generatorbilder (ab 20.11.2026 S2)
+
+**Reales Problem belegt:** Das Reel `2026-11-19_S4` plante fünf Brücken. In den tatsächlichen Drive-Originalen zeigt nur `01.png` eindeutig die geplante Glasbrücke. `02.png` ist ein Höhlenbecken mit Wasserfall statt Lava-Brücke, `03.png` eine verzierte Terrasse mit einer entfernten Brücke statt fokussierter Lotus-Brücke, `04.png` eine nächtliche Aussichtsterrasse statt futuristischer Sky-Rail-Brücke, `05.png` eine antike Theater-/Ruinenlandschaft statt lebender Wurzelbrücke. Alle Dateien waren gültig und verschieden; diese Art **Inhaltsfehler** wurde bislang unbemerkt publiziert.
+
+**Das ist kein Geschmackstest:** Ein Reel über fünf Brücken darf nicht aus fünf zufälligen hübschen Orten bestehen. Der im Plan definierte Gegenstand muss in jedem einzelnen Quellbild **tatsächlich als Hauptmotiv sichtbar** sein. Nicht: "schön genug?", "passt mir die Stimmung?", "künstlerisch gut?" Sondern allein: **"Zeigt das Bild eindeutig die angekündigte Sache?"**
+
+### Neues Kreativplan-Format für neue Slots ab 2026-11-20 S2
+
+Ergänze in `assets/creative_plans/YYYY-MM-DD_Sx.json`:
+- `core_subject`: Ein frei gewählter, konkret sichtbarer gemeinsamer Gegenstand, zum Beispiel `bridge`, `dessert`, `book-filled library`, `flying vehicle`. Der Gegenstand darf NICHT bloß eine Stimmung oder Umgebung sein.
+- Bei **jeder** der genau fünf Varianten `must_show`: ein konkreter, beobachtbarer Satz zum Hauptobjekt, z.B. `A long black basalt stone bridge spans the glowing lava channel; bridge deck and both endpoints visible`. `image_prompt` muss dieses Hauptobjekt nachweisbar ausdrücklich erwähnen.
+
+### Zwingende objektbezogene Bilderzeugung
+
+1. Den geplanten **`must_show`-Gegenstand an den ANFANG** jedes isolierten Einzelbild-Prompts stellen. Nicht zuerst Wald, Blumen, Lounge, Wolken, Palast, Bett, Materialästhetik oder dekorative Aussicht beschreiben.
+2. **Bilddominanz:** Der Gegenstand muss zentral, groß und gut erkennbar sein. Aus einem Brücken-Plan darf nicht bloß eine Terrasse werden, von der aus weit entfernt eine winzige Brücke sichtbar ist. Schreibe konkrete Blickrichtung und Rahmen, z.B. `The bridge itself is the unmistakable main subject, spanning the center of the portrait composition, both ends clearly visible.` Entsprechend bei Dessert, Fahrzeug, Bibliothek usw.
+3. Vor weiterer Produktion **JEDES generierte Originalbild anschauen** und ausschließlich den dargestellten Hauptgegenstand mit dem geplanten `must_show` abgleichen. Technisch gültige, aber themenfremde Bilder als inhaltlichen Fehlschlag ansehen. **Keinerlei ästhetischen Scorer, Geschmacksurteil oder allgemeine KI-Freigabeschleife**.
+4. Bei Nichtübereinstimmung maximal **zwei** isolierte Nachversuche nur für dieses Bild, dabei den Prompt kürzer und objektzentrierter machen; keine Referenzen auf vorige Bildausgaben, kein Bearbeiten oder Ausschneiden vorheriger Bilder, keine Collagen. Falls weiterhin kein objektkorrektes Original entsteht, **keinen irreführenden themenfremden Reel veröffentlichen**. Den tatsächlichen technischen Produktionsausfall melden und andere Slots nicht verändern. Diese Inhaltsprüfung ist eine harte Einschränkung nur für nachweislich falsch abgebildete Themengegenstände und ersetzt **nicht** die verbotene subjektive KI-Qualitätsbewertung.
+5. Für jedes tatsächlich visuell geprüfte, richtige Quellbild eine kurze wahrheitsgetreue `observed_subject`-Beschreibung verfassen, `subject_visible: true` und `subject_dominant: true` setzen und den **SHA256 des endgültig zum Drive hochgeladenen PNG-Byteinhalts** berechnen. Keine sichtbare Präsenz behaupten, wenn der Gegenstand nur im Prompt vorkommt.
+
+### Neues Audit-JSON (vor Upload-Manifest committen)
+
+`assets/scene_audits/YYYY-MM-DD_Sx.json`:
+
+```json
+{
+  "date": "2026-11-20",
+  "slot": "S2",
+  "topic": "Which extraordinary bridge would you cross?",
+  "core_subject": "bridge",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "THE GLASS ABYSS",
+      "must_show": "Transparent glass bridge spanning a canyon as the central main subject",
+      "sha256": "64-hex-stellen-durch-reale-berechnete-dateipruefsumme-ersetzen",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A long glass suspension bridge is clearly visible from its near end across the canyon"
+    }
+  ]
+}
+```
+
+Das Muster zeigt **nur die Struktur**; tatsächlich sind **genau fünf** Einträge nötig und die SHA256-Werte müssen aus den echten Originaldateien stammen. Das `must_show` muss exakt mit dem jeweiligen Kreativplan übereinstimmen, `label` ebenfalls. Audit-Commit **vor** `assets/drive_manifests/KEY.json`, damit der Renderer-Pipeline schon ein Audit vorliegt. Die Import-Pipeline `src/private_drive_import.py` prüft, ob das Audit genau zum Plan passt, und vergleicht die SHA256 gegen die **wirklich von Drive importierten** PNG-Bytes. Bei Abweichung wird nicht gerendert. Dadurch wird ein falsch zugeordnetes oder nachträglich geändertes Bild nicht unbemerkt veröffentlicht.
+
+**Ehrliche Grenze:** Die maschinelle SHA-/JSON-Prüfung kann nicht beurteilen, ob im Bild wirklich eine Brücke zu sehen ist. Die eigentliche Sichtprüfung geschieht durch den Bildproduktionsagenten beim Betrachten jedes echten Bildes, nicht allein anhand der schriftlichen Prompts oder Labels. Diese Prüfung ist zwingend, aber nicht unfehlbar. Keine Erfolgsbehauptung bei nicht tatsächlich durchgeführter Sichtprüfung.
+
+Die bestehenden bis einschließlich `2026-11-20_S1` produzierten oder bereits veröffentlichten Reels bleiben von dieser zusätzlichen Schranke unberührt. Nichts nachträglich löschen, ersetzen oder doppelt publizieren, ohne dass der Nutzer es verlangt.
