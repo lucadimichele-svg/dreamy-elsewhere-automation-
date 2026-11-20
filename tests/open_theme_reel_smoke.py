@@ -35,6 +35,15 @@ plan = {
     {"label":"ORBITAL BREAKFAST","brief":"Futuristic space station breakfast floating above Earth"}
   ]
 }
+# The synthetic plan uses the NEW subject-focused schema.
+plan["core_subject"] = "breakfast"
+for variant in plan["variants"]:
+    variant["must_show"] = "A plated breakfast must dominate the frame as the unmistakable main subject"
+    variant["image_prompt"] = (
+        "A clearly visible plated breakfast is the main foreground subject. "
+        + variant["brief"]
+        + ". Photorealistic isolated full-screen vertical portrait, no words or collage."
+    )
 with tempfile.TemporaryDirectory() as td:
     temporary = Path(td)
     audio = temporary / "test_audio.mp3"
