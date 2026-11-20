@@ -18,7 +18,7 @@ on:
       - '.github/workflows/dreamy-drive-cleanup.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: dreamy-elsewhere-private-drive-cleanup
@@ -45,3 +45,15 @@ jobs:
         env:
           GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
         run: python src/drive_cleanup.py --apply
+      - name: Persist only confirmed Drive move timestamps
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.apply)
+        run: |
+          set -euo pipefail
+          git config user.name dreamy-drive-cleanup-bot
+          git config user.email dreamy-drive-cleanup-bot@users.noreply.github.com
+          git add docs/source-moved
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(dreamy): record moved source folders for owner cleanup"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
