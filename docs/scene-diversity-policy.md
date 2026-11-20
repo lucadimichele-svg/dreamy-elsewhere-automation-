@@ -1,3 +1,10 @@
+## Korrektur: Kernmotiv zählt, nicht die exakte Kulisse (20.11.2026)
+
+Ein dokumentierter Ausfall am 20.11.2026 S2: Bei `Which enchanted door would you open?` wurden erzeugte, klar sichtbare Türen abgelehnt, weil die Kulisse Wald/Wüste statt des geplanten Unterwassertempels war. Das war zu streng. **Künftig gelten ausschließlich das gemeinsame `core_subject` und seine tatsächliche Präsenz als Hauptmotiv als harte inhaltliche Pflicht.** Eine erkennbare Tür ist beim Türen-Reel gültig, auch wenn ihre Material- oder Ortsbeschreibung von `must_show` abweicht. Dasselbe gilt für Brücken, Desserts, Fahrzeuge usw. Die übrigen Promptdetails dienen als kreative Zielvorgabe und nicht als Abbruchgrund.
+
+Wenn das echte Bild den Kerngegenstand korrekt zeigt, aber die konkrete Variante nicht: **Vor dem Drive-Manifest das Variantenlabel und die Bildbeschreibung passend zur tatsächlichen Aufnahme anpassen** (`CORAL GATE` wird bei deutlich sichtbarer Wald-Tür bspw. `ENCHANTED FOREST GATE`). Kreativplan, fünf Label-Audits und Renderer bleiben dadurch konsistent. Nicht künstlich behaupten, eine Bronzetür in einem Unterwassertempel zu zeigen, wenn es real eine Waldtür ist. Niemals wegen eines unterschiedlichen Hintergrunds die gesamte Produktion stoppen. Eine Szene, die gar keine erkennbare Tür zeigt, bleibt dagegen eindeutig falsch und wird durch einen neuen isolierten Kernobjekt-Prompt ersetzt. Technische Probleme wie Collagen und nicht echte Einzelbilder bleiben verboten. Ästhetische KI-Bewertungen bleiben vollständig abgeschaltet.
+
+---
 # Dreamy Elsewhere — verbindliche offene Themen- und Reel-Produktion
 
 ## Grundprinzip (ab 18.11.2026 S3)
