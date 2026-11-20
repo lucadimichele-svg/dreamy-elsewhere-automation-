@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-20",
+  "slot": "S2",
+  "topic": "Which enchanted door would you open?",
+  "theme_category": "fantasy/enchanted-architecture",
+  "core_subject": "door",
+  "variants": [
+    {
+      "label": "THE OBSIDIAN DOOR",
+      "brief": "A tall black obsidian doorway stands alone in a sunlit desert, its carved stone door leaf partly open and its entire frame prominently visible.",
+      "must_show": "A large black obsidian door with a carved solid stone door leaf and rectangular frame occupies the center foreground.",
+      "image_prompt": "A large black obsidian door with a carved solid stone door leaf and rectangular frame occupies the center foreground. The door is unmistakably the main subject, viewed straight-on, in an empty golden desert at dawn; intricate volcanic glass carvings, realistic shadows. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE CORAL GATE",
+      "brief": "A huge coral-encrusted bronze door with a visible handle stands inside a submerged ancient temple, illuminated by turquoise water.",
+      "must_show": "A monumental coral-covered bronze door with clear hinges and a handle dominates the underwater temple scene.",
+      "image_prompt": "A monumental coral-covered bronze door with clear hinges and a handle dominates the underwater temple scene. The door is the centered foreground main subject, seen from low frontal angle, ancient masonry and sunlight filtered through blue seawater. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE CLOCKWORK PORTAL",
+      "brief": "A gigantic copper gear-shaped door with a hinged circular panel sits in a Victorian industrial hall beneath amber lamps.",
+      "must_show": "A giant circular brass clockwork door with exposed gear teeth and a visible hinged door panel fills the foreground.",
+      "image_prompt": "A giant circular brass clockwork door with exposed gear teeth and a visible hinged door panel fills the foreground. The clockwork door is the central main subject, viewed from a low three-quarter angle inside a Victorian machinery hall, brass patina, warm amber lamps. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE FROSTED DOOR",
+      "brief": "An immense carved translucent ice door rises from a snowy arctic fortress with northern lights beyond.",
+      "must_show": "A towering carved ice door with a defined doorframe and partially open door slab is the main foreground object.",
+      "image_prompt": "A towering carved ice door with a defined doorframe and partially open door slab is the main foreground object. The ice door fills most of the portrait composition in an Arctic fortress at night, sharp frozen textures, subtle aurora overhead. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE BLOOMING GATE",
+      "brief": "A vividly painted red lacquered wooden door in a Japanese garden, decorated with climbing wisteria and bronze hardware.",
+      "must_show": "A tall red lacquered wooden door with visible hinges, handle and complete frame dominates the garden image.",
+      "image_prompt": "A tall red lacquered wooden door with visible hinges, handle and complete frame dominates the garden image. The door is the large unmistakable central subject in a quiet Japanese wisteria garden at sunrise, detailed woodgrain and bronze hardware. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
