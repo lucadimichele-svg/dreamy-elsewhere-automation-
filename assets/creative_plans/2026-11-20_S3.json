@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-20",
+  "slot": "S3",
+  "topic": "Which impossible kite would you fly?",
+  "theme_category": "fantasy/sky-art",
+  "core_subject": "kite",
+  "variants": [
+    {
+      "label": "THE AMBER PHOENIX",
+      "brief": "An enormous golden phoenix-shaped kite flies above a terraced ancient Persian garden at sunrise, its silk wings and long ribbons filling the foreground.",
+      "must_show": "A gigantic golden phoenix-shaped kite is the dominant central subject.",
+      "image_prompt": "A giant amber phoenix kite is the unmistakable main object. An enormous golden phoenix-shaped kite flies above a terraced ancient Persian garden at sunrise, its silk wings and long ribbons filling the foreground. Photorealistic detailed fabric and believable flying lines. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE MOON JELLY",
+      "brief": "A luminous translucent jellyfish-shaped kite floats over a windy black-sand beach at twilight, its flowing fabric tentacles trailing across the sky.",
+      "must_show": "A large translucent jellyfish-shaped kite dominates the image.",
+      "image_prompt": "A giant moon jelly kite is the unmistakable main object. A luminous translucent jellyfish-shaped kite floats over a windy black-sand beach at twilight, its flowing fabric tentacles trailing across the sky. Photorealistic detailed fabric and believable flying lines. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE DRAGON OF SILK",
+      "brief": "A crimson Chinese dragon kite with many jointed fabric sections soars above a river festival in misty morning light.",
+      "must_show": "A long red Chinese dragon-shaped kite is the dominant subject.",
+      "image_prompt": "A giant dragon of silk kite is the unmistakable main object. A crimson Chinese dragon kite with many jointed fabric sections soars above a river festival in misty morning light. Photorealistic detailed fabric and believable flying lines. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE CLOCKWORK RAY",
+      "brief": "A copper-and-blue mechanical manta-ray kite with visible spars glides above an old European lighthouse at dusk.",
+      "must_show": "A large manta-ray-shaped kite is prominently visible.",
+      "image_prompt": "A giant clockwork ray kite is the unmistakable main object. A copper-and-blue mechanical manta-ray kite with visible spars glides above an old European lighthouse at dusk. Photorealistic detailed fabric and believable flying lines. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE STAR SAIL",
+      "brief": "A huge indigo star-shaped kite with luminous thread embroidery flies above a snowy polar landscape under aurora.",
+      "must_show": "A large star-shaped fabric kite dominates the foreground.",
+      "image_prompt": "A giant star sail kite is the unmistakable main object. A huge indigo star-shaped kite with luminous thread embroidery flies above a snowy polar landscape under aurora. Photorealistic detailed fabric and believable flying lines. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
