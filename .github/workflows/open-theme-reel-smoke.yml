@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'tests/open_theme_reel_smoke.py'
+      - 'tests/scene_integrity_smoke.py'
+      - 'src/scene_integrity.py'
       - '.github/workflows/open-theme-reel-smoke.yml'
   workflow_dispatch:
 
@@ -27,6 +29,7 @@ jobs:
       - name: Test open topics, persistent memory, labeled 15s Reel, and AAC audio
         run: |
           python -m compileall -q src tests
+          python tests/scene_integrity_smoke.py
           python tests/open_theme_reel_smoke.py
       - name: No publication or commit is ever permitted
         run: echo "PASS - no Buffer secrets, no GitHub writes, synthetic dates far outside the posting window"
