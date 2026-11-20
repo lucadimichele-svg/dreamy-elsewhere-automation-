@@ -17,6 +17,8 @@ from PIL import Image, ImageOps
 from google.auth.transport.requests import Request
 from google.oauth2.service_account import Credentials
 from schedule import ROOT, CONFIG, slots_for
+from creative_plan import load_for_render
+from scene_integrity import required as subject_audit_required, load_audit, check_payload
 
 MANIFESTS = ROOT / "assets" / "drive_manifests"
 INBOX = ROOT / "assets" / "inbox"
@@ -80,6 +82,12 @@ def import_one(path, session):
     if target.is_dir() and sorted(p.name for p in target.iterdir() if p.is_file()) == names:
         print("SKIP already imported", stem)
         return False
+    day_str, slot = stem.split("_")
+    day = date.fromisoformat(day_str)
+    # For new Reels, the producer has to check whether the actual object
+    # of EACH variant is visibly present, and attest the exact uploaded bytes.
+    # This is content correctness, not an aesthetic or similarity rating.
+    audit = load_audit(stem, load_for_render(day, slot)) if subject_audit_required(day, slot) else None
     expected_folder_id = list_one_folder(session, stem)
     with tempfile.TemporaryDirectory() as temp:
         tmp = Path(temp)
@@ -101,6 +109,8 @@ def import_one(path, session):
                         raise ImportFailure(f"Image {index} exceeds 20 MB")
             finally:
                 response.close()
+            if audit is not None:
+                check_payload(audit, index, bytes(payload))
             with Image.open(io.BytesIO(payload)) as image:
                 image.verify()
             with Image.open(io.BytesIO(payload)) as image:
