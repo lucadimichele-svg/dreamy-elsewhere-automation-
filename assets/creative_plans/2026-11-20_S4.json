@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-20",
+  "slot": "S4",
+  "topic": "Which extraordinary throne would you claim?",
+  "theme_category": "fantasy/royal-artifacts",
+  "core_subject": "throne",
+  "variants": [
+    {
+      "label": "THE CORAL THRONE",
+      "brief": "A towering throne of pale coral and polished pearl stands on a submerged marble dais, with blue light filtering through the sea.",
+      "must_show": "A large elaborate coral-and-pearl throne fills the center foreground, clearly showing the seat, backrest and armrests.",
+      "image_prompt": "A large coral-and-pearl throne dominates the center foreground, its high coral backrest, seat and armrests clearly visible, standing on a submerged marble dais in clear turquoise water, photorealistic underwater lighting. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE OBSIDIAN THRONE",
+      "brief": "A sharply carved black volcanic-glass throne stands within a vast basalt chamber illuminated by flowing lava.",
+      "must_show": "A monumental black obsidian throne with seat, arms and high backrest is the dominant foreground object.",
+      "image_prompt": "A monumental black obsidian throne dominates the center foreground, its high angular backrest, seat and armrests clearly visible in a basalt volcanic hall, orange lava glow reflecting on black stone. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE BLOSSOM THRONE",
+      "brief": "An ornate ivory throne surrounded by flowering cherry branches stands in an open Japanese palace garden at dawn.",
+      "must_show": "A carved ivory throne with an unmistakable seat, back and armrests occupies the center of the image.",
+      "image_prompt": "An ornate ivory throne dominates the center foreground, carved high backrest, seat and armrests unmistakable, standing in a tranquil Japanese palace garden with cherry blossom petals and pale morning light. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE STARSHIP THRONE",
+      "brief": "A futuristic titanium command throne sits at the center of a spacecraft bridge, a ringed planet beyond.",
+      "must_show": "A futuristic metal throne with prominent backrest, seat and armrests dominates the image.",
+      "image_prompt": "A futuristic titanium command throne dominates the center foreground, clearly visible tall backrest, seat and armrests with subtle illuminated controls, inside a credible spacecraft command room with a distant ringed planet. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE DESERT THRONE",
+      "brief": "An ancient gilded sandstone throne stands beneath tall ruined columns in a sunlit desert temple.",
+      "must_show": "A gilded sandstone throne with recognizable seat, high backrest and armrests fills the foreground.",
+      "image_prompt": "A gilded sandstone throne dominates the center foreground, its carved high backrest, seat and armrests clearly visible, surrounded by tall weathered columns of an ancient desert temple at golden sunset. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
