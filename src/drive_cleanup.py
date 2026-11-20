@@ -28,6 +28,7 @@ DRIVE = "https://www.googleapis.com/drive/v3/files"
 RECEIPT_BASE = ("https://raw.githubusercontent.com/lucadimichele-svg/"
                 "blinkpuzz-automation/main/docs/dreamy-published")
 FOLDER_TAG = "DREAMY_SOURCE_CLEANUP_V1:"
+MOVED_DIR = ROOT / "docs" / "source-moved"
 AGE = timedelta(hours=24)
 STEM = re.compile(r"^\d{4}-\d{2}-\d{2}_S[1-4]$")
 MIME_FOLDER = "application/vnd.google-apps.folder"
@@ -156,9 +157,6 @@ class Drive:
                                  "fields":"id,parents,description"},
                          json={"description":description})
 
-    def delete(self, fid):
-        self.call("DELETE",DRIVE+"/"+fid)
-
 
 def exact_files(files, manifest, allow_subset=False):
     expected={x["id"]:(x["name"], "image/png") for x in manifest["files"]}
@@ -171,6 +169,31 @@ def exact_files(files, manifest, allow_subset=False):
             return False
         found.add(fid)
     return found.issubset(expected.keys()) if allow_subset else found == set(expected.keys())
+
+
+def remember_move(stem, manifest, receipt, record, apply):
+    """Write a durable, public but NON-SENSITIVE move time for owner-side deletion."""
+    obj = {
+        "schema": 1, "account": "dreamy_elsewhere", "stem": stem,
+        "source": "confirmed_drive_incoming_to_used",
+        "marker": receipt["marker"],
+        "buffer_post_id": receipt["buffer_post_id"],
+        "sent_at": receipt["sent_at"], "moved_at": record["moved_at"],
+        "instagram_url": receipt["instagram_url"],
+        "drive_folder_id": manifest["drive_folder_id"],
+        "files": manifest["files"],
+    }
+    path = MOVED_DIR / (stem+".json")
+    if path.exists():
+        try:
+            existing = json.loads(path.read_text(encoding="utf-8"))
+        except ValueError:
+            raise RuntimeError("Corrupt existing archive receipt; refusing overwrite")
+        if existing != obj:
+            raise RuntimeError("Archive receipt conflict; refusing overwrite")
+    elif apply:
+        MOVED_DIR.mkdir(parents=True,exist_ok=True)
+        path.write_text(json.dumps(obj,indent=2,ensure_ascii=False)+"\\n",encoding="utf-8")
 
 
 def run(apply=False):
@@ -258,6 +281,14 @@ def run(apply=False):
                     print("HOLD",stem,"Move failed:",str(exc)[:160])
                     held+=1
                     continue
+            if apply:
+                try:
+                    remember_move(stem, manifest, receipt, record, apply)
+                except RuntimeError as exc:
+                    print("ARCHIVE_RECEIPT_ERROR", stem, str(exc))
+                    held += 1
+                    # Moving was still successful; next run may recover from
+                    # the durable Drive folder description.
             print("MOVE" if apply else "WOULD MOVE",stem,
                   "incoming -> used (Instagram status SENT confirmed)")
             moved+=1
@@ -282,6 +313,12 @@ def run(apply=False):
                 print("HOLD",stem,"Move record conflicts with Buffer receipt")
                 held+=1
                 continue
+            try:
+                remember_move(stem, manifest, receipt, record, apply)
+            except RuntimeError as exc:
+                print("HOLD",stem,"Move receipt conflict:",str(exc))
+                held+=1
+                continue
             if utc_now() - moved_at < AGE:
                 print("RETAIN",stem,"Not yet 24h since moving to used")
                 continue
@@ -290,21 +327,12 @@ def run(apply=False):
                 print("HOLD",stem,"Unknown extra file or renamed original in used")
                 held+=1
                 continue
-            if apply:
-                try:
-                    for f in children:
-                        driveway.delete(f["id"])
-                    # Ensure folder now empty before deleting it.
-                    if driveway.children(folder_id):
-                        raise RuntimeError("Folder not empty after deleting verified originals")
-                    driveway.delete(folder_id)
-                except (requests.RequestException,RuntimeError) as exc:
-                    print("HOLD",stem,"Delete failed; remaining originals retained:",str(exc)[:180])
-                    held+=1
-                    continue
-            print("DELETE" if apply else "WOULD DELETE",stem,
-                  "all eligible originals and dedicated folder (24h since move)")
-            deleted+=1
+            # GitHub service account has canDelete=false for user-owned files.
+            # Never try to delete using insufficient rights; separate owner
+            # connector cleanup must verify the moved receipt before deletion.
+            print("OWNER_DELETE_REQUIRED",stem,
+                  "24h elapsed; owner-connected cleaner may delete originals")
+            held+=1
         else:
             print("HOLD",stem,"Folder outside authorized incoming/used parents")
             held+=1
