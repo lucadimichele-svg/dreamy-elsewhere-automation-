@@ -258,6 +258,10 @@ def run(apply=False):
             continue
         parents=set(folder.get("parents",[]))
         if parents == {INCOMING}:
+            if folder.get("capabilities",{}).get("canMoveItemWithinDrive") is False:
+                print("HOLD",stem,"Drive key lacks folder-move rights")
+                held+=1
+                continue
             if not exact_files(children,manifest):
                 print("HOLD",stem,"Incoming folder is not EXACTLY five expected PNG originals")
                 held+=1
