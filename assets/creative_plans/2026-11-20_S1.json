@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-20",
+  "slot": "S1",
+  "topic": "Which impossible flying invention would you pilot?",
+  "theme_category": "fantasy/aviation",
+  "variants": [
+    {
+      "label": "THE SILK BALLOON",
+      "brief": "A vast embroidered silk hot-air balloon floats above an ancient Persian city at dawn, seen from a rooftop with turquoise domes.",
+      "image_prompt": "Photorealistic vertical portrait of one ornate crimson and gold embroidered silk hot-air balloon floating above the turquoise domes of ancient Isfahan at rosy sunrise, viewed upward from a tiled rooftop, visible woven texture and realistic basket rigging. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE CLOCKWORK WINGS",
+      "brief": "An elegant brass mechanical flying machine soars over a foggy industrial Victorian harbor.",
+      "image_prompt": "Photorealistic vertical portrait of one elaborate Victorian brass clockwork ornithopter in flight above a foggy London harbor, seen from the riverbank at blue dawn, detailed hinged wings and exposed gears, realistic metal engineering. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE LOTUS SAIL",
+      "brief": "A fantastical single-masted lotus-petal sailing vessel crosses a mirror-still desert salt flat.",
+      "image_prompt": "Photorealistic vertical portrait of one elegant sailboat with a giant translucent pink lotus-petal sail gliding across a shallow mirror-like salt flat in the Atacama desert at sunset, photographed from water level, delicate fabric ribs and warm reflection. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE CRYSTAL GLIDER",
+      "brief": "A translucent mineral-wing glider traverses a vast snowy alpine valley under starlight.",
+      "image_prompt": "Photorealistic vertical portrait of one futuristic human-scale glider with angular translucent crystalline wings suspended above a snowy alpine valley beneath the Milky Way, viewed from an adjacent ridge, believable carbon-fiber framework, moonlit icy textures. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE SOLAR MANTA",
+      "brief": "A solar-powered manta-shaped aircraft flies over a tropical ocean at midday.",
+      "image_prompt": "Photorealistic vertical portrait of one giant graceful manta-ray-shaped solar aircraft soaring above turquoise tropical ocean reefs in bright midday sunshine, viewed from a nearby coastal cliff, clearly visible flexible photovoltaic panels and engineered wing spars. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
