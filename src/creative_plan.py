@@ -10,6 +10,7 @@ from datetime import date
 from pathlib import Path
 
 from schedule import ROOT, CONFIG, reel_key
+from scene_integrity import check_new_plan_fields, SubjectMismatch
 
 PLANS = ROOT / "assets" / "creative_plans"
 MEDIA = ROOT / "docs" / "media"
@@ -52,6 +53,7 @@ def validate_plan(data, stem):
         if canonical in seen:
             raise CreativePlanError("Two variants have identical labels")
         seen.add(canonical)
+    check_new_plan_fields(data, stem)
     return data
 
 
