@@ -182,6 +182,14 @@ def run(apply=False):
     print("ROOT PERMISSIONS incoming:",root_in.get("capabilities"),
           "used:",root_used.get("capabilities"))
     print("MODE:", "APPLY" if apply else "DRY_RUN")
+    # Safe permission probe only: never modify this file.
+    probe_path = ROOT / "assets/drive_manifests/2026-11-17_S1.json"
+    probe = validate_manifest(probe_path) if probe_path.exists() else None
+    if probe:
+        sample_file = driveway.get(probe["files"][0]["id"])
+        sample_folder = driveway.get(probe["drive_folder_id"])
+        print("ORIGINAL FILE CAPABILITIES:", sample_file.get("capabilities"))
+        print("ORIGINAL FOLDER CAPABILITIES:", sample_folder.get("capabilities"))
     receipts_seen=0
     moved=0
     deleted=0
