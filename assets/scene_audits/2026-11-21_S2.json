@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-21",
+  "slot": "S2",
+  "topic": "Which enchanted discovery would you explore?",
+  "core_subject": "ornate fantasy artifact or structure",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "THE HARBOR LANTERN",
+      "must_show": "An ornate brass lantern with glowing amber glass is large in the foreground beside a harbor.",
+      "sha256": "9ea81cf849a82eb7701f8d082f9eed7edb500da9bef7702c860afd2a351cb1df",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A large pierced brass lantern with a glowing candle and amber panels sits prominently on a harbor stone ledge at sunset."
+    },
+    {
+      "name": "02.png",
+      "label": "THE STARGAZER TELESCOPE",
+      "must_show": "A large brass telescope on a tall decorated pedestal dominates a nighttime observatory.",
+      "sha256": "c11bdf02931551b1c08d8883b0915febf4124b250a3544afc6cb932e2874b938",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "An enormous decorated brass telescope on an ornate pedestal fills an open stone observatory beneath the starry night sky."
+    },
+    {
+      "name": "03.png",
+      "label": "THE CELESTIAL SPHERE",
+      "must_show": "An ornate armillary sphere with a dark celestial globe and golden orbital rings dominates a terrace table.",
+      "sha256": "d5299142031f94cf200e3a2fe2b9c14786ee654ef1d37ccd2afdb50dd9cb7a6b",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A gold ringed armillary sphere enclosing a dark blue celestial globe stands prominently on a desk overlooking a sunset city."
+    },
+    {
+      "name": "04.png",
+      "label": "THE SECRET GARDEN DOOR",
+      "must_show": "A large ornate turquoise-and-gold double door with floral metalwork stands in an ivy-covered stone entrance.",
+      "sha256": "c56dfcfa5730b4c32948a781819a203616f025b1f4b9e21dcc154943df723aa6",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "Tall teal and gold double doors covered with flower and vine patterns dominate an ivy-covered stone garden archway."
+    },
+    {
+      "name": "05.png",
+      "label": "THE BLOSSOM BRIDGE",
+      "must_show": "A large arched stone bridge spans the foreground of a turquoise river beneath cherry blossoms.",
+      "sha256": "25ca7bc978ab6e34f0dc9a38cb5911dd29965661293f8c26ecefc99e72603e74",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A broad stone arch footbridge with lantern posts spans turquoise water under pink flowering trees in a mountainous landscape."
+    }
+  ]
+}
