@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-21",
+  "slot": "S4",
+  "topic": "Which enchanted landmark would you discover?",
+  "core_subject": "architectural landmark",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "MOONLIT FOUNTAIN",
+      "must_show": "A large illuminated tiered marble fountain with a wide basin and high jets stands centrally in a moonlit stone courtyard.",
+      "sha256": "8aeb4aae07b30138f2504851993d5bcfbe16f3439e90b44db11a5755c294adfe",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A large illuminated marble fountain with a round basin and tall water jets stands in a moonlit courtyard."
+    },
+    {
+      "name": "02.png",
+      "label": "THE ICE PALACE GATE",
+      "must_show": "A tall ornate double doorway in a crystalline ice palace dominates the frame, with steps and aurora beyond.",
+      "sha256": "3c100a5eb3b0704936eabfcabdec6840d546f2e11b0cebf248db834fda3566bf",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A large frosted double doorway is the focal point of a glowing crystalline ice palace beneath the aurora."
+    },
+    {
+      "name": "03.png",
+      "label": "THE AURORA FOUNTAIN",
+      "must_show": "A tiered ice fountain pouring bright blue water dominates the foreground of a frozen cavern with aurora outside.",
+      "sha256": "b5c6d7c7eb5fe57d79e4b449a46c11ff6df0592fb9d5d384aba6ff7cb9d4f0dd",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A luminous blue multi-tier ice fountain pours into a broad basin within a frozen cavern."
+    },
+    {
+      "name": "04.png",
+      "label": "THE GLASSHOUSE FOUNTAIN",
+      "must_show": "A large three-tier stone fountain with flowing water dominates a sunlit glass-domed botanical conservatory.",
+      "sha256": "58063ce3dabbc07122c6e90ab9010a8204a15deca9982410e02ebd2abd19acbd",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A three-tier stone fountain pours water into a round pool inside a sunlit glass botanical conservatory."
+    },
+    {
+      "name": "05.png",
+      "label": "THE SAKURA BRIDGE",
+      "must_show": "A large curved red wooden bridge spans the central foreground of a Japanese garden koi pond beneath pink cherry blossoms.",
+      "sha256": "379c32130002658d934736b721950a8f44bc05d8b309dbfef1d438d4d5a35d55",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A prominent curved red wooden footbridge crosses a koi pond amid cherry blossoms and a pavilion."
+    }
+  ]
+}
