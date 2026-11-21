@@ -1,39 +1,39 @@
 {
   "date": "2026-11-21",
   "slot": "S3",
-  "topic": "Which extraordinary waterfall would you visit?",
-  "theme_category": "nature/fantastical-waterfalls",
-  "core_subject": "waterfall",
+  "topic": "Which breathtaking landmark would you explore?",
+  "theme_category": "exploration/fantastical-landmarks",
+  "core_subject": "landmark",
   "variants": [
     {
-      "label": "THE BASALT CASCADE",
-      "brief": "A towering waterfall plunges between black basalt columns in a volcanic valley beneath pale northern light.",
-      "must_show": "A towering waterfall is the central dominant subject, plunging between tall black basalt columns.",
-      "image_prompt": "A large waterfall dominates the center foreground. A towering waterfall plunges between black basalt columns in a volcanic valley beneath pale northern light. Photorealistic vertical 9:16 landscape photograph, waterfall clearly visible and occupying most of the frame. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE BASALT WATERFALL",
+      "brief": "A towering waterfall framed by columnar black basalt cliffs and a snow-dusted mountain, with a turbulent river below.",
+      "must_show": "A large waterfall landmark is centered between tall dark basalt rock columns.",
+      "image_prompt": "A large waterfall landmark dominates the center of a volcanic basalt canyon with mountains behind it. The landmark is clearly visible as the central dominant subject. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE JUNGLE VEIL",
-      "brief": "A broad waterfall pours over a vine-covered limestone cliff into a jade rainforest pool with mist rising.",
-      "must_show": "A broad waterfall dominates the center, dropping over a lush rainforest cliff into a pool.",
-      "image_prompt": "A large waterfall dominates the center foreground. A broad waterfall pours over a vine-covered limestone cliff into a jade rainforest pool with mist rising. Photorealistic vertical 9:16 landscape photograph, waterfall clearly visible and occupying most of the frame. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE SUNSET AQUEDUCT",
+      "brief": "A monumental ancient multi-arched stone aqueduct spans a turquoise gorge with flowers and golden sunset light.",
+      "must_show": "A large stone aqueduct landmark with multiple arches dominates the scene above a river.",
+      "image_prompt": "A monumental stone aqueduct landmark crosses a steep river gorge at sunset, with multiple high arches. The landmark is clearly visible as the central dominant subject. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE DESERT MIRAGE",
-      "brief": "A rare waterfall descends from a red sandstone cliff into a hidden oasis surrounded by sunlit dunes.",
-      "must_show": "A visible waterfall pours down a red sandstone cliff into a desert oasis.",
-      "image_prompt": "A large waterfall dominates the center foreground. A rare waterfall descends from a red sandstone cliff into a hidden oasis surrounded by sunlit dunes. Photorealistic vertical 9:16 landscape photograph, waterfall clearly visible and occupying most of the frame. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE HIGHLAND CASTLE",
+      "brief": "A grand medieval stone castle with towers rises above a drawbridge and gatehouse at warm sunset.",
+      "must_show": "A large medieval castle landmark with many towers rises behind its stone gatehouse.",
+      "image_prompt": "A grand medieval castle landmark stands above a fortified gatehouse and wooden drawbridge at sunset. The landmark is clearly visible as the central dominant subject. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE FROZEN BLUE",
-      "brief": "A powerful waterfall breaks through a frozen ice canyon, framed by blue glacier walls and snow.",
-      "must_show": "A large waterfall flows through the middle of a blue glacial canyon.",
-      "image_prompt": "A large waterfall dominates the center foreground. A powerful waterfall breaks through a frozen ice canyon, framed by blue glacier walls and snow. Photorealistic vertical 9:16 landscape photograph, waterfall clearly visible and occupying most of the frame. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE GOLDEN PORTAL",
+      "brief": "A freestanding ancient carved stone arch with open bronze doors overlooks a misty mountain valley at sunset.",
+      "must_show": "A monumental carved stone portal landmark with two open bronze doors fills the center.",
+      "image_prompt": "A freestanding ancient stone portal landmark with open bronze doors frames a golden mountain valley. The landmark is clearly visible as the central dominant subject. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE MOONLIT FALLS",
-      "brief": "A silver waterfall drops into a dark mountain lake beneath a bright full moon and starry night.",
-      "must_show": "A tall waterfall is visibly centered above a mountain lake at night.",
-      "image_prompt": "A large waterfall dominates the center foreground. A silver waterfall drops into a dark mountain lake beneath a bright full moon and starry night. Photorealistic vertical 9:16 landscape photograph, waterfall clearly visible and occupying most of the frame. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE MOUNTAIN VIADUCT",
+      "brief": "A towering stone railway viaduct carries a red steam train across a green mountain gorge above a waterfall.",
+      "must_show": "A tall multi-arched railway viaduct landmark dominates the gorge, with a red train above.",
+      "image_prompt": "A towering stone railway viaduct landmark crosses a mountain gorge with a red steam train on top. The landmark is clearly visible as the central dominant subject. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     }
   ]
 }
