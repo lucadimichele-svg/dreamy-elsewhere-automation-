@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-21",
+  "slot": "S4",
+  "topic": "Which enchanted fountain would you visit?",
+  "theme_category": "fantasy/architecture",
+  "core_subject": "fountain",
+  "variants": [
+    {
+      "label": "THE MOONLIT MARBLE",
+      "brief": "A grand circular marble fountain with water jets and moonlight in an ancient courtyard.",
+      "must_show": "A large circular marble fountain with clearly visible basin and tall water jets dominates the center foreground of a moonlit ancient courtyard.",
+      "image_prompt": "A large circular marble fountain with clearly visible basin and tall water jets dominates the center foreground of a moonlit ancient courtyard. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE ROSE GARDEN",
+      "brief": "An ornate tiered stone fountain surrounded by blooming roses at sunrise.",
+      "must_show": "A large three-tier stone fountain with flowing water dominates the center foreground of a lush rose garden at sunrise.",
+      "image_prompt": "A large three-tier stone fountain with flowing water dominates the center foreground of a lush rose garden at sunrise. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE GOLDEN PALACE",
+      "brief": "A monumental gilded fountain with cascading bowls in a warm palace courtyard.",
+      "must_show": "A monumental gold fountain with several wide cascading bowls dominates the center foreground of an opulent palace courtyard.",
+      "image_prompt": "A monumental gold fountain with several wide cascading bowls dominates the center foreground of an opulent palace courtyard. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE CRYSTAL SPRING",
+      "brief": "A luminous crystalline fountain pouring water into a stone basin in a snowy fantasy plaza.",
+      "must_show": "A large faceted crystal fountain with clearly visible cascading water and a circular basin dominates the foreground of a snowy fantasy plaza.",
+      "image_prompt": "A large faceted crystal fountain with clearly visible cascading water and a circular basin dominates the foreground of a snowy fantasy plaza. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE DESERT OASIS",
+      "brief": "A carved sandstone fountain with streams of clear water in an oasis courtyard.",
+      "must_show": "A large carved sandstone fountain with a wide basin and flowing water dominates the foreground of a palm-lined desert oasis courtyard.",
+      "image_prompt": "A large carved sandstone fountain with a wide basin and flowing water dominates the foreground of a palm-lined desert oasis courtyard. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
