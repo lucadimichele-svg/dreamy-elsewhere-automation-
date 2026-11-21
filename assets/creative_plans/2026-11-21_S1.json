@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-21",
+  "slot": "S1",
+  "topic": "Which enchanted cake would you taste?",
+  "theme_category": "fantasy/food",
+  "core_subject": "cake",
+  "variants": [
+    {
+      "label": "THE AMBER HONEY CAKE",
+      "brief": "A tall layered honey cake with amber glaze on an antique copper cake stand in a candlelit Persian bakery.",
+      "must_show": "A large layered honey cake dominates the foreground on a copper cake stand, clearly recognizable as the central cake.",
+      "image_prompt": "A large layered honey cake dominates the foreground on a copper cake stand, glossy amber honey dripping down its tiers, warm candlelit bakery background. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE MOONSTONE CAKE",
+      "brief": "A round pearl-white cake with edible silver sugar crystals on a dark marble pedestal under moonlight.",
+      "must_show": "A large round pearl-white celebration cake dominates the foreground, clearly recognizable as the central cake.",
+      "image_prompt": "A large round pearl-white celebration cake dominates the foreground, decorated with edible silver sugar crystals and delicate frosting, on a dark marble pedestal under blue moonlight. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE ROSE GARDEN CAKE",
+      "brief": "An ornate pink cake covered in realistic sugar roses on a garden banquet table at sunrise.",
+      "must_show": "A large ornate pink frosted cake dominates the foreground, clearly recognizable as the central cake.",
+      "image_prompt": "A large ornate pink frosted cake dominates the foreground, densely decorated with realistic handmade sugar roses, on a garden banquet table in soft sunrise light. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE VOLCANIC CHOCOLATE CAKE",
+      "brief": "A dark chocolate cake with flowing molten chocolate center on a black ceramic plate beside glowing embers.",
+      "must_show": "A large dark chocolate cake dominates the foreground, clearly recognizable as the central cake.",
+      "image_prompt": "A large dark chocolate cake dominates the foreground, a cut section revealing flowing molten chocolate, on a black ceramic plate beside softly glowing embers. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE STARRY CITRUS CAKE",
+      "brief": "A tall golden citrus cake topped with candied orange slices and tiny edible stars on a rooftop dessert table.",
+      "must_show": "A large golden citrus layer cake dominates the foreground, clearly recognizable as the central cake.",
+      "image_prompt": "A large golden citrus layer cake dominates the foreground, topped with candied orange slices and edible star-shaped sugar decorations, on a rooftop dessert table at twilight. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
