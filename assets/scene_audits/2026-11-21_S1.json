@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-21",
+  "slot": "S1",
+  "topic": "Which dreamy food escape would you choose?",
+  "core_subject": "prepared food",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "THE HONEY PALACE",
+      "must_show": "A large honey-drizzled layered cake with pistachios and flower petals is the dominant prepared food in the foreground.",
+      "sha256": "b6df29d197be6864491c220634bc38ddff14fde7afec61f14162e80c4ae6b121",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A tall honey-glazed layered cake with visible cream layers, pistachios and flower petals stands on a copper pedestal in a tiled courtyard."
+    },
+    {
+      "name": "02.png",
+      "label": "THE CHOCOLATE TERRACE",
+      "must_show": "A large layered chocolate cake topped with raspberries is the dominant prepared food in the foreground.",
+      "sha256": "18d50cb47df797173b6f7701f8c2ae6fb11b85f1c0357566a7307910222616f6",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A tall layered chocolate cake with dripping ganache, raspberries and chocolate shavings stands on a bronze cake stand on a sunset terrace."
+    },
+    {
+      "name": "03.png",
+      "label": "THE LAVENDER BREAKFAST",
+      "must_show": "A plated croissant with berries is the dominant prepared food in a lavender-field breakfast setting.",
+      "sha256": "f4d6c532937a8c6948d6ac9aacad54554d44365d8a8ec16ffde860ec514261d0",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A large flaky croissant with berries sits on a plate beside yogurt, coffee and juice on a lavender-field terrace."
+    },
+    {
+      "name": "04.png",
+      "label": "THE SUNRISE MEZZE",
+      "must_show": "A large pan of shakshuka with eggs is the dominant prepared food on a breakfast table.",
+      "sha256": "541f5e9eb143498df3be481a61e032ef669705f00a44c6e3deefad575ca8a833",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A pan of egg shakshuka with bread, cheeses, olives and tea is displayed on a breakfast table overlooking rock formations and hot-air balloons."
+    },
+    {
+      "name": "05.png",
+      "label": "THE DESERT TEA FEAST",
+      "must_show": "A brass tray of dates, baklava and fruit is the dominant prepared food at a desert camp.",
+      "sha256": "0f477c8b5cf3511a7c3559dd4228b5daf0b4bd8c34f10a8dcfd5cc7998c104a6",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A brass serving tray holds dates, baklava, figs and grapes beside tea glasses and a brass pot at a desert camp."
+    }
+  ]
+}
