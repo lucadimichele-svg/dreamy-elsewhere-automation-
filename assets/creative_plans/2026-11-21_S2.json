@@ -1,39 +1,39 @@
 {
   "date": "2026-11-21",
   "slot": "S2",
-  "topic": "Which magical lantern would you light?",
-  "theme_category": "fantasy/luminous artifacts",
-  "core_subject": "lantern",
+  "topic": "Which enchanted discovery would you explore?",
+  "theme_category": "fantasy/enchanted discoveries",
+  "core_subject": "ornate fantasy artifact or structure",
   "variants": [
     {
-      "label": "THE AMBER LANTERN",
-      "brief": "An enormous brass lantern with amber glass panels glows on a stone pier beside a misty sea at dusk.",
-      "must_show": "A large ornate brass lantern with amber glass panels occupies the central foreground on a stone pier beside a misty sea at dusk.",
-      "image_prompt": "A large ornate brass lantern with amber glass panels occupies the central foreground on a stone pier beside a misty sea at dusk. The lantern is unmistakably the largest and central object in the portrait. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE HARBOR LANTERN",
+      "brief": "An ornate glowing brass lantern stands on a stone harbor ledge at orange sunset.",
+      "must_show": "An ornate brass lantern with glowing amber glass is large in the foreground beside a harbor.",
+      "image_prompt": "An ornate brass lantern with glowing amber glass is large in the foreground beside a harbor. The described object or structure is large and clearly the central subject. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE MOON LANTERN",
-      "brief": "A giant paper lantern shaped like a crescent moon floats above a tranquil Japanese river at twilight.",
-      "must_show": "A huge crescent-shaped paper lantern dominates the foreground over a calm river at twilight.",
-      "image_prompt": "A huge crescent-shaped paper lantern dominates the foreground over a calm river at twilight. The lantern is unmistakably the largest and central object in the portrait. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE STARGAZER TELESCOPE",
+      "brief": "A giant engraved golden telescope stands in a starry old observatory.",
+      "must_show": "A large brass telescope on a tall decorated pedestal dominates a nighttime observatory.",
+      "image_prompt": "A large brass telescope on a tall decorated pedestal dominates a nighttime observatory. The described object or structure is large and clearly the central subject. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE ICE LANTERN",
-      "brief": "A carved ice lantern radiates soft blue light in a snowy northern courtyard under the aurora.",
-      "must_show": "A tall sculpted translucent ice lantern is centered and dominates a snowy courtyard under northern lights.",
-      "image_prompt": "A tall sculpted translucent ice lantern is centered and dominates a snowy courtyard under northern lights. The lantern is unmistakably the largest and central object in the portrait. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE CELESTIAL SPHERE",
+      "brief": "An elaborate golden and blue armillary sphere rests on a scholarly terrace at dusk.",
+      "must_show": "An ornate armillary sphere with a dark celestial globe and golden orbital rings dominates a terrace table.",
+      "image_prompt": "An ornate armillary sphere with a dark celestial globe and golden orbital rings dominates a terrace table. The described object or structure is large and clearly the central subject. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE LOTUS LANTERN",
-      "brief": "A luminous pink lotus-shaped lantern rests on a reflective lily pond in a tropical temple garden.",
-      "must_show": "A giant glowing lotus-shaped lantern with visible petals fills the foreground on a still lily pond.",
-      "image_prompt": "A giant glowing lotus-shaped lantern with visible petals fills the foreground on a still lily pond. The lantern is unmistakably the largest and central object in the portrait. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE SECRET GARDEN DOOR",
+      "brief": "A tall blue-green and gold floral double door fills a vine-covered stone arch.",
+      "must_show": "A large ornate turquoise-and-gold double door with floral metalwork stands in an ivy-covered stone entrance.",
+      "image_prompt": "A large ornate turquoise-and-gold double door with floral metalwork stands in an ivy-covered stone entrance. The described object or structure is large and clearly the central subject. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE STAR LANTERN",
-      "brief": "A futuristic suspended glass lantern filled with miniature stars illuminates a dark observatory.",
-      "must_show": "A large spherical glass lantern containing many tiny star-like lights dominates the foreground of a dark futuristic observatory.",
-      "image_prompt": "A large spherical glass lantern containing many tiny star-like lights dominates the foreground of a dark futuristic observatory. The lantern is unmistakably the largest and central object in the portrait. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE BLOSSOM BRIDGE",
+      "brief": "An arched stone bridge crosses a turquoise stream beneath pink cherry blossoms.",
+      "must_show": "A large arched stone bridge spans the foreground of a turquoise river beneath cherry blossoms.",
+      "image_prompt": "A large arched stone bridge spans the foreground of a turquoise river beneath cherry blossoms. The described object or structure is large and clearly the central subject. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     }
   ]
 }
