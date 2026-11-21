@@ -1,39 +1,39 @@
 {
   "date": "2026-11-21",
   "slot": "S1",
-  "topic": "Which enchanted cake would you taste?",
-  "theme_category": "fantasy/food",
-  "core_subject": "cake",
+  "topic": "Which dreamy food escape would you choose?",
+  "theme_category": "dreamy/culinary-travel",
+  "core_subject": "prepared food",
   "variants": [
     {
-      "label": "THE AMBER HONEY CAKE",
-      "brief": "A tall layered honey cake with amber glaze on an antique copper cake stand in a candlelit Persian bakery.",
-      "must_show": "A large layered honey cake dominates the foreground on a copper cake stand, clearly recognizable as the central cake.",
-      "image_prompt": "A large layered honey cake dominates the foreground on a copper cake stand, glossy amber honey dripping down its tiers, warm candlelit bakery background. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE HONEY PALACE",
+      "brief": "A large honey-drizzled layered cake with pistachios and flowers on a copper stand in a tiled lantern-lit courtyard.",
+      "must_show": "A large honey-drizzled layered cake with pistachios and flower petals is the dominant prepared food in the foreground.",
+      "image_prompt": "A large honey-drizzled layered cake with pistachios and flower petals is the dominant prepared food in the foreground. A large honey-drizzled layered cake with pistachios and flowers on a copper stand in a tiled lantern-lit courtyard. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE MOONSTONE CAKE",
-      "brief": "A round pearl-white cake with edible silver sugar crystals on a dark marble pedestal under moonlight.",
-      "must_show": "A large round pearl-white celebration cake dominates the foreground, clearly recognizable as the central cake.",
-      "image_prompt": "A large round pearl-white celebration cake dominates the foreground, decorated with edible silver sugar crystals and delicate frosting, on a dark marble pedestal under blue moonlight. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE CHOCOLATE TERRACE",
+      "brief": "A layered chocolate ganache cake decorated with raspberries on a bronze stand on a sunset terrace.",
+      "must_show": "A large layered chocolate cake topped with raspberries is the dominant prepared food in the foreground.",
+      "image_prompt": "A large layered chocolate cake topped with raspberries is the dominant prepared food in the foreground. A layered chocolate ganache cake decorated with raspberries on a bronze stand on a sunset terrace. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE ROSE GARDEN CAKE",
-      "brief": "An ornate pink cake covered in realistic sugar roses on a garden banquet table at sunrise.",
-      "must_show": "A large ornate pink frosted cake dominates the foreground, clearly recognizable as the central cake.",
-      "image_prompt": "A large ornate pink frosted cake dominates the foreground, densely decorated with realistic handmade sugar roses, on a garden banquet table in soft sunrise light. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE LAVENDER BREAKFAST",
+      "brief": "A large croissant, berries, yogurt, coffee and juice on a breakfast table overlooking lavender fields.",
+      "must_show": "A plated croissant with berries is the dominant prepared food in a lavender-field breakfast setting.",
+      "image_prompt": "A plated croissant with berries is the dominant prepared food in a lavender-field breakfast setting. A large croissant, berries, yogurt, coffee and juice on a breakfast table overlooking lavender fields. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE VOLCANIC CHOCOLATE CAKE",
-      "brief": "A dark chocolate cake with flowing molten chocolate center on a black ceramic plate beside glowing embers.",
-      "must_show": "A large dark chocolate cake dominates the foreground, clearly recognizable as the central cake.",
-      "image_prompt": "A large dark chocolate cake dominates the foreground, a cut section revealing flowing molten chocolate, on a black ceramic plate beside softly glowing embers. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE SUNRISE MEZZE",
+      "brief": "A copper pan of shakshuka surrounded by bread, cheese, olives and tea on a terrace with balloons in the distance.",
+      "must_show": "A large pan of shakshuka with eggs is the dominant prepared food on a breakfast table.",
+      "image_prompt": "A large pan of shakshuka with eggs is the dominant prepared food on a breakfast table. A copper pan of shakshuka surrounded by bread, cheese, olives and tea on a terrace with balloons in the distance. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE STARRY CITRUS CAKE",
-      "brief": "A tall golden citrus cake topped with candied orange slices and tiny edible stars on a rooftop dessert table.",
-      "must_show": "A large golden citrus layer cake dominates the foreground, clearly recognizable as the central cake.",
-      "image_prompt": "A large golden citrus layer cake dominates the foreground, topped with candied orange slices and edible star-shaped sugar decorations, on a rooftop dessert table at twilight. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE DESERT TEA FEAST",
+      "brief": "A brass tea tray with dates, baklava, figs and grapes at a desert oasis camp at sunset.",
+      "must_show": "A brass tray of dates, baklava and fruit is the dominant prepared food at a desert camp.",
+      "image_prompt": "A brass tray of dates, baklava and fruit is the dominant prepared food at a desert camp. A brass tea tray with dates, baklava, figs and grapes at a desert oasis camp at sunset. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     }
   ]
 }
