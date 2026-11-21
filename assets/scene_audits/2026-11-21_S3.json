@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-21",
+  "slot": "S3",
+  "topic": "Which breathtaking landmark would you explore?",
+  "core_subject": "landmark",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "THE BASALT WATERFALL",
+      "must_show": "A large waterfall landmark is centered between tall dark basalt rock columns.",
+      "sha256": "46fb1e272f2d989e3298ac36964491f170eff0695a701cb0d9daf8e2a6552efa",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A broad white waterfall drops into a rocky pool between tall dark basalt columns with mountains behind."
+    },
+    {
+      "name": "02.png",
+      "label": "THE SUNSET AQUEDUCT",
+      "must_show": "A large stone aqueduct landmark with multiple arches dominates the scene above a river.",
+      "sha256": "5cd1f1c5aeb2abd43e8ef74a09ce3b1d90bc07e998890c60a28ab2fce00b4451",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A large old stone aqueduct with several high arches crosses a turquoise gorge under a warm sunset."
+    },
+    {
+      "name": "03.png",
+      "label": "THE HIGHLAND CASTLE",
+      "must_show": "A large medieval castle landmark with many towers rises behind its stone gatehouse.",
+      "sha256": "ad063f0305d419c8a8e8bf1f0c7da50f4e78b83d70aecc1fc3eed1a558489b36",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A large multi-towered stone castle rises behind a fortified gatehouse and wooden drawbridge, with a waterfall at the right."
+    },
+    {
+      "name": "04.png",
+      "label": "THE GOLDEN PORTAL",
+      "must_show": "A monumental carved stone portal landmark with two open bronze doors fills the center.",
+      "sha256": "6479e1fc00d6b001260b5af302ada8605544e8371f7339425f9041d38b92f23f",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "An enormous freestanding carved stone arch and two open bronze doors frame a sunlit mountain valley."
+    },
+    {
+      "name": "05.png",
+      "label": "THE MOUNTAIN VIADUCT",
+      "must_show": "A tall multi-arched railway viaduct landmark dominates the gorge, with a red train above.",
+      "sha256": "93567cbab2e9199b3346714e5654fdee735847befd20d45da20345988bf8bca0",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A high multi-arched stone railway viaduct carries a red steam train over a steep green mountain gorge."
+    }
+  ]
+}
