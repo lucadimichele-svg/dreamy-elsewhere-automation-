@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-21",
+  "slot": "S2",
+  "topic": "Which magical lantern would you light?",
+  "theme_category": "fantasy/luminous artifacts",
+  "core_subject": "lantern",
+  "variants": [
+    {
+      "label": "THE AMBER LANTERN",
+      "brief": "An enormous brass lantern with amber glass panels glows on a stone pier beside a misty sea at dusk.",
+      "must_show": "A large ornate brass lantern with amber glass panels occupies the central foreground on a stone pier beside a misty sea at dusk.",
+      "image_prompt": "A large ornate brass lantern with amber glass panels occupies the central foreground on a stone pier beside a misty sea at dusk. The lantern is unmistakably the largest and central object in the portrait. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE MOON LANTERN",
+      "brief": "A giant paper lantern shaped like a crescent moon floats above a tranquil Japanese river at twilight.",
+      "must_show": "A huge crescent-shaped paper lantern dominates the foreground over a calm river at twilight.",
+      "image_prompt": "A huge crescent-shaped paper lantern dominates the foreground over a calm river at twilight. The lantern is unmistakably the largest and central object in the portrait. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE ICE LANTERN",
+      "brief": "A carved ice lantern radiates soft blue light in a snowy northern courtyard under the aurora.",
+      "must_show": "A tall sculpted translucent ice lantern is centered and dominates a snowy courtyard under northern lights.",
+      "image_prompt": "A tall sculpted translucent ice lantern is centered and dominates a snowy courtyard under northern lights. The lantern is unmistakably the largest and central object in the portrait. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE LOTUS LANTERN",
+      "brief": "A luminous pink lotus-shaped lantern rests on a reflective lily pond in a tropical temple garden.",
+      "must_show": "A giant glowing lotus-shaped lantern with visible petals fills the foreground on a still lily pond.",
+      "image_prompt": "A giant glowing lotus-shaped lantern with visible petals fills the foreground on a still lily pond. The lantern is unmistakably the largest and central object in the portrait. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE STAR LANTERN",
+      "brief": "A futuristic suspended glass lantern filled with miniature stars illuminates a dark observatory.",
+      "must_show": "A large spherical glass lantern containing many tiny star-like lights dominates the foreground of a dark futuristic observatory.",
+      "image_prompt": "A large spherical glass lantern containing many tiny star-like lights dominates the foreground of a dark futuristic observatory. The lantern is unmistakably the largest and central object in the portrait. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
