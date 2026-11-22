@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-24",
+  "slot": "S1",
+  "topic": "Which Tokyo would you explore?",
+  "theme_category": "real-world-reimagined/landmark-test",
+  "core_subject": "Shibuya Scramble Crossing, Tokyo, Japan",
+  "experiment": "real-world-reimagined/6-reel-initial-test",
+  "original_landmark": "Shibuya Scramble Crossing, Tokyo, Japan",
+  "variants": [
+    {
+      "label": "TOKYO ICE AGE",
+      "brief": "The diagonal crossing remains recognizable beneath snow and an ice-age cityscape.",
+      "must_show": "Shibuya Scramble Crossing with its broad diagonal white crosswalks and recognizable surrounding city buildings is the recognizable main subject",
+      "image_prompt": "Shibuya Scramble Crossing with its broad diagonal white crosswalks and recognizable surrounding city buildings. Frozen Shibuya: famous diagonal white crosswalks still visible through frost, tall station-square buildings buried in winter snow, realistic deep ice. High-angle view over the crossing at blue morning twilight. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "ANCIENT SPIRIT CITY",
+      "brief": "The famous Shibuya crossing meets Edo-era wooden facades, pink blossoms and lanterns.",
+      "must_show": "Shibuya Scramble Crossing with its broad diagonal white crosswalks and recognizable surrounding city buildings is the recognizable main subject",
+      "image_prompt": "Shibuya Scramble Crossing with its broad diagonal white crosswalks and recognizable surrounding city buildings. Mythic Shibuya: original diagonal crossing geometry with old Japanese wood-fronted facades and thousands of floating lanterns, cherry blossoms overhead. Street-level view across the crossing during warm sunrise. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "JUNGLE TOKYO",
+      "brief": "A post-human Shibuya crossing covered in jungle ferns and hanging vines.",
+      "must_show": "Shibuya Scramble Crossing with its broad diagonal white crosswalks and recognizable surrounding city buildings is the recognizable main subject",
+      "image_prompt": "Shibuya Scramble Crossing with its broad diagonal white crosswalks and recognizable surrounding city buildings. Green lost-world Shibuya: recognizable broad crossing markings with tall old facades wrapped in green vines, enormous tropical trees and ferns emerging from the pavement. Oblique ground-level picture in dewy emerald morning mist. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "CYBERPUNK RAIN",
+      "brief": "A rainy Shibuya Scramble Crossing in a dramatic violet-blue neon future.",
+      "must_show": "Shibuya Scramble Crossing with its broad diagonal white crosswalks and recognizable surrounding city buildings is the recognizable main subject",
+      "image_prompt": "Shibuya Scramble Crossing with its broad diagonal white crosswalks and recognizable surrounding city buildings. Cyberpunk Shibuya: unmistakable diagonal crosswalks and huge buildings, glowing abstract billboards with no readable words, reflective wet streets and luminous rain. Elevated wide street photo under midnight indigo neon. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "GOLDEN FUTURE",
+      "brief": "A sunny Shibuya crossing surrounded by elegant green architecture.",
+      "must_show": "Shibuya Scramble Crossing with its broad diagonal white crosswalks and recognizable surrounding city buildings is the recognizable main subject",
+      "image_prompt": "Shibuya Scramble Crossing with its broad diagonal white crosswalks and recognizable surrounding city buildings. Solarpunk Shibuya: diagonal white scramble crossing retained as recognizable central plaza, surrounding original building silhouettes with innovative glass gardens and vertical planting. High view from a terrace on a clear spring afternoon. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    }
+  ]
+}
