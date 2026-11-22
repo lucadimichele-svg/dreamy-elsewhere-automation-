@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-22",
+  "slot": "S1",
+  "topic": "Which magical book would you open?",
+  "theme_category": "fantasy/books-and-knowledge",
+  "core_subject": "open illustrated book",
+  "variants": [
+    {
+      "label": "THE ASTRAL ATLAS",
+      "brief": "An enormous open celestial atlas on an astronomer's oak desk, star maps glowing under a midnight observatory dome.",
+      "must_show": "A large open illustrated book is clearly visible as the dominant foreground object.",
+      "image_prompt": "A large open illustrated astronomy book is the unmistakable central foreground subject, thick parchment pages showing intricate celestial maps and constellations, on an antique oak desk inside a midnight observatory. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE FOREST HERBAL",
+      "brief": "A large antique botanical book lies open amid moss and herbs, with hand-painted medicinal plants.",
+      "must_show": "A large open illustrated book is clearly visible as the dominant foreground object.",
+      "image_prompt": "A large open botanical book dominates the foreground, oversized cream pages filled with hand-painted leaves and flowers, resting on a moss-covered woodland table with soft dawn mist. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE OCEAN CHRONICLE",
+      "brief": "An open weathered maritime book with engraved sailing charts rests in a ship captain's cabin.",
+      "must_show": "A large open illustrated book is clearly visible as the dominant foreground object.",
+      "image_prompt": "A large open antique maritime book is the central foreground subject, detailed engraved ocean charts on its pages, resting on a wooden captain's desk inside an old sailing ship. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE DRAGON BESTIARY",
+      "brief": "A huge illustrated medieval bestiary rests open on a stone lectern in a candlelit archive.",
+      "must_show": "A large open illustrated book is clearly visible as the dominant foreground object.",
+      "image_prompt": "A large open medieval bestiary book dominates the foreground on a stone lectern, illuminated parchment pages depicting a richly detailed mythical dragon, candlelit ancient library behind. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE FUTURE CODEX",
+      "brief": "A futuristic physical book with luminous translucent pages stands open on a sleek laboratory table.",
+      "must_show": "A large open illustrated book is clearly visible as the dominant foreground object.",
+      "image_prompt": "A large open futuristic physical book is the central foreground subject, thick translucent luminous pages displaying abstract holographic geometric diagrams, on a sleek dark laboratory table. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
