@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-22",
+  "slot": "S3",
+  "topic": "Which extraordinary lantern would you light?",
+  "theme_category": "fantasy/illuminated-objects",
+  "core_subject": "large decorative lantern",
+  "variants": [
+    {
+      "label": "THE PAPER STAR",
+      "brief": "A large luminous folded paper lantern shaped like a star hangs above a quiet cobblestone courtyard at dusk.",
+      "must_show": "A large luminous folded paper lantern shaped like a star hangs above a quiet cobblestone courtyard at dusk.",
+      "image_prompt": "A large luminous folded paper lantern shaped like a star hangs above a quiet cobblestone courtyard at dusk. The lantern itself dominates the foreground and is fully visible. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE BRASS ORRERY",
+      "brief": "A large brass celestial lantern with orbiting rings hangs in a vaulted Renaissance observatory.",
+      "must_show": "A large brass celestial lantern with orbiting rings hangs in a vaulted Renaissance observatory.",
+      "image_prompt": "A large brass celestial lantern with orbiting rings hangs in a vaulted Renaissance observatory. The lantern itself dominates the foreground and is fully visible. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE LOTUS LIGHT",
+      "brief": "A large luminous lotus-shaped floating lantern rests on the surface of a tranquil river at night.",
+      "must_show": "A large luminous lotus-shaped floating lantern rests on the surface of a tranquil river at night.",
+      "image_prompt": "A large luminous lotus-shaped floating lantern rests on the surface of a tranquil river at night. The lantern itself dominates the foreground and is fully visible. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE ICE BEACON",
+      "brief": "A large carved ice lantern glows from within on a snowy Arctic shore under the northern lights.",
+      "must_show": "A large carved ice lantern glows from within on a snowy Arctic shore under the northern lights.",
+      "image_prompt": "A large carved ice lantern glows from within on a snowy Arctic shore under the northern lights. The lantern itself dominates the foreground and is fully visible. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    },
+    {
+      "label": "THE SKY JELLY",
+      "brief": "A large translucent jellyfish-shaped lantern hangs from an arched futuristic garden canopy at twilight.",
+      "must_show": "A large translucent jellyfish-shaped lantern hangs from an arched futuristic garden canopy at twilight.",
+      "image_prompt": "A large translucent jellyfish-shaped lantern hangs from an arched futuristic garden canopy at twilight. The lantern itself dominates the foreground and is fully visible. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+    }
+  ]
+}
