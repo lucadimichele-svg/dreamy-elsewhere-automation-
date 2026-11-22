@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-23",
+  "slot": "S2",
+  "topic": "Which version of Paris would you visit?",
+  "theme_category": "real-world-reimagined/france/eiffel-tower",
+  "core_subject": "Paris Eiffel Tower with its recognizable iron lattice silhouette",
+  "experiment": "real-world-reimagined/6-reel-initial-test",
+  "original_landmark": "the Eiffel Tower in Paris, France",
+  "variants": [
+    {
+      "label": "PARIS IN BLOOM",
+      "brief": "The Eiffel Tower towers above an overgrown romantic Paris wrapped in flowering vines and wild gardens.",
+      "must_show": "the unmistakable complete tapered iron lattice Eiffel Tower from its base to antenna and the surrounding Parisian cityscape is clearly visible as the dominant main scene subject",
+      "image_prompt": "the Eiffel Tower in Paris, France. the unmistakable complete tapered iron lattice Eiffel Tower from its base to antenna and the surrounding Parisian cityscape. Paris after nature's return; the complete Eiffel Tower remains clearly recognizable and structurally intact, climbing roses cover parts of its lattice, wildflower gardens occupy the Champ de Mars and old Paris rooftops appear beyond. Camera: low-angle portrait from the Champ de Mars in a pastel spring sunrise. Keep the named landmark unmistakably identifiable in the foreground/central image in this alternative-world version. One isolated photorealistic editorial location photograph, native vertical 9:16 composition, rich realistic physical detail and believable architectural proportions. The named, famous real-world place must remain instantly recognizable as the large central subject, not a generic fantasy city. No humans as primary subjects. No readable lettering, typography, captions, logos, watermarks, inset panels, split screen, collage or montage."
+    },
+    {
+      "label": "FROZEN PARIS",
+      "brief": "An icy Eiffel Tower rises through thick snowfall over a transformed winter Paris.",
+      "must_show": "the unmistakable complete tapered iron lattice Eiffel Tower from its base to antenna and the surrounding Parisian cityscape is clearly visible as the dominant main scene subject",
+      "image_prompt": "the Eiffel Tower in Paris, France. the unmistakable complete tapered iron lattice Eiffel Tower from its base to antenna and the surrounding Parisian cityscape. A frozen alternate Paris with the complete iconic iron lattice Eiffel Tower coated in delicate frost, snow covering the Champ de Mars paths, pale silver-blue storm clouds over Paris rooftops. Camera: symmetrical straight-on ground-level composition during calm morning snowfall. Keep the named landmark unmistakably identifiable in the foreground/central image in this alternative-world version. One isolated photorealistic editorial location photograph, native vertical 9:16 composition, rich realistic physical detail and believable architectural proportions. The named, famous real-world place must remain instantly recognizable as the large central subject, not a generic fantasy city. No humans as primary subjects. No readable lettering, typography, captions, logos, watermarks, inset panels, split screen, collage or montage."
+    },
+    {
+      "label": "STEAMPUNK PARIS",
+      "brief": "The Eiffel Tower in a warm brass-and-copper Paris filled with fantastical clockwork machinery.",
+      "must_show": "the unmistakable complete tapered iron lattice Eiffel Tower from its base to antenna and the surrounding Parisian cityscape is clearly visible as the dominant main scene subject",
+      "image_prompt": "the Eiffel Tower in Paris, France. the unmistakable complete tapered iron lattice Eiffel Tower from its base to antenna and the surrounding Parisian cityscape. A nineteenth-century alternate steampunk Paris; the original Eiffel Tower geometry remains recognizable under polished copper engineering fittings, large brass clockwork structures on the lawns and elegant airships beyond. Camera: three-quarter view from a historic Parisian boulevard at amber sunset. Keep the named landmark unmistakably identifiable in the foreground/central image in this alternative-world version. One isolated photorealistic editorial location photograph, native vertical 9:16 composition, rich realistic physical detail and believable architectural proportions. The named, famous real-world place must remain instantly recognizable as the large central subject, not a generic fantasy city. No humans as primary subjects. No readable lettering, typography, captions, logos, watermarks, inset panels, split screen, collage or montage."
+    },
+    {
+      "label": "CITY OF LIGHTS",
+      "brief": "A magical evening Paris with the Eiffel Tower wrapped in thousands of floating lanterns.",
+      "must_show": "the unmistakable complete tapered iron lattice Eiffel Tower from its base to antenna and the surrounding Parisian cityscape is clearly visible as the dominant main scene subject",
+      "image_prompt": "the Eiffel Tower in Paris, France. the unmistakable complete tapered iron lattice Eiffel Tower from its base to antenna and the surrounding Parisian cityscape. An enchanting Paris dusk, the original full Eiffel Tower clearly central and instantly recognizable, thousands of warm golden floating lanterns drifting around it, authentic slate roofs and Seine-side architecture in the distance. Camera: elevated terrace angle at cobalt-blue twilight. Keep the named landmark unmistakably identifiable in the foreground/central image in this alternative-world version. One isolated photorealistic editorial location photograph, native vertical 9:16 composition, rich realistic physical detail and believable architectural proportions. The named, famous real-world place must remain instantly recognizable as the large central subject, not a generic fantasy city. No humans as primary subjects. No readable lettering, typography, captions, logos, watermarks, inset panels, split screen, collage or montage."
+    },
+    {
+      "label": "SOLARPUNK PARIS",
+      "brief": "A sustainable future Paris with the Eiffel Tower rising from lush green terraces and elevated gardens.",
+      "must_show": "the unmistakable complete tapered iron lattice Eiffel Tower from its base to antenna and the surrounding Parisian cityscape is clearly visible as the dominant main scene subject",
+      "image_prompt": "the Eiffel Tower in Paris, France. the unmistakable complete tapered iron lattice Eiffel Tower from its base to antenna and the surrounding Parisian cityscape. A beautiful solarpunk Paris where the familiar complete Eiffel Tower rises above green roofs and planted terraces, innovative light solar canopies and quiet tree-lined boulevards. Camera: wide upper-level observation view with turquoise spring sky. Keep the named landmark unmistakably identifiable in the foreground/central image in this alternative-world version. One isolated photorealistic editorial location photograph, native vertical 9:16 composition, rich realistic physical detail and believable architectural proportions. The named, famous real-world place must remain instantly recognizable as the large central subject, not a generic fantasy city. No humans as primary subjects. No readable lettering, typography, captions, logos, watermarks, inset panels, split screen, collage or montage."
+    }
+  ]
+}
