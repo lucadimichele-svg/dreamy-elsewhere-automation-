@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-23",
+  "slot": "S4",
+  "topic": "Which Golden Gate Bridge would you cross?",
+  "theme_category": "real-world-reimagined/landmark-test",
+  "core_subject": "Golden Gate Bridge, San Francisco, California",
+  "experiment": "real-world-reimagined/6-reel-initial-test",
+  "original_landmark": "Golden Gate Bridge, San Francisco, California",
+  "variants": [
+    {
+      "label": "FROZEN GATE",
+      "brief": "The real orange Golden Gate Bridge crosses a fantastical ice-covered San Francisco Bay.",
+      "must_show": "The Golden Gate Bridge with International Orange suspension towers, long deck and cables spans San Francisco Bay is the recognizable main subject",
+      "image_prompt": "The Golden Gate Bridge with International Orange suspension towers, long deck and cables spans San Francisco Bay. Ice-age Golden Gate Bridge: both iconic orange towers and long cable-supported deck visible over a bay of floating icebergs. Marin Headlands viewpoint with pale blue dawn and drifting snow. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "THE GREEN CROSSING",
+      "brief": "The San Francisco suspension bridge becomes an overgrown living landmark.",
+      "must_show": "The Golden Gate Bridge with International Orange suspension towers, long deck and cables spans San Francisco Bay is the recognizable main subject",
+      "image_prompt": "The Golden Gate Bridge with International Orange suspension towers, long deck and cables spans San Francisco Bay. Nature-reclaimed Golden Gate Bridge: original recognizable red-orange suspension towers and deck draped in ivy, emerald coastal forest and fog. Low three-quarter viewpoint from the green rocky shore. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "ABANDONED GATE",
+      "brief": "A silent post-apocalyptic Golden Gate Bridge rises through moody coastal fog.",
+      "must_show": "The Golden Gate Bridge with International Orange suspension towers, long deck and cables spans San Francisco Bay is the recognizable main subject",
+      "image_prompt": "The Golden Gate Bridge with International Orange suspension towers, long deck and cables spans San Francisco Bay. Post-human Golden Gate Bridge: original familiar towers and bridge deck still span the bay, empty road and a few tufts of grass on the approach. Symmetrical cinematic view from the roadway in a gray foggy sunrise. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "THE CRYSTAL BAY",
+      "brief": "A recognizable Golden Gate Bridge crosses a mystical bay dotted with glowing crystals.",
+      "must_show": "The Golden Gate Bridge with International Orange suspension towers, long deck and cables spans San Francisco Bay is the recognizable main subject",
+      "image_prompt": "The Golden Gate Bridge with International Orange suspension towers, long deck and cables spans San Francisco Bay. Dreamlike Golden Gate Bridge: familiar orange towers and catenary suspension cables over San Francisco Bay, elegant luminous crystals along the coastline. Distant coastal elevated shot beneath violet sunset. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "SKY GATE 2200",
+      "brief": "An optimistic futuristic Golden Gate Bridge spans a clean solarpunk San Francisco.",
+      "must_show": "The Golden Gate Bridge with International Orange suspension towers, long deck and cables spans San Francisco Bay is the recognizable main subject",
+      "image_prompt": "The Golden Gate Bridge with International Orange suspension towers, long deck and cables spans San Francisco Bay. Future Golden Gate Bridge: unchanged recognizable iconic orange bridge towers and long suspended roadway, quiet aerial ferries and green coastal architecture around it. Wide elevated photograph in bright sunrise. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    }
+  ]
+}
