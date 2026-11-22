@@ -1,39 +1,39 @@
 {
   "date": "2026-11-22",
   "slot": "S2",
-  "topic": "Which enchanted mask would you wear?",
-  "theme_category": "fantasy/ceremonial-artifacts",
-  "core_subject": "ceremonial mask",
+  "topic": "Which enchanted creation would you discover?",
+  "theme_category": "fantasy/magical-creations",
+  "core_subject": "enchanted crafted object",
   "variants": [
     {
       "label": "THE SUN MASK",
-      "brief": "A large golden sun-shaped ceremonial mask with sculpted rays stands on a dark stone plinth in a torchlit ancient desert sanctuary.",
-      "must_show": "A large golden ceremonial mask with a radiant sculpted sun face is centered in the foreground on a stone plinth.",
-      "image_prompt": "A large golden ceremonial mask with radiant sculpted sun rays dominates the center foreground on a dark stone plinth in a torchlit ancient desert sanctuary. Photorealistic detailed metalwork, no person wearing it. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "brief": "An enormous engraved golden sun-face mask with radiant spiked crown rests on a dark stone pedestal in a torchlit desert temple.",
+      "must_show": "A giant golden sun-face mask with radiant crown spikes occupies the foreground on a stone pedestal.",
+      "image_prompt": "A giant golden sun-face mask with radiant crown spikes occupies the foreground on a stone pedestal. An enormous engraved golden sun-face mask with radiant spiked crown rests on a dark stone pedestal in a torchlit desert temple. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE MOON MASK",
-      "brief": "A luminous silver crescent ceremonial mask with pearl inlays rests upright against midnight-blue velvet in a starlit observatory.",
-      "must_show": "A large silver crescent ceremonial mask with pearl inlays is unmistakably centered and dominant.",
-      "image_prompt": "A large silver ceremonial mask with a crescent moon crest and pearl inlays dominates the foreground, standing upright against midnight-blue velvet in a starlit observatory. Detailed reflective silver, no human face. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE FOREST GATE",
+      "brief": "A monumental ornate double wooden door with gilded tree motifs and green glass is built into an ancient tree among pink flowers and glowing lanterns.",
+      "must_show": "A large gilded wooden double door with green glass panels fills the left foreground of an ancient tree.",
+      "image_prompt": "A large gilded wooden double door with green glass panels fills the left foreground of an ancient tree. A monumental ornate double wooden door with gilded tree motifs and green glass is built into an ancient tree among pink flowers and glowing lanterns. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE FOREST MASK",
-      "brief": "An elaborate carved wooden ceremonial mask with fern and moss details hangs prominently on an ancient tree in a misty sacred grove.",
-      "must_show": "A large carved wooden ceremonial mask decorated with leaves and moss fills the central frame.",
-      "image_prompt": "A large carved wooden ceremonial mask with expressive eyes, moss and fern decorations fills the foreground, mounted on the trunk of an ancient tree in a misty sacred grove. Clearly a wearable mask, no human face. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE CRYSTAL THRONE",
+      "brief": "A royal purple velvet throne framed by giant luminous amethyst crystals and intricate gold scrollwork stands in a cavern beside a waterfall.",
+      "must_show": "A large purple upholstered throne framed by glowing crystals is the unmistakable foreground subject.",
+      "image_prompt": "A large purple upholstered throne framed by glowing crystals is the unmistakable foreground subject. A royal purple velvet throne framed by giant luminous amethyst crystals and intricate gold scrollwork stands in a cavern beside a waterfall. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE PORCELAIN MASK",
-      "brief": "An elegant white porcelain ceremonial mask painted with cobalt blue flowers sits upright on a silk cushion in a candlelit imperial gallery.",
-      "must_show": "A large white porcelain ceremonial mask with cobalt blue floral painting dominates the composition.",
-      "image_prompt": "A large white porcelain ceremonial mask with cobalt blue floral painting is the main foreground subject, standing upright on a silk cushion in a candlelit imperial gallery. Clearly shaped as a face mask, no person. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE GOLDEN PORTAL",
+      "brief": "A luminous golden swirling portal fills a monumental carved stone arch among flowering vines, lanterns and steps in a mountain ruin.",
+      "must_show": "A large golden glowing portal framed by an ancient stone arch is central and clearly visible.",
+      "image_prompt": "A large golden glowing portal framed by an ancient stone arch is central and clearly visible. A luminous golden swirling portal fills a monumental carved stone arch among flowering vines, lanterns and steps in a mountain ruin. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     },
     {
-      "label": "THE STARFIRE MASK",
-      "brief": "A futuristic dark obsidian ceremonial mask with delicate amber light filaments floats above a pedestal inside a mysterious spacecraft museum.",
-      "must_show": "A large black ceremonial mask with glowing amber geometric filaments dominates the foreground.",
-      "image_prompt": "A large black obsidian ceremonial mask with thin glowing amber geometric filaments dominates the center foreground, hovering just above a pedestal inside a mysterious futuristic museum. A distinct face-shaped mask, no person. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE MOON CRADLE",
+      "brief": "A giant translucent crystal crescent-shaped lounging seat with lavender pillows and hanging star ornaments stands on a stone platform in a ruined palace.",
+      "must_show": "A large translucent crescent-moon shaped seat with lavender cushions dominates the foreground.",
+      "image_prompt": "A large translucent crescent-moon shaped seat with lavender cushions dominates the foreground. A giant translucent crystal crescent-shaped lounging seat with lavender pillows and hanging star ornaments stands on a stone platform in a ruined palace. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
     }
   ]
 }
