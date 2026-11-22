@@ -1,21 +1,21 @@
 {
   "date": "2026-11-22",
   "slot": "S1",
-  "topic": "Which magical book would you open?",
-  "theme_category": "fantasy/books-and-knowledge",
-  "core_subject": "open illustrated book",
+  "topic": "Which magical discovery would you choose?",
+  "theme_category": "fantasy/curious-discoveries",
+  "core_subject": "fantastical discovery artifact or vehicle",
   "variants": [
     {
-      "label": "THE ASTRAL ATLAS",
-      "brief": "An enormous open celestial atlas on an astronomer's oak desk, star maps glowing under a midnight observatory dome.",
-      "must_show": "A large open illustrated book is clearly visible as the dominant foreground object.",
-      "image_prompt": "A large open illustrated astronomy book is the unmistakable central foreground subject, thick parchment pages showing intricate celestial maps and constellations, on an antique oak desk inside a midnight observatory. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE CELESTIAL ATLAS",
+      "brief": "An antique star atlas spread open on a desk under the moonlit observatory dome.",
+      "must_show": "A large open celestial atlas on a desk is the foreground discovery.",
+      "image_prompt": "A large open celestial atlas with golden constellation diagrams is centered on an astronomer's desk in a moonlit observatory, a brass telescope behind it. Single vertical photorealistic image without text or collage."
     },
     {
-      "label": "THE FOREST HERBAL",
-      "brief": "A large antique botanical book lies open amid moss and herbs, with hand-painted medicinal plants.",
-      "must_show": "A large open illustrated book is clearly visible as the dominant foreground object.",
-      "image_prompt": "A large open botanical book dominates the foreground, oversized cream pages filled with hand-painted leaves and flowers, resting on a moss-covered woodland table with soft dawn mist. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE SUNSET AIRSHIP",
+      "brief": "An ornate red and cream hot-air balloon hovers over a stone terrace at sunset.",
+      "must_show": "A large ornate hot air balloon is the main discovery in front of a valley.",
+      "image_prompt": "A large red and cream ornate hot air balloon with a wicker basket hovers above a stone terrace overlooking a sunset valley. Single vertical photorealistic image without text or collage."
     },
     {
       "label": "THE OCEAN CHRONICLE",
