@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-22",
+  "slot": "S1",
+  "topic": "Which magical adventure would you choose?",
+  "core_subject": "fantastical adventure destination or discovery",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "THE STAR ATLAS",
+      "must_show": "A large open celestial atlas with golden constellations dominates a moonlit observatory desk, with a brass telescope behind it.",
+      "sha256": "2807c14859233f4fe421b5fc88cde14d5cfc0ad542486dde95d82e9ff167d287",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A large open antique atlas with gold constellation illustrations occupies the foreground desk of a moonlit observatory."
+    },
+    {
+      "name": "02.png",
+      "label": "THE SUNSET BALLOON",
+      "must_show": "A large ornate red and cream hot air balloon with a wicker basket hovers beside a stone terrace above a waterfall valley at sunset.",
+      "sha256": "9c4be3a871e47841e35a11caf6306e453e80225dbed75faa005ccbffe1ec4fcb",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A red and cream hot air balloon with a hanging wicker basket fills the upper foreground over a sunset valley."
+    },
+    {
+      "name": "03.png",
+      "label": "THE FLOATING PALACE",
+      "must_show": "A marble domed palace pavilion stands on a floating island amid violet wisteria and waterfalls above a sea of clouds.",
+      "sha256": "60712207c56f15ab10ff94d6c55ce09b627d087fdcedf2de2d1a908fc64c116e",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A marble pavilion with a dome and arches stands prominently on a floating island surrounded by wisteria and waterfalls."
+    },
+    {
+      "name": "04.png",
+      "label": "THE CASTLE TEA TERRACE",
+      "must_show": "A stone terrace with tea service and pastries in the foreground overlooks a majestic cliffside castle and waterfalls at sunset.",
+      "sha256": "4c7ae44642d778f69413bfad8aa7cd25e466940cc88b6a0a45bebd4b732cd37e",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A stone breakfast table with tea and pastries overlooks a towering castle on a cliff beside cascading waterfalls."
+    },
+    {
+      "name": "05.png",
+      "label": "THE SUNSET TREEHOUSE",
+      "must_show": "A large lantern-lit wooden treehouse and rope bridge occupy the foreground in a tropical tree canopy above misty mountains at sunset.",
+      "sha256": "1ac3df863b1b79bd7d7d1eba761f5d710f06a92a04704953c89655bde4778b50",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A large lantern-lit wooden treehouse and rope bridge fill the foreground above a sunset mountain valley."
+    }
+  ]
+}
