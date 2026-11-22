@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-22",
+  "slot": "S2",
+  "topic": "Which enchanted creation would you discover?",
+  "core_subject": "enchanted crafted object",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "THE SUN MASK",
+      "must_show": "A giant golden sun-face mask with radiant crown spikes occupies the foreground on a stone pedestal.",
+      "sha256": "bfd3c34ca03e000484161edc786f42507d2fd94e6f7d9bb9ab64588356afb57b",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "An oversized sculpted golden face mask with closed eyelids and radiating sun spikes is displayed on a dark carved plinth between burning braziers."
+    },
+    {
+      "name": "02.png",
+      "label": "THE FOREST GATE",
+      "must_show": "A large gilded wooden double door with green glass panels fills the left foreground of an ancient tree.",
+      "sha256": "10922122ac0cbf524c2b60a9ec183fc2d01b297cf245ee8f7ce7949c6187935d",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "An ornate arched wooden double door with golden vine carvings and green stained glass is set into a huge tree, with stone steps and lanterns."
+    },
+    {
+      "name": "03.png",
+      "label": "THE CRYSTAL THRONE",
+      "must_show": "A large purple upholstered throne framed by glowing crystals is the unmistakable foreground subject.",
+      "sha256": "246818255dcf4bd03a316d31f5641420264f2cccde92b5a5f0ac251a5ea9be96",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A purple velvet royal chair with gold armrests stands before a towering fan of glowing violet crystals, with a waterfall visible to the right."
+    },
+    {
+      "name": "04.png",
+      "label": "THE GOLDEN PORTAL",
+      "must_show": "A large golden glowing portal framed by an ancient stone arch is central and clearly visible.",
+      "sha256": "dbe421ab32fba2f6faa24fc76b35f269d7892d7525321281e78275af83a96888",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A bright swirling golden light fills a tall carved stone doorway above steps, surrounded by flowering vines and lanterns."
+    },
+    {
+      "name": "05.png",
+      "label": "THE MOON CRADLE",
+      "must_show": "A large translucent crescent-moon shaped seat with lavender cushions dominates the foreground.",
+      "sha256": "a85d08d28ab788b85a9ec1676a8371bd57e1ded56ec783a7d7de8b2d05c36b6a",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A luminous clear crystal crescent shaped lounge with lavender cushions, hanging prisms and draped fabric sits on a raised circular stone base."
+    }
+  ]
+}
