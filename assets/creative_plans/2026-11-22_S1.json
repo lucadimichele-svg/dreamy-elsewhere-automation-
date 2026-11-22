@@ -1,39 +1,39 @@
 {
   "date": "2026-11-22",
   "slot": "S1",
-  "topic": "Which magical discovery would you choose?",
-  "theme_category": "fantasy/curious-discoveries",
-  "core_subject": "fantastical discovery artifact or vehicle",
+  "topic": "Which magical adventure would you choose?",
+  "theme_category": "fantasy/adventure-escapes",
+  "core_subject": "fantastical adventure destination or discovery",
   "variants": [
     {
-      "label": "THE CELESTIAL ATLAS",
-      "brief": "An antique star atlas spread open on a desk under the moonlit observatory dome.",
-      "must_show": "A large open celestial atlas on a desk is the foreground discovery.",
-      "image_prompt": "A large open celestial atlas with golden constellation diagrams is centered on an astronomer's desk in a moonlit observatory, a brass telescope behind it. Single vertical photorealistic image without text or collage."
+      "label": "THE STAR ATLAS",
+      "brief": "An illuminated antique celestial atlas lies open on a scholar's desk in a moonlit observatory.",
+      "must_show": "A large open celestial atlas with golden constellations dominates a moonlit observatory desk, with a brass telescope behind it.",
+      "image_prompt": "A large open celestial atlas with golden constellations dominates a moonlit observatory desk, with a brass telescope behind it. One single continuous vertical 9:16 photorealistic scene, no text, logo, collage, panels, or watermark."
     },
     {
-      "label": "THE SUNSET AIRSHIP",
-      "brief": "An ornate red and cream hot-air balloon hovers over a stone terrace at sunset.",
-      "must_show": "A large ornate hot air balloon is the main discovery in front of a valley.",
-      "image_prompt": "A large red and cream ornate hot air balloon with a wicker basket hovers above a stone terrace overlooking a sunset valley. Single vertical photorealistic image without text or collage."
+      "label": "THE SUNSET BALLOON",
+      "brief": "A crimson and cream balloon floats beside a stone lookout over a waterfall valley at sunset.",
+      "must_show": "A large ornate red and cream hot air balloon with a wicker basket hovers beside a stone terrace above a waterfall valley at sunset.",
+      "image_prompt": "A large ornate red and cream hot air balloon with a wicker basket hovers beside a stone terrace above a waterfall valley at sunset. One single continuous vertical 9:16 photorealistic scene, no text, logo, collage, panels, or watermark."
     },
     {
-      "label": "THE OCEAN CHRONICLE",
-      "brief": "An open weathered maritime book with engraved sailing charts rests in a ship captain's cabin.",
-      "must_show": "A large open illustrated book is clearly visible as the dominant foreground object.",
-      "image_prompt": "A large open antique maritime book is the central foreground subject, detailed engraved ocean charts on its pages, resting on a wooden captain's desk inside an old sailing ship. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE FLOATING PALACE",
+      "brief": "A marble-domed pavilion on a floating island overlooks clouds and cascading waterfalls.",
+      "must_show": "A marble domed palace pavilion stands on a floating island amid violet wisteria and waterfalls above a sea of clouds.",
+      "image_prompt": "A marble domed palace pavilion stands on a floating island amid violet wisteria and waterfalls above a sea of clouds. One single continuous vertical 9:16 photorealistic scene, no text, logo, collage, panels, or watermark."
     },
     {
-      "label": "THE DRAGON BESTIARY",
-      "brief": "A huge illustrated medieval bestiary rests open on a stone lectern in a candlelit archive.",
-      "must_show": "A large open illustrated book is clearly visible as the dominant foreground object.",
-      "image_prompt": "A large open medieval bestiary book dominates the foreground on a stone lectern, illuminated parchment pages depicting a richly detailed mythical dragon, candlelit ancient library behind. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE CASTLE TEA TERRACE",
+      "brief": "A carved stone breakfast table looks across a valley toward a cliffside castle and waterfalls.",
+      "must_show": "A stone terrace with tea service and pastries in the foreground overlooks a majestic cliffside castle and waterfalls at sunset.",
+      "image_prompt": "A stone terrace with tea service and pastries in the foreground overlooks a majestic cliffside castle and waterfalls at sunset. One single continuous vertical 9:16 photorealistic scene, no text, logo, collage, panels, or watermark."
     },
     {
-      "label": "THE FUTURE CODEX",
-      "brief": "A futuristic physical book with luminous translucent pages stands open on a sleek laboratory table.",
-      "must_show": "A large open illustrated book is clearly visible as the dominant foreground object.",
-      "image_prompt": "A large open futuristic physical book is the central foreground subject, thick translucent luminous pages displaying abstract holographic geometric diagrams, on a sleek dark laboratory table. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "THE SUNSET TREEHOUSE",
+      "brief": "A lantern-lit tropical treehouse and wooden rope bridge stand high above a misty forest valley.",
+      "must_show": "A large lantern-lit wooden treehouse and rope bridge occupy the foreground in a tropical tree canopy above misty mountains at sunset.",
+      "image_prompt": "A large lantern-lit wooden treehouse and rope bridge occupy the foreground in a tropical tree canopy above misty mountains at sunset. One single continuous vertical 9:16 photorealistic scene, no text, logo, collage, panels, or watermark."
     }
   ]
 }
