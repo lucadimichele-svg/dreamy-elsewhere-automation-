@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-23",
+  "slot": "S3",
+  "topic": "Which Venice would you explore?",
+  "theme_category": "real-world-reimagined/landmark-test",
+  "core_subject": "Venice, Italy",
+  "experiment": "real-world-reimagined/6-reel-initial-test",
+  "original_landmark": "Venice, Italy",
+  "variants": [
+    {
+      "label": "THE FROZEN CANAL",
+      "brief": "A Venice Grand Canal frozen solid beneath the real Rialto Bridge and snowbound palazzi.",
+      "must_show": "The Rialto Bridge arches over the Venice Grand Canal with historic waterfront palazzi is the recognizable main subject",
+      "image_prompt": "The Rialto Bridge arches over the Venice Grand Canal with historic waterfront palazzi. Ice Age Venice: transparent ice covers the Grand Canal, white snow dusts the real Rialto Bridge and facades. Low canal-level view facing directly toward the bridge in icy blue dawn. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "THE LOST GARDEN",
+      "brief": "The familiar Rialto Bridge surrounded by an overgrown dreamlike garden city.",
+      "must_show": "The Rialto Bridge arches over the Venice Grand Canal with historic waterfront palazzi is the recognizable main subject",
+      "image_prompt": "The Rialto Bridge arches over the Venice Grand Canal with historic waterfront palazzi. Lost-world Venice: real Rialto Bridge and the canal remain visible while lush vines, emerald foliage and flowers cover the waterfront. A view from an abandoned gondola in soft morning light. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "VENICE AFTER DARK",
+      "brief": "Venice's familiar Grand Canal glows with floating lanterns under an indigo moon.",
+      "must_show": "The Rialto Bridge arches over the Venice Grand Canal with historic waterfront palazzi is the recognizable main subject",
+      "image_prompt": "The Rialto Bridge arches over the Venice Grand Canal with historic waterfront palazzi. Magical Venice at night: unmistakable Rialto Bridge glows over Grand Canal waters, floating lanterns and warm stone palazzi. Three-quarter viewpoint from a small stone canal stairway. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "SUBMERGED VENICE",
+      "brief": "The Rialto Bridge and Grand Canal preserved beneath an enormous transparent underwater dome.",
+      "must_show": "The Rialto Bridge arches over the Venice Grand Canal with historic waterfront palazzi is the recognizable main subject",
+      "image_prompt": "The Rialto Bridge arches over the Venice Grand Canal with historic waterfront palazzi. Underwater-world Venice: real Rialto Bridge and Venetian canal architecture survive in a colossal transparent ocean dome, fish visible high beyond the glass. Canal-edge viewpoint, turquoise reflected light and sunbeams. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "NEON RENAISSANCE",
+      "brief": "A futuristic Venice with the recognizable Rialto Bridge and neon-lit gondola traffic.",
+      "must_show": "The Rialto Bridge arches over the Venice Grand Canal with historic waterfront palazzi is the recognizable main subject",
+      "image_prompt": "The Rialto Bridge arches over the Venice Grand Canal with historic waterfront palazzi. Cyberpunk Venice: original Rialto Bridge and broad Venice canal still recognizable, historic palazzi outlined by subtle magenta and cyan neon, sleek water taxis. High oblique canal photograph under gentle midnight rain. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    }
+  ]
+}
