@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-24",
+  "slot": "S2",
+  "topic": "Which Santorini would you stay in?",
+  "theme_category": "real-world-reimagined/landmark-test",
+  "core_subject": "Oia village, Santorini, Greece",
+  "experiment": "real-world-reimagined/6-reel-initial-test",
+  "original_landmark": "Oia village, Santorini, Greece",
+  "variants": [
+    {
+      "label": "THE GARDEN ISLAND",
+      "brief": "Santorini's characteristic white-and-blue churches reimagined amid lush flowering greenery.",
+      "must_show": "Oia Santorini whitewashed cubic cliffside village, bright blue-domed churches and steep Aegean caldera is the recognizable main subject",
+      "image_prompt": "Oia Santorini whitewashed cubic cliffside village, bright blue-domed churches and steep Aegean caldera. Jungle Santorini: unmistakable cascade of whitewashed houses and blue-domed church roofs with emerald terraces, tropical blooms and bougainvillea. Elevated view toward the caldera at fresh golden dawn. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "SANTORINI IN SNOW",
+      "brief": "Oia's famous domes and white houses are covered with snow in an alternate arctic climate.",
+      "must_show": "Oia Santorini whitewashed cubic cliffside village, bright blue-domed churches and steep Aegean caldera is the recognizable main subject",
+      "image_prompt": "Oia Santorini whitewashed cubic cliffside village, bright blue-domed churches and steep Aegean caldera. Ice Age Santorini: iconic white stepped Oia village and bright blue-domed churches recognizable beneath thick snow, a distant pale aurora over the dark Aegean. View from traditional stone steps at blue twilight. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "VOLCANIC SUNSET",
+      "brief": "An alternate Santorini with distant lava on the caldera under dramatic red clouds.",
+      "must_show": "Oia Santorini whitewashed cubic cliffside village, bright blue-domed churches and steep Aegean caldera is the recognizable main subject",
+      "image_prompt": "Oia Santorini whitewashed cubic cliffside village, bright blue-domed churches and steep Aegean caldera. Volcanic Santorini: recognizable whitewashed houses, cascading village and blue-domed churches stand intact while distant cliffs show softly glowing volcanic streams. Warm three-quarter rooftop view in fiery red-orange sunset. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "MOONLIT GREECE",
+      "brief": "The recognizable cliffside village glows with lanterns under an enormous full moon.",
+      "must_show": "Oia Santorini whitewashed cubic cliffside village, bright blue-domed churches and steep Aegean caldera is the recognizable main subject",
+      "image_prompt": "Oia Santorini whitewashed cubic cliffside village, bright blue-domed churches and steep Aegean caldera. Dreamy nighttime Santorini: Oia's famous bright blue domes and stacked whitewashed buildings shine under a huge pale moon, warm lantern paths and dark Aegean sea. Low terrace angle with blue domes centered in soft indigo twilight. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    },
+    {
+      "label": "SOLAR ISLAND 2200",
+      "brief": "A sustainable futuristic Santorini keeps its white-and-blue architecture.",
+      "must_show": "Oia Santorini whitewashed cubic cliffside village, bright blue-domed churches and steep Aegean caldera is the recognizable main subject",
+      "image_prompt": "Oia Santorini whitewashed cubic cliffside village, bright blue-domed churches and steep Aegean caldera. Solarpunk Santorini: classic white-and-blue domed Oia village over the high Aegean cliff, delicate glass skywalks, living terraces and Mediterranean roof gardens. Wide dramatic elevated shot in clear midmorning sun. One single original full-frame photorealistic 9:16 portrait image. The recognizable real-world landmark must be the large central subject and actually visible, not an invented substitute. Plausible architecture, richly detailed environment. No text, logos, captions, typography, collage, grid or panel borders."
+    }
+  ]
+}
