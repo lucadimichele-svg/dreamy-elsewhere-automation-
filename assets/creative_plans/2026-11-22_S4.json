@@ -3,37 +3,37 @@
   "slot": "S4",
   "topic": "Which extraordinary world would you explore?",
   "theme_category": "fantasy/exploration",
-  "core_subject": "extraordinary fantasy landmark",
+  "core_subject": "fantasy destination",
   "variants": [
     {
       "label": "MOONLIT OBSERVATORY",
-      "brief": "A grand brass telescope in a moonlit desert observatory",
-      "must_show": "A monumental brass telescope dominates the image inside a desert observatory",
-      "image_prompt": "A monumental brass telescope dominates the image inside a desert observatory. A grand brass telescope in a moonlit desert observatory. The main subject is prominent and unmistakable. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "brief": "A large brass telescope inside an open domed observatory overlooking moonlit desert dunes",
+      "must_show": "A large brass telescope dominates an open domed observatory",
+      "image_prompt": "A large brass telescope dominates an open domed observatory. A large brass telescope inside an open domed observatory overlooking moonlit desert dunes. The main destination is clearly visible. One single continuous full-frame vertical 9:16 photorealistic scene. No text, typography, labels, collage, borders or watermark."
     },
     {
-      "label": "FLOATING NIGHT MARKET",
-      "brief": "A glowing floating market over a misty canal",
-      "must_show": "A colorful floating market with several large illuminated boats fills the frame",
-      "image_prompt": "A colorful floating market with several large illuminated boats fills the frame. A glowing floating market over a misty canal. The main subject is prominent and unmistakable. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "AURORA ICE THRONE",
+      "brief": "An enormous crystal ice throne draped in white fur inside an aurora-lit frozen cavern",
+      "must_show": "An ice throne stands amid towering crystals and glowing lanterns",
+      "image_prompt": "An ice throne stands amid towering crystals and glowing lanterns. An enormous crystal ice throne draped in white fur inside an aurora-lit frozen cavern. The main destination is clearly visible. One single continuous full-frame vertical 9:16 photorealistic scene. No text, typography, labels, collage, borders or watermark."
     },
     {
-      "label": "CRYSTAL CAVERN",
-      "brief": "A towering crystal cavern illuminated by blue mineral formations",
-      "must_show": "A cavern filled with towering luminous crystals dominates the view",
-      "image_prompt": "A cavern filled with towering luminous crystals dominates the view. A towering crystal cavern illuminated by blue mineral formations. The main subject is prominent and unmistakable. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "ENCHANTED TREE LIBRARY",
+      "brief": "An illuminated reading room with bookshelves and fireplace built into a giant tree",
+      "must_show": "A book-filled library room is built into a giant tree",
+      "image_prompt": "A book-filled library room is built into a giant tree. An illuminated reading room with bookshelves and fireplace built into a giant tree. The main destination is clearly visible. One single continuous full-frame vertical 9:16 photorealistic scene. No text, typography, labels, collage, borders or watermark."
     },
     {
-      "label": "CLOCKWORK GARDEN",
-      "brief": "A fantastical garden with giant intricate mechanical flowers",
-      "must_show": "Several enormous mechanical flowers dominate a garden",
-      "image_prompt": "Several enormous mechanical flowers dominate a garden. A fantastical garden with giant intricate mechanical flowers. The main subject is prominent and unmistakable. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "SUNSET COASTAL GATE",
+      "brief": "An ornate wooden door with a golden sun emblem opens onto a sunset coastal pathway",
+      "must_show": "A tall wooden door with a golden sun emblem stands in a stone archway",
+      "image_prompt": "A tall wooden door with a golden sun emblem stands in a stone archway. An ornate wooden door with a golden sun emblem opens onto a sunset coastal pathway. The main destination is clearly visible. One single continuous full-frame vertical 9:16 photorealistic scene. No text, typography, labels, collage, borders or watermark."
     },
     {
-      "label": "SKYBOUND LIGHTHOUSE",
-      "brief": "A tall lighthouse on a floating island above sunset clouds",
-      "must_show": "A large lighthouse dominates a floating island in the clouds",
-      "image_prompt": "A large lighthouse dominates a floating island in the clouds. A tall lighthouse on a floating island above sunset clouds. The main subject is prominent and unmistakable. One single continuous, full-frame vertical 9:16 photorealistic scene. No text, no typography, no logo, no labels, no split screen, no collage, no montage, no panels, no borders, no image grid, no watermark."
+      "label": "WATERFALL CLIFF CITY",
+      "brief": "A glowing white-stone fantasy city clings to cliffs above waterfalls and mist",
+      "must_show": "A white stone fantasy city with towers and bridges occupies towering waterfall cliffs",
+      "image_prompt": "A white stone fantasy city with towers and bridges occupies towering waterfall cliffs. A glowing white-stone fantasy city clings to cliffs above waterfalls and mist. The main destination is clearly visible. One single continuous full-frame vertical 9:16 photorealistic scene. No text, typography, labels, collage, borders or watermark."
     }
   ]
 }
