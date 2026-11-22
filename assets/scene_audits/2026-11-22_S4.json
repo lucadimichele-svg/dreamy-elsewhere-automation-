@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-22",
+  "slot": "S4",
+  "topic": "Which extraordinary world would you explore?",
+  "core_subject": "fantasy destination",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "MOONLIT OBSERVATORY",
+      "must_show": "A large brass telescope dominates an open domed observatory",
+      "sha256": "9e7a29c557fb7b42b94e1e69427ed3b2dc5bc782d0baa35412bd7dd7f81ac483",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A monumental brass telescope stands in a domed observatory opening onto a moonlit desert."
+    },
+    {
+      "name": "02.png",
+      "label": "AURORA ICE THRONE",
+      "must_show": "An ice throne stands amid towering crystals and glowing lanterns",
+      "sha256": "a3c77a971af4de65e47814ca6bcbdc22827226d071126606942ef81872acd278",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A large translucent ice throne with white fur sits within a crystal cavern beneath northern lights."
+    },
+    {
+      "name": "03.png",
+      "label": "ENCHANTED TREE LIBRARY",
+      "must_show": "A book-filled library room is built into a giant tree",
+      "sha256": "fe88b65af2cad3459558824e2a04ae19715c0c8d24e194bed484082c828e218d",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "An illuminated book-filled reading room is built into a huge tree above a misty valley."
+    },
+    {
+      "name": "04.png",
+      "label": "SUNSET COASTAL GATE",
+      "must_show": "A tall wooden door with a golden sun emblem stands in a stone archway",
+      "sha256": "6c47477ae77899b6c3fe4d0e93ee4901a57bf4fd2be222556bc8b9d608d4b327",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A large carved wooden door bearing a sun emblem opens within a stone arch toward the coast."
+    },
+    {
+      "name": "05.png",
+      "label": "WATERFALL CLIFF CITY",
+      "must_show": "A white stone fantasy city with towers and bridges occupies towering waterfall cliffs",
+      "sha256": "ce91970ea3376e4b687b6b2b464d85ab5d289089e06fb2273b1516b58b8e759b",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A white stone cliffside city with domes, bridges and waterfalls rises above the clouds."
+    }
+  ]
+}
