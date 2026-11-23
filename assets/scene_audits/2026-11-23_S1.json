@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-23",
+  "slot": "S1",
+  "topic": "Which Times Square would you explore?",
+  "core_subject": "Times Square Manhattan crossroads and iconic billboard canyon",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "AFTER THE FALL",
+      "must_show": "Times Square Manhattan crossroads with a large central stack of blank billboard screens and an empty weed-filled pedestrian crossing.",
+      "sha256": "f69af18c976e128fa434e29298a285e0079416164abb8e0783b267c057e579a9",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A recognizable Times Square central billboard tower above a deserted cracked crosswalk, blank screens, weeds and morning sun."
+    },
+    {
+      "name": "02.png",
+      "label": "WINTER NEON",
+      "must_show": "Times Square Manhattan crossroads with bright stacked billboard screens, snow-covered sidewalk and a busy pedestrian crossing.",
+      "sha256": "dd9fcc636a86d809cdbdb4c71c10003d5110caf064cd919d12414eaae6fbf324",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "The central stacked billboard tower and Times Square street canyon with snow, taxis, pedestrians and brightly illuminated screens."
+    },
+    {
+      "name": "03.png",
+      "label": "JUNGLE RECLAIMED",
+      "must_show": "Times Square Manhattan crossroads with stacked billboard screens, an overgrown pedestrian crossing and vegetation-covered buildings.",
+      "sha256": "d33a5525b34d83679c0d45e04368b93bbd7694ce0f4a7ac358f14e88a2a83d0e",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "Times Square stacked central billboard tower, overgrown buildings, red steps, vegetation in crosswalk and abandoned yellow taxi."
+    },
+    {
+      "name": "04.png",
+      "label": "RAINY CYBERPUNK",
+      "must_show": "Times Square Manhattan crossroads with towering illuminated billboard facades, taxis and wet pedestrian crossing.",
+      "sha256": "cb0f07a3979eef7c1fd80f6bf6844299fe089e9eb2dc2b8f6343d955aae136e3",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "Recognizable Times Square stacked billboard tower, dense colorful illuminated screens, yellow taxis and wet pedestrian crossing at night."
+    },
+    {
+      "name": "05.png",
+      "label": "SNOWFALL CITY LIGHTS",
+      "must_show": "Times Square Manhattan crossroads with stacked glowing billboard screens, snow flurries and a wet pedestrian crossing.",
+      "sha256": "9398604d7e3a599e7c058cb1d20dc34e1fecdd02d936c6f27bf9aa8bea42a653",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "The Times Square billboard canyon and central stacked screen tower amid snow flurries, taxis and illuminated wet streets."
+    }
+  ]
+}
