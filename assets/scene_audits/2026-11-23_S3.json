@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-23",
+  "slot": "S3",
+  "topic": "Which Venice would you explore?",
+  "core_subject": "Venice, Italy",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "THE FROZEN CANAL",
+      "must_show": "The recognizable Rialto Bridge spans an icy Venice Grand Canal, with snow on its stone arch and historic palazzi.",
+      "sha256": "6380a65d6f71008ec8649a1c2c3a41bf786e134dcd65f0e6e1b6aed3a5b0ca50",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A snow-covered Rialto Bridge with its central arch and shops dominates above a frozen Grand Canal, flanked by Venetian palazzi."
+    },
+    {
+      "name": "02.png",
+      "label": "GONDOLA SUNSET",
+      "must_show": "The recognizable Rialto Bridge spans Venice Grand Canal behind a red velvet gondola at sunset.",
+      "sha256": "4829f08c6df18b80d0368be931ce484b050701b66e2b22268b2d532d611d6394",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "The Rialto Bridge is clearly visible over the Grand Canal behind a foreground gondola with red velvet cushions and a lantern at sunset."
+    },
+    {
+      "name": "03.png",
+      "label": "WISTERIA CAFE",
+      "must_show": "The recognizable Rialto Bridge spans Venice Grand Canal behind a wisteria-covered waterside cafe.",
+      "sha256": "de5cc3e5489d23e9c935ce3b365949da5cecc0e7fb6f7ba68d4ad18211181776",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "The recognizable Rialto Bridge dominates the Grand Canal beyond a wisteria-draped waterside cafe and ornate gondola."
+    },
+    {
+      "name": "04.png",
+      "label": "THE LOST GARDEN",
+      "must_show": "The recognizable Rialto Bridge spans Venice Grand Canal and is covered with green vines and flowering foliage.",
+      "sha256": "2b29c11885c1d7f9306a11e468e71834e84f4bbf912c160ccdd66ab5782891c9",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "The Rialto Bridge dominates the canal, its stone structure covered in green vines, with dense foliage and lotus flowers in the foreground."
+    },
+    {
+      "name": "05.png",
+      "label": "VENETIAN TWILIGHT",
+      "must_show": "The recognizable Rialto Bridge spans Venice Grand Canal behind a moored gondola and purple flowers at dusk.",
+      "sha256": "598a9bdaa1552aded8404faffa533b707c3f28eb74b2c7d8b06fc7b818bd3967",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "The illuminated Rialto Bridge spans the Grand Canal beyond a moored red-upholstered gondola, striped posts and purple blossoms."
+    }
+  ]
+}
