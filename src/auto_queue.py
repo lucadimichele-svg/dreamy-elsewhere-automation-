@@ -101,7 +101,10 @@ def main():
             if when.isoformat() in planned_times:
                 continue
             # Do not post stale content. Slightly late slots are shared right away.
-            if not now - timedelta(hours=3) <= when <= now + timedelta(days=2):
+            # A delayed scheduled GitHub run must not silently discard a valid
+            # finished Reel after only three hours. Six-hour same-day
+            # recovery is bounded; older missed slots are never revived.
+            if not now - timedelta(hours=6) <= when <= now + timedelta(days=2):
                 continue
             if not (MEDIA / metadata["video"]).is_file():
                 continue
