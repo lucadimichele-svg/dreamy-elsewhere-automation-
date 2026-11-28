@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-28",
+  "slot": "S3",
+  "topic": "Which observatory would you watch the stars from?",
+  "theme_category": "astronomy/retreats",
+  "core_subject": "astronomical observatory",
+  "variants": [
+    {
+      "label": "ALPINE OBSERVATORY",
+      "brief": "A circular astronomical observatory on a snowy alpine summit",
+      "must_show": "A circular astronomical observatory on a snowy alpine summit with a visible large telescope",
+      "image_prompt": "A circular astronomical observatory on a snowy alpine summit with a visible large telescope. Single photorealistic vertical 9:16 scene, no text or collage."
+    },
+    {
+      "label": "DESERT OBSERVATORY",
+      "brief": "A sandstone astronomical observatory beneath a desert Milky Way",
+      "must_show": "A sandstone astronomical observatory beneath a desert Milky Way with a visible large telescope",
+      "image_prompt": "A sandstone astronomical observatory beneath a desert Milky Way with a visible large telescope. Single photorealistic vertical 9:16 scene, no text or collage."
+    },
+    {
+      "label": "OCEAN OBSERVATORY",
+      "brief": "A modern astronomical observatory on a rocky ocean cliff",
+      "must_show": "A modern astronomical observatory on a rocky ocean cliff with a visible large telescope",
+      "image_prompt": "A modern astronomical observatory on a rocky ocean cliff with a visible large telescope. Single photorealistic vertical 9:16 scene, no text or collage."
+    },
+    {
+      "label": "FOREST OBSERVATORY",
+      "brief": "A timber astronomical observatory among giant redwoods",
+      "must_show": "A timber astronomical observatory among giant redwoods with a visible large telescope",
+      "image_prompt": "A timber astronomical observatory among giant redwoods with a visible large telescope. Single photorealistic vertical 9:16 scene, no text or collage."
+    },
+    {
+      "label": "LUNAR OBSERVATORY",
+      "brief": "A futuristic astronomical observatory on the lunar surface",
+      "must_show": "A futuristic astronomical observatory on the lunar surface with a visible large telescope",
+      "image_prompt": "A futuristic astronomical observatory on the lunar surface with a visible large telescope. Single photorealistic vertical 9:16 scene, no text or collage."
+    }
+  ]
+}
