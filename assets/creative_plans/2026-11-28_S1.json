@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-28",
+  "slot": "S1",
+  "topic": "Which observatory would you watch the stars from?",
+  "theme_category": "dreamy/astronomy",
+  "core_subject": "astronomical observatory",
+  "variants": [
+    {
+      "label": "ALPINE OBSERVATORY",
+      "brief": "A timber and stone astronomical observatory on a snowy summit, seen from below",
+      "must_show": "A timber and stone astronomical observatory on a snowy summit, seen from below",
+      "image_prompt": "A timber and stone astronomical observatory on a snowy summit, seen from below. The observatory is the dominant subject. Single continuous photorealistic vertical 9:16 photograph, no text, logo, collage or panels."
+    },
+    {
+      "label": "DESERT OBSERVATORY",
+      "brief": "A sandstone astronomical observatory with a copper dome amid desert dunes",
+      "must_show": "A sandstone astronomical observatory with a copper dome amid desert dunes",
+      "image_prompt": "A sandstone astronomical observatory with a copper dome amid desert dunes. The observatory is the dominant subject. Single continuous photorealistic vertical 9:16 photograph, no text, logo, collage or panels."
+    },
+    {
+      "label": "OCEAN OBSERVATORY",
+      "brief": "A white astronomical observatory on a rugged ocean cliff at sunset",
+      "must_show": "A white astronomical observatory on a rugged ocean cliff at sunset",
+      "image_prompt": "A white astronomical observatory on a rugged ocean cliff at sunset. The observatory is the dominant subject. Single continuous photorealistic vertical 9:16 photograph, no text, logo, collage or panels."
+    },
+    {
+      "label": "FOREST OBSERVATORY",
+      "brief": "An antique brick astronomical observatory amid towering redwoods",
+      "must_show": "An antique brick astronomical observatory amid towering redwoods",
+      "image_prompt": "An antique brick astronomical observatory amid towering redwoods. The observatory is the dominant subject. Single continuous photorealistic vertical 9:16 photograph, no text, logo, collage or panels."
+    },
+    {
+      "label": "ORBITAL OBSERVATORY",
+      "brief": "A futuristic astronomical observatory with a large telescope dome on the lunar surface",
+      "must_show": "A futuristic astronomical observatory with a large telescope dome on the lunar surface",
+      "image_prompt": "A futuristic astronomical observatory with a large telescope dome on the lunar surface. The observatory is the dominant subject. Single continuous photorealistic vertical 9:16 photograph, no text, logo, collage or panels."
+    }
+  ]
+}
