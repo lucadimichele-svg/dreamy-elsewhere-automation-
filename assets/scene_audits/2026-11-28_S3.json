@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-28",
+  "slot": "S3",
+  "topic": "Which observatory would you watch the stars from?",
+  "core_subject": "astronomical observatory",
+  "files": [
+    {
+      "name": "01.png",
+      "label": "ALPINE OBSERVATORY",
+      "must_show": "A snowy summit observatory with an open metal dome and large telescope",
+      "sha256": "9225f98b86b237b5b9d2ebee60b5303b8a7d6bc1be81f46d1eb3e158df78375f",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A snowy summit observatory with an open metal dome and large telescope"
+    },
+    {
+      "name": "02.png",
+      "label": "CHERRY BLOSSOM OBSERVATORY",
+      "must_show": "A stone observatory with a visible telescope framed by cherry blossoms at sunset",
+      "sha256": "5d82db29596c0c1ea2ea6362be58cb90c24b3df8c74c9867f8efce73f1595918",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A stone observatory with a visible telescope framed by cherry blossoms at sunset"
+    },
+    {
+      "name": "03.png",
+      "label": "GLASS CANOPY OBSERVATORY",
+      "must_show": "A glass-domed treetop observatory with a prominent tripod telescope",
+      "sha256": "a208fe8f7aa9c8818ed4cdab32ecbb5914b3b4faf8a5af286eb6a13b4f5ae9f6",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A glass-domed treetop observatory with a prominent tripod telescope"
+    },
+    {
+      "name": "04.png",
+      "label": "COPPER TREE OBSERVATORY",
+      "must_show": "A wooden treehouse observatory with an open copper dome and brass telescope",
+      "sha256": "20a5829d951d62f607e24e5b159f8e79de32387a757211ece3534d14e2f92854",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "A wooden treehouse observatory with an open copper dome and brass telescope"
+    },
+    {
+      "name": "05.png",
+      "label": "VINTAGE STAR LOUNGE",
+      "must_show": "An interior observatory with a large vintage telescope under an open dome",
+      "sha256": "9755068c5bf302555c47891c94a6ecc6cd001212d2f6e49155849e2c44c477db",
+      "subject_visible": true,
+      "subject_dominant": true,
+      "observed_subject": "An interior observatory with a large vintage telescope under an open dome"
+    }
+  ]
+}
