@@ -7,33 +7,33 @@
   "variants": [
     {
       "label": "ALPINE OBSERVATORY",
-      "brief": "A circular astronomical observatory on a snowy alpine summit",
-      "must_show": "A circular astronomical observatory on a snowy alpine summit with a visible large telescope",
-      "image_prompt": "A circular astronomical observatory on a snowy alpine summit with a visible large telescope. Single photorealistic vertical 9:16 scene, no text or collage."
+      "brief": "A snowy summit observatory with an open metal dome and large telescope",
+      "must_show": "A snowy summit observatory with an open metal dome and large telescope",
+      "image_prompt": "A snowy summit observatory with an open metal dome and large telescope. Single photorealistic vertical 9:16 scene without text."
     },
     {
-      "label": "DESERT OBSERVATORY",
-      "brief": "A sandstone astronomical observatory beneath a desert Milky Way",
-      "must_show": "A sandstone astronomical observatory beneath a desert Milky Way with a visible large telescope",
-      "image_prompt": "A sandstone astronomical observatory beneath a desert Milky Way with a visible large telescope. Single photorealistic vertical 9:16 scene, no text or collage."
+      "label": "CHERRY BLOSSOM OBSERVATORY",
+      "brief": "A stone observatory with a visible telescope framed by cherry blossoms at sunset",
+      "must_show": "A stone observatory with a visible telescope framed by cherry blossoms at sunset",
+      "image_prompt": "A stone observatory with a visible telescope framed by cherry blossoms at sunset. Single photorealistic vertical 9:16 scene without text."
     },
     {
-      "label": "OCEAN OBSERVATORY",
-      "brief": "A modern astronomical observatory on a rocky ocean cliff",
-      "must_show": "A modern astronomical observatory on a rocky ocean cliff with a visible large telescope",
-      "image_prompt": "A modern astronomical observatory on a rocky ocean cliff with a visible large telescope. Single photorealistic vertical 9:16 scene, no text or collage."
+      "label": "GLASS CANOPY OBSERVATORY",
+      "brief": "A glass-domed treetop observatory with a prominent tripod telescope",
+      "must_show": "A glass-domed treetop observatory with a prominent tripod telescope",
+      "image_prompt": "A glass-domed treetop observatory with a prominent tripod telescope. Single photorealistic vertical 9:16 scene without text."
     },
     {
-      "label": "FOREST OBSERVATORY",
-      "brief": "A timber astronomical observatory among giant redwoods",
-      "must_show": "A timber astronomical observatory among giant redwoods with a visible large telescope",
-      "image_prompt": "A timber astronomical observatory among giant redwoods with a visible large telescope. Single photorealistic vertical 9:16 scene, no text or collage."
+      "label": "COPPER TREE OBSERVATORY",
+      "brief": "A wooden treehouse observatory with an open copper dome and brass telescope",
+      "must_show": "A wooden treehouse observatory with an open copper dome and brass telescope",
+      "image_prompt": "A wooden treehouse observatory with an open copper dome and brass telescope. Single photorealistic vertical 9:16 scene without text."
     },
     {
-      "label": "LUNAR OBSERVATORY",
-      "brief": "A futuristic astronomical observatory on the lunar surface",
-      "must_show": "A futuristic astronomical observatory on the lunar surface with a visible large telescope",
-      "image_prompt": "A futuristic astronomical observatory on the lunar surface with a visible large telescope. Single photorealistic vertical 9:16 scene, no text or collage."
+      "label": "VINTAGE STAR LOUNGE",
+      "brief": "An interior observatory with a large vintage telescope under an open dome",
+      "must_show": "An interior observatory with a large vintage telescope under an open dome",
+      "image_prompt": "An interior observatory with a large vintage telescope under an open dome. Single photorealistic vertical 9:16 scene without text."
     }
   ]
 }
